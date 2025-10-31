@@ -1,0 +1,391 @@
+// Prisma Schema for TAXCOIN MVP
+// 參考: .specify/features/taxcoin-mvp-platform/data-model.md
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+// ===== 列舉類型 =====
+
+enum UserRole {
+  TOURIST  // 旅客
+  INVESTOR // 投資者
+  MERCHANT // 店家
+  ADMIN    // 管理員
+}
+
+enum KycStatus {
+  PENDING  // 待驗證
+  VERIFIED // 已驗證
+  REJECTED // 已拒絕
+}
+
+enum ClaimStatus {
+  PENDING   // 待審核
+  APPROVED  // 已核准
+  REJECTED  // 已拒絕
+  DISBURSED // 已發放
+}
+
+enum PoolStatus {
+  RECRUITING // 募集中
+  FULL       // 已滿額
+  MATURED    // 已到期
+  SETTLED    // 已結算
+  REDEEMED   // 已兌現
+}
+// ===== 使用者管理 =====
+
+model User {
+  id            String      @id @default(auto()) @map("_id") @db.ObjectId
+  did           String      @unique // W3C DID (例如: did:key:z6Mk...)
+  didDocument   Json?       // DID Document (完整的 W3C DID Document)
+  didSeed       String?     // DID 種子 (加密存儲,用於重建 DID)
+  role          UserRole
+  kycStatus     KycStatus   @default(PENDING)
+  walletAddress String?     @unique
+  email         String?     // 移除 @unique，因為 MongoDB 會把多個 null 視為重複
+  phoneNumber   String?
+  lastLoginAt   DateTime?   // 最後登入時間
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+
+  // 關聯
+  kycRecords    KycRecord[]
+  taxClaims     TaxClaim[]
+  investments   Investment[]
+  notifications Notification[]
+  merchants     Merchant[] // QR Code 支付 - 店家
+  payments      Payment[] // QR Code 支付 - 支付記錄
+
+  @@map("users")
+}
+
+model KycRecord {
+  id               String    @id @default(auto()) @map("_id") @db.ObjectId
+  userId           String    @db.ObjectId
+  fullName         String
+  passportNumber   String
+  passportImageUrl String
+  faceImageUrl     String
+  nationality      String
+  dateOfBirth      DateTime
+  status           KycStatus @default(PENDING)
+  verifiedAt       DateTime?
+  reviewedAt       DateTime?
+  rejectedReason   String?
+
+  // ✅ Self SDK 相關欄位
+  verifiableCredential Json?     // KYC 可驗證憑證 (Verifiable Credential)
+  credentialId         String?   // 憑證 ID
+  issuerDID            String?   // 簽發者 DID (平台的管理員 DID)
+  didDocumentHash      String?   // DID Document Hash (用於鏈上驗證)
+
+  // 🔗 Celo 鏈上驗證欄位
+  celoTxHash           String?   // Celo 交易哈希
+  celoBlockNumber      Int?      // Celo 區塊號
+  celoProofHash        String?   // Proof Hash (防止重放攻擊)
+  celoVerifiedAt       DateTime? // Celo 鏈上驗證時間
+
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+
+  // 關聯
+  user User @relation(fields: [userId], references: [id])
+
+  @@map("kyc_records")
+}
+
+// ===== 退稅申請 =====
+
+model TaxClaim {
+  id              String       @id @default(auto()) @map("_id") @db.ObjectId
+  userId          String       @db.ObjectId
+  receiptImages   String[] // 收據圖片 URLs
+  receiptImageUrl String? // 主要收據圖片 URL (向後兼容)
+  merchantName    String? // 商家名稱
+  purchaseDate    String? // 購買日期
+  entryFlight     String? // 入境航班號碼
+  entryFlightDate DateTime? // 入境航班日期
+  exitFlight      String? // 出境航班號碼
+  exitFlightDate  DateTime? // 出境航班日期
+  ocrResult       Json? // OCR 解析結果
+  ocrData         Json? // OCR 原始數據 (別名)
+  originalAmount  Float // 原始金額
+  taxAmount       Float // 退稅金額
+  taxCoinAmount   Float // TaxCoin 數量
+  status          ClaimStatus  @default(PENDING)
+  nftTokenId      String?      @unique // NFT Token ID
+  reviewedBy      String? // 審核者 ID
+  reviewedAt      DateTime?
+  rejectedReason  String?
+  disbursedAt     DateTime?
+  createdAt       DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
+
+  // 關聯
+  user        User          @relation(fields: [userId], references: [id])
+  nft         TaxClaimNft?
+  rwaPoolItem RwaPoolItem?
+
+  @@map("tax_claims")
+}
+
+model TaxClaimNft {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  taxClaimId  String   @unique @db.ObjectId
+  nftTokenId  String   @unique // Sui NFT Object ID
+  metadataUri String
+  mintedAt    DateTime @default(now())
+
+  // 關聯
+  taxClaim TaxClaim @relation(fields: [taxClaimId], references: [id])
+
+  @@map("tax_claim_nfts")
+}
+
+// ===== RWA 投資池 =====
+
+enum RiskLevel {
+  LOW    // 低風險
+  MEDIUM // 中風險
+  HIGH   // 高風險
+}
+
+model RwaPool {
+  id                 String     @id @default(auto()) @map("_id") @db.ObjectId
+  poolName           String
+  name               String     @default("") // 池子名稱 (別名)
+  description        String?    // 池子描述
+  targetAmount       Float // 目標募集金額
+  currentAmount      Float      @default(0) // 當前募集金額
+  yieldRate          Float // 預期收益率 (%)
+  riskLevel          RiskLevel  @default(MEDIUM) // 風險等級
+  maturityDate       DateTime // 到期日
+  status             PoolStatus @default(RECRUITING)
+  poolContractId     String?    @unique // Sui Pool Contract Object ID
+  totalTokenSupply   Float? // 代幣總供應量
+  createdAt          DateTime   @default(now())
+  updatedAt          DateTime   @updatedAt
+
+  // 關聯
+  items       RwaPoolItem[]
+  investments Investment[]
+
+  @@map("rwa_pools")
+}
+
+model RwaPoolItem {
+  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  poolId     String   @db.ObjectId
+  taxClaimId String   @unique @db.ObjectId
+  addedAt    DateTime @default(now())
+
+  // 關聯
+  pool     RwaPool  @relation(fields: [poolId], references: [id])
+  taxClaim TaxClaim @relation(fields: [taxClaimId], references: [id])
+
+  @@map("rwa_pool_items")
+}
+
+// ===== 投資記錄 =====
+
+enum InvestmentStatus {
+  ACTIVE    // 進行中
+  REDEEMED  // 已贖回
+  CANCELLED // 已取消
+}
+
+model Investment {
+  id                String           @id @default(auto()) @map("_id") @db.ObjectId
+  userId            String           @db.ObjectId
+  poolId            String           @db.ObjectId
+  investmentAmount  Float // 投資金額
+  tokenAmount       Float // 獲得的代幣數量
+  yieldAmount       Float? // 收益金額
+  yieldRate         Float? // 收益率
+  status            InvestmentStatus @default(ACTIVE)
+  investedAt        DateTime         @default(now()) // 投資時間
+  redeemedAt        DateTime?
+  transactionHash   String?          @unique // Sui Transaction Hash
+  poolShareNftId    String?          @unique // Pool Share NFT Object ID
+  createdAt         DateTime         @default(now())
+  updatedAt         DateTime         @updatedAt
+
+  // 關聯
+  user User    @relation(fields: [userId], references: [id])
+  pool RwaPool @relation(fields: [poolId], references: [id])
+
+  @@map("investments")
+}
+
+// ===== 通知系統 =====
+
+model Notification {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  userId    String   @db.ObjectId
+  title     String
+  message   String
+  type      String // 通知類型: TAX_APPROVED, INVESTMENT_SUCCESS, POOL_MATURED, etc.
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  // 關聯
+  user User @relation(fields: [userId], references: [id])
+
+  @@map("notifications")
+}
+
+// ===== 系統設定 =====
+
+model SystemConfig {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  key       String   @unique // 配置鍵名
+  value     String // 配置值 (JSON string)
+  updatedAt DateTime @updatedAt
+
+  @@map("system_config")
+}
+
+// ===== 審計日誌 =====
+
+model AuditLog {
+  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  userId     String? // 操作者 ID (可為系統)
+  action     String // 操作類型
+  entityType String // 實體類型
+  entityId   String // 實體 ID
+  changes    Json? // 變更內容
+  details    Json? // 詳細資訊 (別名)
+  ipAddress  String?
+  userAgent  String?
+  createdAt  DateTime @default(now())
+
+  @@map("audit_logs")
+}
+
+// ===== QR Code 支付功能 =====
+
+enum MerchantStatus {
+  ACTIVE    // 營業中
+  SUSPENDED // 已暫停
+}
+
+enum ProductStatus {
+  ACTIVE   // 上架中
+  INACTIVE // 已下架
+}
+
+enum PaymentStatus {
+  PENDING   // 待支付
+  COMPLETED // 已完成
+  FAILED    // 失敗
+  CANCELLED // 已取消
+}
+
+enum InvoiceStatus {
+  ISSUED // 已開立
+  VOIDED // 已作廢
+}
+
+model Merchant {
+  id            String         @id @default(auto()) @map("_id") @db.ObjectId
+  userId        String         @db.ObjectId
+  merchantName  String // 店家名稱
+  taxId         String         @unique // 統一編號
+  ownerName     String // 負責人姓名
+  phone         String // 聯絡電話
+  address       String // 店家地址
+  businessType  String // 營業項目
+  walletAddress String // Sui 錢包地址
+  status        MerchantStatus @default(ACTIVE)
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+
+  // 關聯
+  user     User      @relation(fields: [userId], references: [id])
+  products Product[]
+  payments Payment[]
+  invoices Invoice[]
+
+  @@map("merchants")
+}
+
+model Product {
+  id          String        @id @default(auto()) @map("_id") @db.ObjectId
+  merchantId  String        @db.ObjectId
+  name        String // 商品名稱
+  description String // 商品描述
+  price       Float // 單價 (TWD)
+  stock       Int // 庫存數量
+  category    String // 分類
+  imageUrl    String? // 商品圖片
+  status      ProductStatus @default(ACTIVE)
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  // 關聯
+  merchant Merchant @relation(fields: [merchantId], references: [id])
+
+  @@map("products")
+}
+
+model Payment {
+  id              String        @id @default(auto()) @map("_id") @db.ObjectId
+  customerId      String?       @db.ObjectId // 關聯 User（旅客）- 掃描後才填入
+  merchantId      String        @db.ObjectId
+  orderNumber     String        @unique // 訂單編號
+  items           Json // 商品明細 (PaymentItem[])
+  subtotal        Float // 小計
+  tax             Float // 稅額
+  total           Float // 總計
+  status          PaymentStatus @default(PENDING)
+  transactionHash String?       @unique // 區塊鏈交易哈希
+  invoiceId       String?       @db.ObjectId // 關聯 Invoice
+  qrCodeData      String // QR Code 原始數據
+  expiresAt       DateTime // QR Code 過期時間
+  paidAt          DateTime? // 支付時間
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+
+  // 關聯
+  customer User?    @relation(fields: [customerId], references: [id])
+  merchant Merchant @relation(fields: [merchantId], references: [id])
+  invoice  Invoice?
+
+  @@map("payments")
+}
+
+model Invoice {
+  id             String        @id @default(auto()) @map("_id") @db.ObjectId
+  paymentId      String        @unique @db.ObjectId
+  invoiceNumber  String        @unique // 發票號碼
+  invoiceDate    DateTime // 發票日期
+  merchantTaxId  String // 賣方統編
+  merchantName   String // 賣方名稱
+  buyerTaxId     String? // 買方統編（可選）
+  buyerName      String? // 買方名稱（可選）
+  items          Json // 發票品項
+  subtotal       Float // 銷售額
+  tax            Float // 稅額
+  total          Float // 總計
+  taxRate        Float         @default(0.05) // 稅率（預設 5%）
+  qrCodeData     String // 發票 QR Code 數據
+  status         InvoiceStatus @default(ISSUED)
+  voidedAt       DateTime? // 作廢時間
+  voidReason     String? // 作廢原因
+  merchantId     String        @db.ObjectId
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+
+  // 關聯
+  payment  Payment  @relation(fields: [paymentId], references: [id])
+  merchant Merchant @relation(fields: [merchantId], references: [id])
+
+  @@map("invoices")
+}

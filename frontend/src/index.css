@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Web3 風格全域樣式 */
+@layer base {
+  * {
+    @apply border-gray-800;
+  }
+
+  html {
+    @apply antialiased;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-dark-bg text-white font-sans;
+    background-image: radial-gradient(
+        circle at 20% 50%,
+        rgba(14, 165, 233, 0.1) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 80% 80%,
+        rgba(217, 70, 239, 0.1) 0%,
+        transparent 50%
+      );
+  }
+
+  /* 自定義捲軸樣式 - Web3 風格 */
+  ::-webkit-scrollbar {
+    @apply w-2 h-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-bg;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary-600 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary-500;
+  }
+}
+
+@layer components {
+  /* Web3 卡片元件 */
+  .card {
+    @apply bg-dark-card rounded-xl p-6 shadow-card border border-gray-800 transition-all duration-300;
+  }
+
+  .card:hover {
+    @apply shadow-glow border-primary-500/50;
+  }
+
+  /* 導航連結樣式 */
+  .nav-link {
+    @apply text-gray-300 hover:text-primary-400 transition-colors duration-300 font-medium;
+  }
+
+  /* Web3 按鈕樣式 */
+  .btn {
+    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-cyber text-white shadow-glow hover:shadow-glow-lg hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply bg-dark-hover text-white border border-primary-500 hover:bg-primary-500/10 hover:shadow-glow;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary-500 text-primary-400 hover:bg-primary-500 hover:text-white hover:shadow-glow;
+  }
+
+  .btn-sm {
+    @apply px-4 py-2 text-sm;
+  }
+
+  /* 輸入框樣式 */
+  .input {
+    @apply w-full bg-dark-hover border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/50 transition-all duration-300;
+  }
+
+  /* 標籤樣式 */
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+  }
+
+  .badge-success {
+    @apply bg-success/20 text-success border border-success/50;
+  }
+
+  .badge-warning {
+    @apply bg-warning/20 text-warning border border-warning/50;
+  }
+
+  .badge-error {
+    @apply bg-error/20 text-error border border-error/50;
+  }
+
+  .badge-info {
+    @apply bg-primary-500/20 text-primary-400 border border-primary-500/50;
+  }
+
+  /* 發光文字 */
+  .text-glow {
+    @apply text-transparent bg-clip-text bg-gradient-cyber;
+    text-shadow: 0 0 20px rgba(14, 165, 233, 0.5);
+  }
+
+  /* 網格背景 - Web3 風格 */
+  .grid-bg {
+    background-image: linear-gradient(
+        rgba(14, 165, 233, 0.1) 1px,
+        transparent 1px
+      ),
+      linear-gradient(90deg, rgba(14, 165, 233, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+}
+
+@layer utilities {
+  /* RWD 工具類 */
+  .container-responsive {
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* 動畫工具類 */
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out;
+  }
+
+  /* Glass morphism 效果 */
+  .glass {
+    @apply bg-dark-card/50 backdrop-blur-lg border border-white/10;
+  }
+}
+
+/* 載入動畫 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* 響應式字體大小 */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1025px) {
+  html {
+    font-size: 16px;
+  }
+}

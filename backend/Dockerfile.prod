@@ -1,0 +1,75 @@
+# 多階段建置 - 生產環境
+
+# Stage 1: 建置階段
+FROM node:20-alpine AS builder
+
+WORKDIR /app
+
+# 安裝建置依賴
+RUN apk add --no-cache python3 make g++
+
+# 複製 package 檔案
+COPY package*.json ./
+COPY prisma ./prisma/
+
+# 安裝所有依賴 (包含 devDependencies)
+RUN npm ci
+
+# 複製源碼
+COPY . .
+
+# 生成 Prisma Client
+RUN npx prisma generate
+
+# 建置 TypeScript
+RUN npm run build
+
+# 移除開發依賴
+RUN npm prune --production
+
+# Stage 2: 生產階段
+FROM node:20-alpine
+
+WORKDIR /app
+
+# 安裝運行時依賴
+RUN apk add --no-cache \
+    tini \
+    curl \
+    wget \
+    && rm -rf /var/cache/apk/*
+
+# 創建非 root 使用者
+RUN addgroup -g 1001 -S nodejs && \
+    adduser -S nodejs -u 1001
+
+# 從建置階段複製檔案
+COPY --from=builder --chown=nodejs:nodejs /app/node_modules ./node_modules
+COPY --from=builder --chown=nodejs:nodejs /app/dist ./dist
+COPY --from=builder --chown=nodejs:nodejs /app/prisma ./prisma
+COPY --from=builder --chown=nodejs:nodejs /app/package*.json ./
+
+# 創建必要目錄
+RUN mkdir -p /app/uploads /app/logs && \
+    chown -R nodejs:nodejs /app/uploads /app/logs
+
+# 切換到非 root 使用者
+USER nodejs
+
+# 環境變數
+ENV NODE_ENV=production \
+    PORT=3000 \
+    TZ=Asia/Taipei
+
+# 暴露端口
+EXPOSE 3000
+
+# 健康檢查
+HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
+    CMD wget --quiet --tries=1 --spider http://localhost:3000/health || exit 1
+
+# 使用 tini 作為 init 系統
+ENTRYPOINT ["/sbin/tini", "--"]
+
+# 啟動應用
+CMD ["node", "dist/server.js"]

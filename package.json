@@ -1,0 +1,33 @@
+{
+  "name": "taxcoin-mvp",
+  "version": "1.0.0",
+  "description": "TAXCOIN MVP - AI 區塊鏈退稅驗證平台",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w frontend\" \"npm run dev -w backend\"",
+    "build": "npm run build -w frontend && npm run build -w backend",
+    "test": "npm run test -w frontend && npm run test -w backend",
+    "lint": "npm run lint -w frontend && npm run lint -w backend",
+    "format": "npm run format -w frontend && npm run format -w backend",
+    "docker:up": "./scripts/start-all.sh",
+    "docker:down": "./scripts/stop-all.sh",
+    "docker:logs": "./scripts/logs.sh"
+  },
+  "keywords": [
+    "taxcoin",
+    "blockchain",
+    "ai",
+    "ocr",
+    "rwa",
+    "sui"
+  ],
+  "author": "TaxCoin MVP Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

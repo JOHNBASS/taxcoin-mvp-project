@@ -1,0 +1,2 @@
+# Prisma migrations
+migrations/*/migration.sql

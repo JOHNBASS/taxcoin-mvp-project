@@ -1,0 +1,108 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="settledGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#EAB308;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FBBF24;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="glowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </linearGradient>
+    <radialGradient id="shineGradient">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="400" height="400" fill="url(#settledGradient)"/>
+
+  <!-- 裝飾星星 -->
+  <g opacity="0.3">
+    <path d="M 80,60 L 85,70 L 95,72 L 87,80 L 89,90 L 80,85 L 71,90 L 73,80 L 65,72 L 75,70 Z" fill="#ffffff"/>
+    <path d="M 320,80 L 323,87 L 330,88 L 325,93 L 326,100 L 320,97 L 314,100 L 315,93 L 310,88 L 317,87 Z" fill="#ffffff"/>
+    <path d="M 350,300 L 355,310 L 365,312 L 357,320 L 359,330 L 350,325 L 341,330 L 343,320 L 335,312 L 345,310 Z" fill="#ffffff"/>
+  </g>
+
+  <!-- 光芒效果 -->
+  <circle cx="200" cy="180" r="80" fill="url(#shineGradient)" opacity="0.3"/>
+
+  <!-- 主要內容區域 -->
+  <rect x="40" y="80" width="320" height="240" rx="20" fill="#ffffff" opacity="0.95"/>
+
+  <!-- 標題區域 -->
+  <rect x="40" y="80" width="320" height="60" rx="20" fill="url(#glowGradient)"/>
+
+  <!-- 圖標 - 已結算的對勾與金幣 -->
+  <g transform="translate(200, 180)">
+    <!-- 金幣背景 -->
+    <circle cx="0" cy="0" r="50" fill="#F59E0B" opacity="0.3"/>
+    <circle cx="0" cy="0" r="42" fill="#FBBF24" opacity="0.5"/>
+
+    <!-- 對勾符號 -->
+    <path d="M -15,0 L -5,15 L 20,-15" stroke="#10B981" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <animate attributeName="stroke-dasharray" from="0,50" to="50,0" dur="0.5s" fill="freeze"/>
+    </path>
+
+    <!-- 金幣光澤 -->
+    <ellipse cx="-10" cy="-15" rx="20" ry="12" fill="#ffffff" opacity="0.4"/>
+
+    <!-- 裝飾圓環 -->
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#F59E0B" stroke-width="2" opacity="0.6"/>
+  </g>
+
+  <!-- 標題文字 -->
+  <text x="200" y="115" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1F2937" text-anchor="middle">
+    投資池份額憑證
+  </text>
+
+  <!-- 狀態標籤 -->
+  <rect x="140" y="240" width="120" height="32" rx="16" fill="#10B981"/>
+  <text x="200" y="262" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    已結算
+  </text>
+
+  <!-- 底部說明文字 -->
+  <text x="200" y="295" font-family="Arial, sans-serif" font-size="14" fill="#6B7280" text-anchor="middle">
+    Investment Completed
+  </text>
+
+  <!-- 裝飾線條 -->
+  <line x1="80" y1="140" x2="320" y2="140" stroke="#E5E7EB" stroke-width="1"/>
+
+  <!-- 成就徽章裝飾 -->
+  <g transform="translate(60, 320)">
+    <circle r="15" fill="#F59E0B" opacity="0.2"/>
+    <path d="M 0,-8 L 3,-2 L 9,-1 L 4,3 L 5,9 L 0,6 L -5,9 L -4,3 L -9,-1 L -3,-2 Z" fill="#F59E0B"/>
+  </g>
+  <g transform="translate(340, 320)">
+    <circle r="15" fill="#10B981" opacity="0.2"/>
+    <path d="M 0,-8 L 3,-2 L 9,-1 L 4,3 L 5,9 L 0,6 L -5,9 L -4,3 L -9,-1 L -3,-2 Z" fill="#10B981"/>
+  </g>
+
+  <!-- TaxCoin 標識 -->
+  <text x="200" y="375" font-family="Arial, sans-serif" font-size="12" fill="#9CA3AF" text-anchor="middle">
+    TaxCoin • Powered by Sui
+  </text>
+
+  <!-- 閃爍星光效果 -->
+  <g opacity="0.6">
+    <circle cx="150" cy="150" r="2" fill="#F59E0B">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="250" cy="160" r="2" fill="#FBBF24">
+      <animate attributeName="opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="180" cy="200" r="2" fill="#F59E0B">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- 底部裝飾點 -->
+  <g opacity="0.6">
+    <circle cx="120" cy="350" r="4" fill="#F59E0B"/>
+    <circle cx="200" cy="350" r="4" fill="#EAB308"/>
+    <circle cx="280" cy="350" r="4" fill="#10B981"/>
+  </g>
+</svg>

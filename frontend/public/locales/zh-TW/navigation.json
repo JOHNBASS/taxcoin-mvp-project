@@ -1,0 +1,22 @@
+{
+  "home": "首頁",
+  "taxClaims": "退稅",
+  "applyTaxRefund": "申請退稅",
+  "myClaims": "我的申請",
+  "investmentPools": "投資池",
+  "myInvestments": "我的投資",
+  "adminDashboard": "管理儀表板",
+  "reviewClaims": "審核退稅",
+  "userManagement": "用戶管理",
+  "poolManagement": "投資池管理",
+  "kycVerification": "KYC 驗證",
+  "kyc": "KYC",
+  "exchange": "兌換",
+  "pools": "投資池",
+  "dashboard": "儀表板",
+  "claims": "退稅",
+  "users": "使用者",
+  "merchant": "店家",
+  "products": "商品",
+  "payments": "支付"
+}

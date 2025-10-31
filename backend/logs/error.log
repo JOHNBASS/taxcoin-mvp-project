@@ -1,0 +1,1052 @@
+[2025-10-21 06:48:29] ERROR: 請求參數錯誤
+[2025-10-21 07:22:38] ERROR: 請求參數錯誤
+[2025-10-21 07:23:35] ERROR: 
+Invalid `prisma.user.create()` invocation:
+
+
+Prisma needs to perform transactions, which requires your MongoDB server to be run as a replica set. https://pris.ly/d/mongodb-replica-set
+[2025-10-21 07:35:27] ERROR: 請求參數錯誤
+[2025-10-21 07:36:05] ERROR: 
+Invalid `prisma.user.create()` invocation:
+
+
+Prisma needs to perform transactions, which requires your MongoDB server to be run as a replica set. https://pris.ly/d/mongodb-replica-set
+[2025-10-21 07:36:06] ERROR: 
+Invalid `prisma.user.create()` invocation:
+
+
+Prisma needs to perform transactions, which requires your MongoDB server to be run as a replica set. https://pris.ly/d/mongodb-replica-set
+[2025-10-21 07:37:09] ERROR: 錢包簽名驗證錯誤
+[2025-10-21 07:37:09] ERROR: 簽名驗證失敗
+[2025-10-21 07:44:54] ERROR: 
+Invalid `prisma.user.create()` invocation:
+
+
+Prisma needs to perform transactions, which requires your MongoDB server to be run as a replica set. https://pris.ly/d/mongodb-replica-set
+[2025-10-21 07:51:48] ERROR: ❌ 伺服器啟動失敗
+[2025-10-21 07:52:19] ERROR: ❌ 伺服器啟動失敗
+[2025-10-21 07:56:03] ERROR: 請求參數錯誤
+[2025-10-21 07:56:35] ERROR: 請求參數錯誤
+[2025-10-21 08:11:04] ERROR: 請求參數錯誤
+[2025-10-21 08:13:15] ERROR: Bad control character in string literal in JSON at position 225
+[2025-10-21 08:16:06] ERROR: Nonce 無效或已過期
+[2025-10-21 08:31:49] ERROR: 請求參數錯誤
+[2025-10-21 08:32:00] ERROR: 請求參數錯誤
+[2025-10-21 08:36:19] ERROR: 錢包登入參數驗證失敗
+[2025-10-21 08:36:19] ERROR: 請求參數錯誤
+[2025-10-21 08:39:18] ERROR: 錢包登入參數驗證失敗
+[2025-10-21 08:39:18] ERROR: Request body:
+[2025-10-21 08:39:18] ERROR: Validation errors:
+[2025-10-21 08:39:18] ERROR: 請求參數錯誤
+[2025-10-21 08:50:44] ERROR: 請求參數錯誤
+[2025-10-21 08:56:04] ERROR: 使用者不存在,請先註冊
+[2025-10-21 08:56:48] ERROR: 使用者不存在,請先註冊
+[2025-10-21 09:01:17] ERROR: 使用者不存在,請先註冊
+[2025-10-21 09:01:24] ERROR: 使用者不存在,請先註冊
+[2025-10-21 09:01:46] ERROR: 使用者不存在,請先註冊
+[2025-10-21 09:02:32] ERROR: Nonce 無效或已過期
+[2025-10-21 09:40:58] ERROR: 使用者不存在,請先註冊
+[2025-10-21 09:42:17] ERROR: 使用者不存在,請先註冊
+[2025-10-21 09:44:32] ERROR: 使用者不存在,請先註冊
+[2025-10-21 09:44:34] ERROR: 使用者不存在,請先註冊
+[2025-10-21 09:44:34] ERROR: 使用者不存在,請先註冊
+[2025-10-21 09:46:31] ERROR: 使用者不存在,請先註冊
+[2025-10-21 09:48:32] ERROR: 使用者不存在,請先註冊
+[2025-10-21 09:49:50] ERROR: 使用者不存在,請先註冊
+[2025-10-21 09:49:51] ERROR: 使用者不存在,請先註冊
+[2025-10-21 09:49:51] ERROR: 使用者不存在,請先註冊
+[2025-10-21 09:54:44] ERROR: 使用者不存在,請先註冊
+[2025-10-21 09:54:45] ERROR: 使用者不存在,請先註冊
+[2025-10-21 09:54:58] ERROR: 使用者不存在,請先註冊
+[2025-10-21 09:55:01] ERROR: 使用者不存在,請先註冊
+[2025-10-21 09:55:05] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:01:11] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:01:15] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:01:19] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:01:21] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:01:35] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:03:37] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:08:49] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:19:40] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:19:42] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:19:50] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:19:52] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:19:54] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:27:27] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:27:31] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:27:49] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:28:03] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:28:37] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:29:10] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:29:26] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:37:26] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:37:31] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:40:27] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:41:04] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:41:06] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:41:22] ERROR: 使用者不存在,請先註冊
+[2025-10-21 10:56:42] ERROR: 錢包簽名驗證錯誤
+[2025-10-21 10:56:42] ERROR: 簽名驗證失敗
+[2025-10-21 10:56:44] ERROR: 錢包簽名驗證錯誤
+[2025-10-21 10:56:44] ERROR: 簽名驗證失敗
+[2025-10-21 10:56:47] ERROR: 錢包簽名驗證錯誤
+[2025-10-21 10:56:47] ERROR: 簽名驗證失敗
+[2025-10-21 10:56:52] ERROR: 錢包簽名驗證錯誤
+[2025-10-21 10:56:52] ERROR: 簽名驗證失敗
+[2025-10-21 11:07:23] ERROR: 錢包簽名驗證錯誤
+Error: bad signature size
+    at nacl.sign.detached.verify (/app/node_modules/tweetnacl/nacl-fast.js:2299:11)
+    at Ed25519PublicKey.verify (file:///app/node_modules/@mysten/sui.js/dist/esm/keypairs/ed25519/publickey.js:62:31)
+    at verifyWalletSignature (file:///app/dist/utils/wallet.js:48:38)
+    at walletLogin (file:///app/dist/controllers/auth.controller.js:58:36)
+    at file:///app/dist/utils/asyncHandler.js:3:25
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at next (/app/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/app/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at /app/node_modules/express/lib/router/index.js:284:15
+[2025-10-21 11:07:23] ERROR: 簽名驗證失敗
+[2025-10-21 11:07:26] ERROR: 錢包簽名驗證錯誤
+Error: bad signature size
+    at nacl.sign.detached.verify (/app/node_modules/tweetnacl/nacl-fast.js:2299:11)
+    at Ed25519PublicKey.verify (file:///app/node_modules/@mysten/sui.js/dist/esm/keypairs/ed25519/publickey.js:62:31)
+    at verifyWalletSignature (file:///app/dist/utils/wallet.js:48:38)
+    at walletLogin (file:///app/dist/controllers/auth.controller.js:58:36)
+    at file:///app/dist/utils/asyncHandler.js:3:25
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at next (/app/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/app/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at /app/node_modules/express/lib/router/index.js:284:15
+[2025-10-21 11:07:26] ERROR: 簽名驗證失敗
+[2025-10-21 11:07:28] ERROR: 錢包簽名驗證錯誤
+Error: bad signature size
+    at nacl.sign.detached.verify (/app/node_modules/tweetnacl/nacl-fast.js:2299:11)
+    at Ed25519PublicKey.verify (file:///app/node_modules/@mysten/sui.js/dist/esm/keypairs/ed25519/publickey.js:62:31)
+    at verifyWalletSignature (file:///app/dist/utils/wallet.js:48:38)
+    at walletLogin (file:///app/dist/controllers/auth.controller.js:58:36)
+    at file:///app/dist/utils/asyncHandler.js:3:25
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at next (/app/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/app/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at /app/node_modules/express/lib/router/index.js:284:15
+[2025-10-21 11:07:28] ERROR: 簽名驗證失敗
+[2025-10-21 11:07:48] ERROR: 錢包簽名驗證錯誤
+Error: bad signature size
+    at nacl.sign.detached.verify (/app/node_modules/tweetnacl/nacl-fast.js:2299:11)
+    at Ed25519PublicKey.verify (file:///app/node_modules/@mysten/sui.js/dist/esm/keypairs/ed25519/publickey.js:62:31)
+    at verifyWalletSignature (file:///app/dist/utils/wallet.js:48:38)
+    at walletLogin (file:///app/dist/controllers/auth.controller.js:58:36)
+    at file:///app/dist/utils/asyncHandler.js:3:25
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at next (/app/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/app/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at /app/node_modules/express/lib/router/index.js:284:15
+[2025-10-21 11:07:48] ERROR: 簽名驗證失敗
+[2025-10-21 11:09:31] ERROR: 簽名長度異常
+[2025-10-21 11:09:31] ERROR: 錢包簽名驗證錯誤
+Error: Invalid signature length: 97, expected 64 or 65
+    at verifyWalletSignature (file:///app/dist/utils/wallet.js:52:19)
+    at walletLogin (file:///app/dist/controllers/auth.controller.js:58:36)
+    at file:///app/dist/utils/asyncHandler.js:3:25
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at next (/app/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/app/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at /app/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/app/node_modules/express/lib/router/index.js:346:12)
+    at next (/app/node_modules/express/lib/router/index.js:280:10)
+[2025-10-21 11:09:31] ERROR: 簽名驗證失敗
+[2025-10-21 11:09:33] ERROR: 簽名長度異常
+[2025-10-21 11:09:33] ERROR: 錢包簽名驗證錯誤
+Error: Invalid signature length: 97, expected 64 or 65
+    at verifyWalletSignature (file:///app/dist/utils/wallet.js:52:19)
+    at walletLogin (file:///app/dist/controllers/auth.controller.js:58:36)
+    at file:///app/dist/utils/asyncHandler.js:3:25
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at next (/app/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/app/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at /app/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/app/node_modules/express/lib/router/index.js:346:12)
+    at next (/app/node_modules/express/lib/router/index.js:280:10)
+[2025-10-21 11:09:33] ERROR: 簽名驗證失敗
+[2025-10-21 11:09:40] ERROR: 簽名長度異常
+[2025-10-21 11:09:40] ERROR: 錢包簽名驗證錯誤
+Error: Invalid signature length: 97, expected 64 or 65
+    at verifyWalletSignature (file:///app/dist/utils/wallet.js:52:19)
+    at walletLogin (file:///app/dist/controllers/auth.controller.js:58:36)
+    at file:///app/dist/utils/asyncHandler.js:3:25
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at next (/app/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/app/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at /app/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/app/node_modules/express/lib/router/index.js:346:12)
+    at next (/app/node_modules/express/lib/router/index.js:280:10)
+[2025-10-21 11:09:40] ERROR: 簽名驗證失敗
+[2025-10-21 11:11:43] ERROR: 簽名驗證失敗
+[2025-10-21 11:11:45] ERROR: 簽名驗證失敗
+[2025-10-21 11:11:48] ERROR: 簽名驗證失敗
+[2025-10-21 11:11:50] ERROR: 簽名驗證失敗
+[2025-10-21 11:12:06] ERROR: 簽名驗證失敗
+[2025-10-21 11:14:02] ERROR: 簽名驗證失敗
+[2025-10-21 11:14:14] ERROR: 簽名驗證失敗
+[2025-10-21 11:14:16] ERROR: 簽名驗證失敗
+[2025-10-21 11:14:23] ERROR: 簽名驗證失敗
+[2025-10-21 11:14:25] ERROR: 簽名驗證失敗
+[2025-10-21 11:17:32] ERROR: 簽名驗證失敗
+[2025-10-21 11:17:34] ERROR: 簽名驗證失敗
+[2025-10-21 11:17:36] ERROR: 簽名驗證失敗
+[2025-10-21 11:17:43] ERROR: 簽名驗證失敗
+[2025-10-21 11:19:55] ERROR: 簽名驗證失敗
+[2025-10-21 11:19:56] ERROR: 簽名驗證失敗
+[2025-10-21 11:19:59] ERROR: 簽名驗證失敗
+[2025-10-21 11:21:12] ERROR: 使用者不存在,請先註冊
+[2025-10-21 11:21:42] ERROR: Unexpected field
+[2025-10-21 11:26:14] ERROR: Unexpected field
+[2025-10-21 11:26:16] ERROR: Unexpected field
+[2025-10-21 11:26:30] ERROR: 自拍照驗證失敗: 圖片檔案無效或格式不支援. 建議: 請確保照片中包含清晰的臉部; 請移除墨鏡、口罩等遮蔽物; 請使用有效的圖片格式 (JPG, PNG, WebP); 請確保圖片大小在 10KB ~ 10MB 之間
+[2025-10-21 11:27:43] ERROR: 您已有待審核或已通過的 KYC 記錄
+[2025-10-21 11:27:50] ERROR: 您已有待審核或已通過的 KYC 記錄
+[2025-10-21 11:31:06] ERROR: 簽名驗證失敗
+[2025-10-21 11:31:07] ERROR: 簽名驗證失敗
+[2025-10-21 11:31:11] ERROR: 簽名驗證失敗
+[2025-10-21 11:31:16] ERROR: 簽名驗證失敗
+[2025-10-21 11:31:28] ERROR: 簽名驗證失敗
+[2025-10-21 11:31:30] ERROR: 簽名驗證失敗
+[2025-10-21 11:31:31] ERROR: 簽名驗證失敗
+[2025-10-21 11:31:33] ERROR: 簽名驗證失敗
+[2025-10-21 11:31:36] ERROR: 簽名驗證失敗
+[2025-10-21 11:31:38] ERROR: 簽名驗證失敗
+[2025-10-21 11:32:32] ERROR: 簽名驗證失敗
+[2025-10-21 11:32:34] ERROR: 簽名驗證失敗
+[2025-10-21 11:32:36] ERROR: 簽名驗證失敗
+[2025-10-21 11:32:57] ERROR: 簽名驗證失敗
+[2025-10-21 11:32:58] ERROR: 簽名驗證失敗
+[2025-10-21 11:33:00] ERROR: 簽名驗證失敗
+[2025-10-21 11:34:13] ERROR: 簽名驗證失敗
+[2025-10-21 11:34:40] ERROR: 簽名驗證失敗
+[2025-10-21 11:34:42] ERROR: 簽名驗證失敗
+[2025-10-21 11:34:45] ERROR: 簽名驗證失敗
+[2025-10-21 11:34:58] ERROR: 簽名驗證失敗
+[2025-10-21 11:34:59] ERROR: 簽名驗證失敗
+[2025-10-21 11:35:01] ERROR: 簽名驗證失敗
+[2025-10-21 11:35:11] ERROR: 簽名驗證失敗
+[2025-10-21 11:35:31] ERROR: 簽名驗證失敗
+[2025-10-21 11:35:33] ERROR: 簽名驗證失敗
+[2025-10-21 11:35:44] ERROR: 簽名驗證失敗
+[2025-10-21 11:36:26] ERROR: 簽名驗證失敗
+[2025-10-21 11:36:44] ERROR: 簽名驗證失敗
+[2025-10-21 11:43:58] ERROR: 請先完成 KYC 驗證才能申請退稅
+[2025-10-21 11:49:20] ERROR: 簽名驗證失敗
+[2025-10-21 11:49:38] ERROR: 簽名驗證失敗
+[2025-10-21 11:50:00] ERROR: 簽名驗證失敗
+[2025-10-21 11:50:17] ERROR: 簽名驗證失敗
+[2025-10-21 11:50:19] ERROR: 簽名驗證失敗
+[2025-10-21 11:50:40] ERROR: 簽名驗證失敗
+[2025-10-21 11:50:45] ERROR: 簽名驗證失敗
+[2025-10-21 11:50:47] ERROR: 簽名驗證失敗
+[2025-10-21 11:50:50] ERROR: 簽名驗證失敗
+[2025-10-21 11:51:50] ERROR: 簽名驗證失敗
+[2025-10-21 11:51:59] ERROR: 簽名驗證失敗
+[2025-10-21 11:52:03] ERROR: 簽名驗證失敗
+[2025-10-21 11:52:18] ERROR: 簽名驗證失敗
+[2025-10-21 11:52:20] ERROR: 簽名驗證失敗
+[2025-10-21 11:52:23] ERROR: 簽名驗證失敗
+[2025-10-21 11:52:24] ERROR: 簽名驗證失敗
+[2025-10-21 11:52:30] ERROR: 簽名驗證失敗
+[2025-10-21 11:53:01] ERROR: 簽名驗證失敗
+[2025-10-21 11:53:02] ERROR: 簽名驗證失敗
+[2025-10-21 11:53:15] ERROR: 簽名驗證失敗
+[2025-10-21 11:53:22] ERROR: 簽名驗證失敗
+[2025-10-21 11:53:24] ERROR: 簽名驗證失敗
+[2025-10-21 11:53:30] ERROR: 簽名驗證失敗
+[2025-10-21 11:53:32] ERROR: 簽名驗證失敗
+[2025-10-21 11:53:40] ERROR: 簽名驗證失敗
+[2025-10-21 11:54:17] ERROR: 簽名驗證失敗
+[2025-10-21 11:56:50] ERROR: 
+Invalid `prisma.rwaPool.findMany()` invocation:
+
+{
+  where: {
+    status: "ACTIVE"
+            ~~~~~~~~
+  },
+  orderBy: {
+    createdAt: "desc"
+  },
+  skip: 0,
+  take: 10,
+  include: {
+    _count: {
+      select: {
+        items: true,
+        investments: true
+      }
+    }
+  }
+}
+
+Invalid value for argument `status`. Expected PoolStatus.
+[2025-10-21 11:56:51] ERROR: 
+Invalid `prisma.rwaPool.findMany()` invocation:
+
+{
+  where: {
+    status: "FILLED"
+            ~~~~~~~~
+  },
+  orderBy: {
+    createdAt: "desc"
+  },
+  skip: 0,
+  take: 10,
+  include: {
+    _count: {
+      select: {
+        items: true,
+        investments: true
+      }
+    }
+  }
+}
+
+Invalid value for argument `status`. Expected PoolStatus.
+[2025-10-21 11:58:53] ERROR: 公鑰轉地址失敗
+[2025-10-21 11:58:53] ERROR: 公鑰格式錯誤
+[2025-10-21 11:59:26] ERROR: 公鑰轉地址失敗
+[2025-10-21 11:59:26] ERROR: 公鑰格式錯誤
+[2025-10-21 11:59:44] ERROR: 公鑰轉地址失敗
+[2025-10-21 11:59:44] ERROR: 公鑰格式錯誤
+[2025-10-21 11:59:47] ERROR: 公鑰轉地址失敗
+[2025-10-21 11:59:47] ERROR: 公鑰格式錯誤
+[2025-10-21 11:59:50] ERROR: 公鑰轉地址失敗
+[2025-10-21 11:59:50] ERROR: 公鑰格式錯誤
+[2025-10-21 12:00:50] ERROR: 公鑰轉地址失敗
+[2025-10-21 12:00:50] ERROR: 公鑰格式錯誤
+[2025-10-21 12:00:54] ERROR: 公鑰轉地址失敗
+[2025-10-21 12:00:54] ERROR: 公鑰格式錯誤
+[2025-10-21 12:01:38] ERROR: 公鑰轉地址失敗
+[2025-10-21 12:01:38] ERROR: 公鑰格式錯誤
+[2025-10-21 12:01:40] ERROR: 公鑰轉地址失敗
+[2025-10-21 12:01:40] ERROR: 公鑰格式錯誤
+[2025-10-21 12:02:07] ERROR: 公鑰轉地址失敗
+[2025-10-21 12:02:07] ERROR: 公鑰格式錯誤
+[2025-10-21 12:02:10] ERROR: 公鑰轉地址失敗
+[2025-10-21 12:02:10] ERROR: 公鑰格式錯誤
+[2025-10-21 12:02:23] ERROR: 公鑰轉地址失敗
+[2025-10-21 12:02:23] ERROR: 公鑰驗證失敗
+[2025-10-21 12:02:23] ERROR: 公鑰格式錯誤
+[2025-10-21 12:02:26] ERROR: 公鑰轉地址失敗
+[2025-10-21 12:02:26] ERROR: 公鑰驗證失敗
+[2025-10-21 12:02:26] ERROR: 公鑰格式錯誤
+[2025-10-21 12:02:43] ERROR: 公鑰轉地址失敗
+[2025-10-21 12:02:43] ERROR: 公鑰驗證失敗
+[2025-10-21 12:02:43] ERROR: 公鑰格式錯誤
+[2025-10-21 12:02:46] ERROR: 公鑰轉地址失敗
+[2025-10-21 12:02:46] ERROR: 公鑰驗證失敗
+[2025-10-21 12:02:46] ERROR: 公鑰格式錯誤
+[2025-10-21 12:03:31] ERROR: 公鑰轉地址失敗
+[2025-10-21 12:03:31] ERROR: 公鑰驗證失敗
+[2025-10-21 12:03:31] ERROR: 公鑰格式錯誤
+[2025-10-21 12:06:45] ERROR: 使用者不存在,請先註冊
+[2025-10-21 12:12:53] ERROR: 自拍照驗證失敗: 圖片檔案無效或格式不支援. 建議: 請確保照片中包含清晰的臉部; 請移除墨鏡、口罩等遮蔽物; 請使用有效的圖片格式 (JPG, PNG, WebP); 請確保圖片大小在 10KB ~ 10MB 之間
+[2025-10-21 12:14:12] ERROR: 您已有待審核或已通過的 KYC 記錄
+[2025-10-22 02:16:26] ERROR: Authorization header 格式錯誤
+[2025-10-22 02:16:38] ERROR: Token 無效
+[2025-10-22 02:39:47] ERROR: Token 無效
+[2025-10-22 02:39:58] ERROR: Token 無效
+[2025-10-22 02:40:14] ERROR: 請先完成 KYC 驗證才能申請退稅
+[2025-10-22 02:48:36] ERROR: 缺少 Authorization header
+[2025-10-22 02:56:52] ERROR: 
+Invalid `prisma.kycRecord.findUnique()` invocation:
+
+
+Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "stats", length 5.
+[2025-10-22 02:57:03] ERROR: 
+Invalid `prisma.kycRecord.findUnique()` invocation:
+
+
+Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "stats", length 5.
+[2025-10-22 02:57:04] ERROR: 
+Invalid `prisma.kycRecord.findUnique()` invocation:
+
+
+Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "stats", length 5.
+[2025-10-22 02:57:15] ERROR: 
+Invalid `prisma.kycRecord.findUnique()` invocation:
+
+
+Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "stats", length 5.
+[2025-10-22 02:57:45] ERROR: 
+Invalid `prisma.kycRecord.findUnique()` invocation:
+
+
+Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "stats", length 5.
+[2025-10-22 02:57:46] ERROR: 
+Invalid `prisma.kycRecord.findUnique()` invocation:
+
+
+Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "stats", length 5.
+[2025-10-22 03:09:22] ERROR: 缺少 Authorization header
+[2025-10-22 03:27:46] ERROR: 狀態必須是 VERIFIED 或 REJECTED
+[2025-10-22 03:27:54] ERROR: 狀態必須是 VERIFIED 或 REJECTED
+[2025-10-22 05:00:06] ERROR: 使用者不存在,請先註冊
+[2025-10-22 05:01:03] ERROR: 請先完成 KYC 驗證才能申請退稅
+[2025-10-22 05:19:40] ERROR: 創建退稅申請失敗
+[2025-10-22 05:19:40] ERROR: OCR 識別失敗,請確保收據圖片清晰可讀
+[2025-10-22 05:20:34] ERROR: 創建退稅申請失敗
+[2025-10-22 05:20:34] ERROR: OCR 識別失敗,請確保收據圖片清晰可讀
+[2025-10-22 05:24:10] ERROR: 創建退稅申請失敗
+[2025-10-22 05:24:10] ERROR: OCR 識別失敗,請確保收據圖片清晰可讀
+[2025-10-22 05:24:15] ERROR: 創建退稅申請失敗
+[2025-10-22 05:24:15] ERROR: OCR 識別失敗,請確保收據圖片清晰可讀
+[2025-10-22 05:26:19] ERROR: ❌ 伺服器啟動失敗
+[2025-10-22 05:26:50] ERROR: ❌ 伺服器啟動失敗
+[2025-10-22 05:27:58] ERROR: 請求參數錯誤
+[2025-10-22 05:29:00] ERROR: 創建退稅申請失敗
+[2025-10-22 05:29:00] ERROR: OCR 識別失敗,請確保收據圖片清晰可讀
+[2025-10-22 05:35:09] ERROR: 創建退稅申請失敗
+[2025-10-22 05:35:09] ERROR: OCR 識別失敗,請確保收據圖片清晰可讀
+[2025-10-22 05:37:46] ERROR: 創建退稅申請失敗
+[2025-10-22 05:37:46] ERROR: OCR 識別失敗,請確保收據圖片清晰可讀
+[2025-10-22 05:38:06] ERROR: 創建退稅申請失敗
+[2025-10-22 05:38:06] ERROR: OCR 識別失敗,請確保收據圖片清晰可讀
+[2025-10-22 05:41:04] ERROR: Token 無效
+[2025-10-22 05:47:53] ERROR: 請求參數錯誤
+[2025-10-22 05:47:58] ERROR: 請求參數錯誤
+[2025-10-22 05:57:41] ERROR: 創建退稅申請失敗
+[2025-10-22 05:57:41] ERROR: OCR 識別失敗,請確保收據圖片清晰可讀
+[2025-10-22 05:59:38] ERROR: 創建退稅申請失敗
+[2025-10-22 05:59:38] ERROR: OCR 識別失敗,請確保收據圖片清晰可讀
+[2025-10-22 07:24:55] ERROR: 創建退稅申請失敗
+[2025-10-22 07:24:55] ERROR: OCR 識別失敗,請確保收據圖片清晰可讀
+[2025-10-22 07:26:50] ERROR: Token 無效
+[2025-10-22 08:17:57] ERROR: NFT 鑄造失敗
+[2025-10-22 08:17:57] ERROR: Token 發放失敗
+[2025-10-22 08:17:57] ERROR: Token 發放失敗
+[2025-10-22 08:17:57] ERROR: NFT 鑄造失敗: No valid gas coins found for the transaction.
+[2025-10-22 08:20:36] ERROR: NFT 鑄造失敗
+[2025-10-22 08:20:36] ERROR: Token 發放失敗
+[2025-10-22 08:20:36] ERROR: Token 發放失敗
+[2025-10-22 08:20:36] ERROR: NFT 鑄造失敗: No valid gas coins found for the transaction.
+[2025-10-22 10:02:14] ERROR: NFT 鑄造失敗
+[2025-10-22 10:02:14] ERROR: Token 發放失敗
+[2025-10-22 10:02:14] ERROR: Token 發放失敗
+[2025-10-22 10:02:14] ERROR: NFT 鑄造失敗: No valid gas coins found for the transaction.
+[2025-10-22 11:10:55] ERROR: ❌ 伺服器啟動失敗
+[2025-10-22 11:20:13] ERROR: 使用者不存在,請先註冊
+[2025-10-22 11:20:27] ERROR: 請先完成 KYC 驗證才能申請退稅
+[2025-10-22 11:21:06] ERROR: 使用者不存在,請先註冊
+[2025-10-22 11:22:04] ERROR: 創建退稅申請失敗
+[2025-10-22 11:22:04] ERROR: OCR 識別失敗,請確保收據圖片清晰可讀
+[2025-10-22 11:44:51] ERROR: 使用者不存在,請先註冊
+[2025-10-22 11:44:58] ERROR: 
+Invalid `prisma.rwaPool.findMany()` invocation:
+
+{
+  where: {
+    status: "ACTIVE"
+            ~~~~~~~~
+  },
+  orderBy: {
+    createdAt: "desc"
+  },
+  skip: 0,
+  take: 9,
+  include: {
+    _count: {
+      select: {
+        items: true,
+        investments: true
+      }
+    }
+  }
+}
+
+Invalid value for argument `status`. Expected PoolStatus.
+[2025-10-22 11:44:59] ERROR: 
+Invalid `prisma.rwaPool.findMany()` invocation:
+
+{
+  where: {
+    status: "FILLED"
+            ~~~~~~~~
+  },
+  orderBy: {
+    createdAt: "desc"
+  },
+  skip: 0,
+  take: 9,
+  include: {
+    _count: {
+      select: {
+        items: true,
+        investments: true
+      }
+    }
+  }
+}
+
+Invalid value for argument `status`. Expected PoolStatus.
+[2025-10-22 11:45:00] ERROR: 
+Invalid `prisma.rwaPool.count()` invocation:
+
+{
+  select: {
+    _count: {
+      select: {
+        _all: true
+      }
+    }
+  },
+  where: {
+    status: "ACTIVE"
+            ~~~~~~~~
+  }
+}
+
+Invalid value for argument `status`. Expected PoolStatus.
+[2025-10-22 12:04:22] ERROR: 獲取 NFT 圖片失敗
+[2025-10-22 12:04:22] ERROR: 未處理的 Promise Rejection:
+[2025-10-22 12:06:23] ERROR: 獲取 NFT 圖片失敗
+[2025-10-22 12:06:23] ERROR: 未處理的 Promise Rejection:
+[2025-10-23 08:25:57] ERROR: 請求參數錯誤
+[2025-10-23 08:25:59] ERROR: 請求參數錯誤
+[2025-10-23 08:26:00] ERROR: 請求參數錯誤
+[2025-10-23 08:26:01] ERROR: 請求參數錯誤
+[2025-10-23 08:31:39] ERROR: 請求參數錯誤
+[2025-10-23 08:31:41] ERROR: 請求參數錯誤
+[2025-10-23 08:31:42] ERROR: 請求參數錯誤
+[2025-10-23 08:31:42] ERROR: 請求參數錯誤
+[2025-10-23 08:31:42] ERROR: 請求參數錯誤
+[2025-10-23 08:35:10] ERROR: 參數驗證失敗
+[2025-10-23 08:35:10] ERROR: 請求參數錯誤
+[2025-10-23 08:47:40] ERROR: 請求參數錯誤
+[2025-10-23 08:53:39] ERROR: 請求參數錯誤
+[2025-10-23 08:57:32] ERROR: 請求參數錯誤
+[2025-10-23 09:13:14] ERROR: 投資參數驗證失敗: [{"code":"invalid_type","expected":"number","received":"undefined","path":["amount"],"message":"Required"}]
+[2025-10-23 09:13:14] ERROR: 收到的請求內容: {"shares":2}
+[2025-10-23 09:13:14] ERROR: 請求參數錯誤
+[2025-10-23 09:15:46] ERROR: 投資參數驗證失敗: [{"code":"too_small","minimum":1000,"type":"number","inclusive":true,"exact":false,"message":"最低投資金額為 1,000 TWD","path":["amount"]}]
+[2025-10-23 09:15:46] ERROR: 收到的請求內容: {"amount":200}
+[2025-10-23 09:15:46] ERROR: 請求參數錯誤
+[2025-10-23 09:19:01] ERROR: 投資參數驗證失敗: [{"code":"too_small","minimum":1000,"type":"number","inclusive":true,"exact":false,"message":"最低投資金額為 1,000 TWD","path":["amount"]}]
+[2025-10-23 09:19:01] ERROR: 收到的請求內容: {"amount":200}
+[2025-10-23 09:19:01] ERROR: 請求參數錯誤
+[2025-10-23 09:19:12] ERROR: 投資參數驗證失敗: [{"code":"too_small","minimum":1000,"type":"number","inclusive":true,"exact":false,"message":"最低投資金額為 1,000 TWD","path":["amount"]}]
+[2025-10-23 09:19:12] ERROR: 收到的請求內容: {"amount":200}
+[2025-10-23 09:19:12] ERROR: 請求參數錯誤
+[2025-10-23 09:36:07] ERROR: 最低投資金額為 1000 TWD
+[2025-10-23 10:25:19] ERROR: 投資池未部署到區塊鏈
+[2025-10-23 10:42:15] ERROR: 投資池不存在
+[2025-10-23 10:53:04] ERROR: 參數驗證失敗: [
+  {
+    "code": "too_small",
+    "minimum": 10000,
+    "type": "number",
+    "inclusive": true,
+    "exact": false,
+    "message": "目標金額至少 10,000 TWD",
+    "path": [
+      "targetAmount"
+    ]
+  }
+]
+[2025-10-23 10:53:04] ERROR: 請求內容: {
+  "poolName": "test11",
+  "targetAmount": 10,
+  "yieldRate": 0.02,
+  "maturityDate": "2025-10-30T10:53:03.967Z",
+  "totalTokenSupply": 10
+}
+[2025-10-23 10:53:04] ERROR: 請求參數錯誤
+[2025-10-23 10:53:06] ERROR: 參數驗證失敗: [
+  {
+    "code": "too_small",
+    "minimum": 10000,
+    "type": "number",
+    "inclusive": true,
+    "exact": false,
+    "message": "目標金額至少 10,000 TWD",
+    "path": [
+      "targetAmount"
+    ]
+  }
+]
+[2025-10-23 10:53:06] ERROR: 請求內容: {
+  "poolName": "test11",
+  "targetAmount": 10,
+  "yieldRate": 0.02,
+  "maturityDate": "2025-10-30T10:53:06.649Z",
+  "totalTokenSupply": 10
+}
+[2025-10-23 10:53:06] ERROR: 請求參數錯誤
+[2025-10-23 11:12:26] ERROR: 創建投資池失敗
+[2025-10-23 11:12:26] ERROR: 部署投資池到區塊鏈失敗
+[2025-10-23 11:12:26] ERROR: 部署投資池到區塊鏈失敗: 創建投資池失敗: Dry run failed, could not automatically determine a budget: MoveAbort(MoveLocation { module: ModuleId { address: 0000000000000000000000000000000000000000000000000000000000000001, name: Identifier("string") }, function: 0, instruction: 5, function_name: Some("utf8") }, 1) in command 0
+[2025-10-23 11:13:16] ERROR: 創建投資池失敗
+[2025-10-23 11:13:16] ERROR: 部署投資池到區塊鏈失敗
+[2025-10-23 11:13:16] ERROR: 部署投資池到區塊鏈失敗: 創建投資池失敗: Dry run failed, could not automatically determine a budget: MoveAbort(MoveLocation { module: ModuleId { address: 0000000000000000000000000000000000000000000000000000000000000001, name: Identifier("string") }, function: 0, instruction: 5, function_name: Some("utf8") }, 1) in command 0
+[2025-10-23 11:43:22] ERROR: 請求參數錯誤
+[2025-10-23 11:46:40] ERROR: 請求參數錯誤
+[2025-10-23 11:48:56] ERROR: 請求參數錯誤
+[2025-10-23 11:53:12] ERROR: 構建投資交易失敗
+[2025-10-23 11:53:12] ERROR: 構建交易失敗: 您的錢包中沒有 TaxCoin
+[2025-10-23 11:53:14] ERROR: 構建投資交易失敗
+[2025-10-23 11:53:14] ERROR: 構建交易失敗: 您的錢包中沒有 TaxCoin
+[2025-10-23 12:01:36] ERROR: 構建投資交易失敗
+[2025-10-23 12:01:36] ERROR: 構建交易失敗: 您的錢包中沒有 TaxCoin
+[2025-10-23 12:01:59] ERROR: 構建投資交易失敗
+[2025-10-23 12:01:59] ERROR: 構建交易失敗: 您的錢包中沒有 TaxCoin
+[2025-10-23 12:02:00] ERROR: 構建投資交易失敗
+[2025-10-23 12:02:00] ERROR: 構建交易失敗: 您的錢包中沒有 TaxCoin
+[2025-10-23 12:02:01] ERROR: 構建投資交易失敗
+[2025-10-23 12:02:01] ERROR: 構建交易失敗: 您的錢包中沒有 TaxCoin
+[2025-10-23 12:02:01] ERROR: 構建投資交易失敗
+[2025-10-23 12:02:01] ERROR: 構建交易失敗: 您的錢包中沒有 TaxCoin
+[2025-10-23 12:10:14] ERROR: 管理員 Mint TaxCoin 失敗
+[2025-10-23 12:10:14] ERROR: 管理員鑄造 TaxCoin 失敗
+[2025-10-23 12:10:14] ERROR: 管理員鑄造 TaxCoin 失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-23 12:14:29] ERROR: 管理員 Mint TaxCoin 失敗
+[2025-10-23 12:14:29] ERROR: 管理員鑄造 TaxCoin 失敗
+[2025-10-23 12:14:29] ERROR: 管理員鑄造 TaxCoin 失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-23 12:17:42] ERROR: 管理員 Mint TaxCoin 失敗
+[2025-10-23 12:17:42] ERROR: 管理員鑄造 TaxCoin 失敗
+[2025-10-23 12:17:42] ERROR: 管理員鑄造 TaxCoin 失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-23 12:18:09] ERROR: 管理員 Mint TaxCoin 失敗
+[2025-10-23 12:18:09] ERROR: 管理員鑄造 TaxCoin 失敗
+[2025-10-23 12:18:09] ERROR: 管理員鑄造 TaxCoin 失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-23 12:20:09] ERROR: 創建退稅申請失敗
+[2025-10-23 12:20:09] ERROR: OCR 識別失敗,請確保收據圖片清晰可讀
+[2025-10-23 12:21:19] ERROR: NFT 鑄造失敗
+[2025-10-23 12:21:19] ERROR: Token 發放失敗
+[2025-10-23 12:21:19] ERROR: TaxCoin 發放失敗
+[2025-10-23 12:23:28] ERROR: 構建投資交易失敗
+[2025-10-23 12:23:28] ERROR: 構建交易失敗: Missing transaction sender
+[2025-10-23 12:25:38] ERROR: 構建投資交易失敗
+[2025-10-23 12:25:38] ERROR: 構建交易失敗: Missing transaction sender
+[2025-10-23 12:25:51] ERROR: 構建投資交易失敗
+[2025-10-23 12:25:51] ERROR: 構建交易失敗: Missing transaction sender
+[2025-10-23 12:28:57] ERROR: 構建投資交易失敗
+[2025-10-23 12:28:57] ERROR: 構建交易失敗: Missing transaction sender
+[2025-10-23 12:29:12] ERROR: 構建投資交易失敗
+[2025-10-23 12:29:12] ERROR: 構建交易失敗: Missing transaction sender
+[2025-10-23 12:30:27] ERROR: 構建交易失敗 - 詳細錯誤
+[2025-10-23 12:30:27] ERROR: 構建投資交易失敗
+[2025-10-23 12:30:27] ERROR: 構建交易失敗: No valid gas coins found for the transaction.
+[2025-10-23 12:39:23] ERROR: 構建交易失敗 - 詳細錯誤
+[2025-10-23 12:39:23] ERROR: 構建投資交易失敗
+[2025-10-23 12:39:23] ERROR: 構建交易失敗: No valid gas coins found for the transaction.
+[2025-10-23 12:51:47] ERROR: 創建投資池失敗
+[2025-10-23 12:51:47] ERROR: 部署投資池到區塊鏈失敗
+[2025-10-23 12:51:47] ERROR: 部署投資池到區塊鏈失敗: 創建投資池失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-23 12:51:53] ERROR: 創建投資池失敗
+[2025-10-23 12:51:53] ERROR: 部署投資池到區塊鏈失敗
+[2025-10-23 12:51:53] ERROR: 部署投資池到區塊鏈失敗: 創建投資池失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-23 16:55:20] ERROR: 請上傳至少一張收據圖片
+[2025-10-23 16:56:43] ERROR: NFT 鑄造失敗
+[2025-10-23 16:56:43] ERROR: Token 發放失敗
+[2025-10-23 16:56:43] ERROR: TaxCoin 發放失敗
+[2025-10-23 16:57:14] ERROR: NFT 鑄造失敗
+[2025-10-23 16:57:14] ERROR: Token 發放失敗
+[2025-10-23 16:57:14] ERROR: Token 發放失敗
+[2025-10-23 16:57:14] ERROR: NFT 鑄造失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-23 16:57:57] ERROR: NFT 鑄造失敗
+[2025-10-23 16:57:57] ERROR: Token 發放失敗
+[2025-10-23 16:57:57] ERROR: Token 發放失敗
+[2025-10-23 16:57:57] ERROR: NFT 鑄造失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-23 17:01:19] ERROR: NFT 鑄造失敗
+[2025-10-23 17:01:19] ERROR: Token 發放失敗
+[2025-10-23 17:01:19] ERROR: Token 發放失敗
+[2025-10-23 17:01:19] ERROR: NFT 鑄造失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-23 17:01:34] ERROR: NFT 鑄造失敗
+[2025-10-23 17:01:34] ERROR: Token 發放失敗
+[2025-10-23 17:01:34] ERROR: Token 發放失敗
+[2025-10-23 17:01:34] ERROR: NFT 鑄造失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-23 17:02:28] ERROR: NFT 鑄造失敗
+[2025-10-23 17:02:28] ERROR: Token 發放失敗
+[2025-10-23 17:02:28] ERROR: Token 發放失敗
+[2025-10-23 17:02:28] ERROR: NFT 鑄造失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-23 17:02:30] ERROR: NFT 鑄造失敗
+[2025-10-23 17:02:30] ERROR: Token 發放失敗
+[2025-10-23 17:02:30] ERROR: Token 發放失敗
+[2025-10-23 17:02:30] ERROR: NFT 鑄造失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-23 17:02:32] ERROR: NFT 鑄造失敗
+[2025-10-23 17:02:32] ERROR: Token 發放失敗
+[2025-10-23 17:02:32] ERROR: Token 發放失敗
+[2025-10-23 17:02:32] ERROR: NFT 鑄造失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-23 17:02:42] ERROR: NFT 鑄造失敗
+[2025-10-23 17:02:42] ERROR: Token 發放失敗
+[2025-10-23 17:02:42] ERROR: Token 發放失敗
+[2025-10-23 17:02:42] ERROR: NFT 鑄造失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-23 17:03:16] ERROR: NFT 鑄造失敗
+[2025-10-23 17:03:16] ERROR: Token 發放失敗
+[2025-10-23 17:03:16] ERROR: Token 發放失敗
+[2025-10-23 17:03:16] ERROR: NFT 鑄造失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-23 17:03:24] ERROR: NFT 鑄造失敗
+[2025-10-23 17:03:24] ERROR: Token 發放失敗
+[2025-10-23 17:03:24] ERROR: Token 發放失敗
+[2025-10-23 17:03:24] ERROR: NFT 鑄造失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-23 17:03:37] ERROR: NFT 鑄造失敗
+[2025-10-23 17:03:37] ERROR: Token 發放失敗
+[2025-10-23 17:03:37] ERROR: Token 發放失敗
+[2025-10-23 17:03:37] ERROR: NFT 鑄造失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-23 17:11:48] ERROR: NFT 鑄造失敗
+[2025-10-23 17:11:48] ERROR: Token 發放失敗
+[2025-10-23 17:11:48] ERROR: Token 發放失敗
+[2025-10-23 17:11:48] ERROR: NFT 鑄造失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-23 17:11:55] ERROR: NFT 鑄造失敗
+[2025-10-23 17:11:55] ERROR: Token 發放失敗
+[2025-10-23 17:11:55] ERROR: Token 發放失敗
+[2025-10-23 17:11:55] ERROR: NFT 鑄造失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-23 17:11:59] ERROR: NFT 鑄造失敗
+[2025-10-23 17:11:59] ERROR: Token 發放失敗
+[2025-10-23 17:11:59] ERROR: Token 發放失敗
+[2025-10-23 17:11:59] ERROR: NFT 鑄造失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-23 17:12:01] ERROR: NFT 鑄造失敗
+[2025-10-23 17:12:01] ERROR: Token 發放失敗
+[2025-10-23 17:12:01] ERROR: Token 發放失敗
+[2025-10-23 17:12:01] ERROR: NFT 鑄造失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-23 17:12:02] ERROR: NFT 鑄造失敗
+[2025-10-23 17:12:02] ERROR: Token 發放失敗
+[2025-10-23 17:12:02] ERROR: Token 發放失敗
+[2025-10-23 17:12:02] ERROR: NFT 鑄造失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-23 17:12:03] ERROR: NFT 鑄造失敗
+[2025-10-23 17:12:03] ERROR: Token 發放失敗
+[2025-10-23 17:12:03] ERROR: Token 發放失敗
+[2025-10-23 17:12:03] ERROR: NFT 鑄造失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-23 17:12:04] ERROR: NFT 鑄造失敗
+[2025-10-23 17:12:04] ERROR: Token 發放失敗
+[2025-10-23 17:12:04] ERROR: Token 發放失敗
+[2025-10-23 17:12:04] ERROR: NFT 鑄造失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-23 17:12:19] ERROR: NFT 鑄造失敗
+[2025-10-23 17:12:19] ERROR: Token 發放失敗
+[2025-10-23 17:12:19] ERROR: Token 發放失敗
+[2025-10-23 17:12:19] ERROR: NFT 鑄造失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-27 07:22:03] ERROR: 認證失敗
+[2025-10-27 07:22:03] ERROR: 缺少 Authorization header
+[2025-10-27 07:22:03] ERROR: 認證失敗
+[2025-10-27 07:22:03] ERROR: 缺少 Authorization header
+[2025-10-27 07:22:03] ERROR: 認證失敗
+[2025-10-27 07:22:03] ERROR: 缺少 Authorization header
+[2025-10-27 07:22:17] ERROR: 使用者不存在,請先註冊
+[2025-10-27 07:22:56] ERROR: 使用者不存在,請先註冊
+[2025-10-27 07:22:57] ERROR: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the constraint: `users_email_key`
+[2025-10-27 07:22:59] ERROR: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the constraint: `users_email_key`
+[2025-10-27 07:23:00] ERROR: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the constraint: `users_email_key`
+[2025-10-27 07:23:01] ERROR: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the constraint: `users_email_key`
+[2025-10-27 07:38:54] ERROR: 使用者不存在,請先註冊
+[2025-10-27 07:39:13] ERROR: 使用者不存在,請先註冊
+[2025-10-27 07:39:14] ERROR: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the constraint: `users_email_key`
+[2025-10-27 08:27:49] ERROR: 使用者不存在,請先註冊
+[2025-10-27 08:27:51] ERROR: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the constraint: `users_email_key`
+[2025-10-27 08:27:57] ERROR: 使用者不存在,請先註冊
+[2025-10-27 08:28:00] ERROR: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the constraint: `users_email_key`
+[2025-10-27 08:28:15] ERROR: 使用者不存在,請先註冊
+[2025-10-27 08:28:17] ERROR: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the constraint: `users_email_key`
+[2025-10-27 08:30:30] ERROR: 使用者不存在,請先註冊
+[2025-10-27 08:31:10] ERROR: 使用者不存在,請先註冊
+[2025-10-27 13:52:31] ERROR: 使用者不存在,請先註冊
+[2025-10-27 13:53:18] ERROR: 使用者不存在,請先註冊
+[2025-10-27 13:53:43] ERROR: ❌ DID 解析失敗
+[2025-10-27 13:59:24] ERROR: ❌ DID 解析失敗
+[2025-10-27 14:00:07] ERROR: ❌ DID 解析失敗
+TypeError: Cannot read properties of undefined (reading 'accept')
+    at Object.key (file:///app/node_modules/key-did-resolver/lib/index.js:20:41)
+    at SelfService.resolveDID (file:///app/dist/services/self.service.js:199:59)
+    at SelfService.verifyCredential (file:///app/dist/services/self.service.js:162:42)
+    at file:///app/dist/controllers/kyc.controller.js:397:38
+    at file:///app/dist/utils/asyncHandler.js:3:25
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at next (/app/node_modules/express/lib/router/route.js:149:13)
+    at authenticate (file:///app/dist/middlewares/auth.middleware.js:15:9)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at next (/app/node_modules/express/lib/router/route.js:149:13)
+[2025-10-27 14:00:15] ERROR: ❌ DID 解析失敗
+TypeError: Cannot read properties of undefined (reading 'accept')
+    at Object.key (file:///app/node_modules/key-did-resolver/lib/index.js:20:41)
+    at SelfService.resolveDID (file:///app/dist/services/self.service.js:199:59)
+    at SelfService.verifyCredential (file:///app/dist/services/self.service.js:162:42)
+    at file:///app/dist/controllers/kyc.controller.js:397:38
+    at file:///app/dist/utils/asyncHandler.js:3:25
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at next (/app/node_modules/express/lib/router/route.js:149:13)
+    at authenticate (file:///app/dist/middlewares/auth.middleware.js:15:9)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at next (/app/node_modules/express/lib/router/route.js:149:13)
+[2025-10-27 14:11:11] ERROR: ❌ DID 解析失敗
+TypeError: Cannot read properties of undefined (reading 'accept')
+    at Object.key (file:///app/node_modules/key-did-resolver/lib/index.js:20:41)
+    at SelfService.resolveDID (file:///app/dist/services/self.service.js:199:59)
+    at SelfService.verifyCredential (file:///app/dist/services/self.service.js:162:42)
+    at file:///app/dist/controllers/kyc.controller.js:397:38
+    at file:///app/dist/utils/asyncHandler.js:3:25
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at next (/app/node_modules/express/lib/router/route.js:149:13)
+    at authenticate (file:///app/dist/middlewares/auth.middleware.js:15:9)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at next (/app/node_modules/express/lib/router/route.js:149:13)
+[2025-10-27 14:12:45] ERROR: NFT 鑄造失敗
+[2025-10-27 14:12:45] ERROR: Token 發放失敗
+[2025-10-27 14:12:45] ERROR: TaxCoin 發放失敗
+[2025-10-27 14:13:19] ERROR: NFT 鑄造失敗
+[2025-10-27 14:13:19] ERROR: Token 發放失敗
+[2025-10-27 14:13:19] ERROR: Token 發放失敗
+[2025-10-27 14:13:19] ERROR: NFT 鑄造失敗: Incorrect number of arguments.
+[2025-10-27 14:17:35] ERROR: NFT 鑄造失敗
+[2025-10-27 14:17:35] ERROR: Token 發放失敗
+[2025-10-27 14:17:35] ERROR: Token 發放失敗
+[2025-10-27 14:17:35] ERROR: NFT 鑄造失敗: Incorrect number of arguments.
+[2025-10-27 14:17:38] ERROR: NFT 鑄造失敗
+[2025-10-27 14:17:38] ERROR: Token 發放失敗
+[2025-10-27 14:17:38] ERROR: Token 發放失敗
+[2025-10-27 14:17:38] ERROR: NFT 鑄造失敗: Incorrect number of arguments.
+[2025-10-27 14:18:58] ERROR: NFT 鑄造失敗
+[2025-10-27 14:18:58] ERROR: Token 發放失敗
+[2025-10-27 14:18:58] ERROR: Token 發放失敗
+[2025-10-27 14:18:58] ERROR: NFT 鑄造失敗: Incorrect number of arguments.
+[2025-10-27 14:19:23] ERROR: NFT 鑄造失敗
+[2025-10-27 14:19:23] ERROR: Token 發放失敗
+[2025-10-27 14:19:23] ERROR: Token 發放失敗
+[2025-10-27 14:19:23] ERROR: NFT 鑄造失敗: Incorrect number of arguments.
+[2025-10-27 14:21:31] ERROR: NFT 鑄造失敗
+[2025-10-27 14:21:31] ERROR: Token 發放失敗
+[2025-10-27 14:21:31] ERROR: Token 發放失敗
+[2025-10-27 14:21:31] ERROR: NFT 鑄造失敗: Incorrect number of arguments.
+[2025-10-27 14:27:41] ERROR: NFT 鑄造失敗
+[2025-10-27 14:27:41] ERROR: Token 發放失敗
+[2025-10-27 14:27:41] ERROR: Token 發放失敗
+[2025-10-27 14:27:41] ERROR: NFT 鑄造失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 0, kind: TypeMismatch } in command 0
+[2025-10-27 14:37:43] ERROR: NFT 鑄造失敗
+[2025-10-27 14:37:43] ERROR: Token 發放失敗
+[2025-10-27 14:37:43] ERROR: Token 發放失敗
+[2025-10-27 14:37:43] ERROR: NFT 鑄造失敗: The following input objects are invalid: 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5
+[2025-10-27 14:41:46] ERROR: NFT 鑄造失敗
+[2025-10-27 14:41:46] ERROR: Token 發放失敗
+[2025-10-27 14:41:46] ERROR: Token 發放失敗
+[2025-10-27 14:41:46] ERROR: NFT 鑄造失敗: The following input objects are invalid: 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5
+[2025-10-27 14:42:13] ERROR: NFT 鑄造失敗
+[2025-10-27 14:42:13] ERROR: Token 發放失敗
+[2025-10-27 14:42:13] ERROR: Token 發放失敗
+[2025-10-27 14:42:13] ERROR: NFT 鑄造失敗: The following input objects are invalid: 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5
+[2025-10-27 14:43:28] ERROR: TaxCoin Mint 失敗
+[2025-10-27 14:43:28] ERROR: Token 發放失敗
+[2025-10-27 14:43:28] ERROR: Token 發放失敗
+[2025-10-27 14:43:28] ERROR: TaxCoin 發放失敗: Bad response format
+[2025-10-27 14:44:15] ERROR: TaxCoin Mint 失敗
+[2025-10-27 14:44:15] ERROR: Token 發放失敗
+[2025-10-27 14:44:15] ERROR: Token 發放失敗
+[2025-10-27 14:44:15] ERROR: TaxCoin 發放失敗: Transaction validator signing failed due to issues with transaction inputs, please review the errors and try again:
+- Object ID 0x79b139a3ba33524017cc962a67eb638098d5fcf2bb4677064c0d388fdaa170e1 Version 0x14d01392 Digest HK5HWgH8zVviPSpZmDT2SRR1667jtu62SXGYynLWU4ok is not available for consumption, current version: 0x14d01393
+[2025-10-27 14:48:35] ERROR: 使用者不存在,請先註冊
+[2025-10-27 14:48:58] ERROR: 使用者不存在,請先註冊
+[2025-10-27 14:53:33] ERROR: 使用者不存在,請先註冊
+[2025-10-28 10:34:50] ERROR: 認證失敗
+[2025-10-28 10:34:50] ERROR: 缺少 Authorization header
+[2025-10-28 10:35:25] ERROR: 認證失敗
+[2025-10-28 10:35:25] ERROR: 缺少 Authorization header
+[2025-10-28 10:52:11] ERROR: 投資池結算失敗
+[2025-10-28 10:52:11] ERROR: 投資池結算失敗
+[2025-10-28 10:52:11] ERROR: 投資池結算失敗: 投資池結算失敗: Dry run failed, could not automatically determine a budget: MoveAbort(MoveLocation { module: ModuleId { address: d5b297190ad103142d8e89e4ec3bac02757f055a07c252cfe23a15bd671a128b, name: Identifier("rwa_pool") }, function: 3, instruction: 38, function_name: Some("settle_pool") }, 5) in command 0
+[2025-10-28 11:53:37] ERROR: 投資池結算失敗
+[2025-10-28 11:53:37] ERROR: 投資池結算失敗
+[2025-10-28 11:53:37] ERROR: 投資池結算失敗: 投資池結算失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 1, kind: TypeMismatch } in command 0
+[2025-10-28 12:04:14] ERROR: 認證失敗
+[2025-10-28 12:04:14] ERROR: 缺少 Authorization header
+[2025-10-28 12:06:56] ERROR: 使用者不存在,請先註冊
+[2025-10-28 12:07:14] ERROR: 使用者不存在,請先註冊
+[2025-10-28 12:47:31] ERROR: 投資池結算失敗
+[2025-10-28 12:47:31] ERROR: 投資池結算失敗
+[2025-10-28 12:47:31] ERROR: 投資池結算失敗: 投資池結算失敗: Dry run failed, could not automatically determine a budget: MoveAbort(MoveLocation { module: ModuleId { address: 3c8807627d553281d66d5f56a85cb23b73a32d4a98b7832fdd5ce4857f977da1, name: Identifier("rwa_pool") }, function: 5, instruction: 38, function_name: Some("settle_pool") }, 5) in command 0
+[2025-10-28 13:06:03] ERROR: 缺少 maturityDate 參數
+[2025-10-28 13:07:00] ERROR: ❌ 注入收益失敗
+[2025-10-28 13:07:00] ERROR: ❌ 注入收益失敗
+[2025-10-28 13:07:00] ERROR: 注入收益失敗: 注入收益失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 2, kind: InvalidResultArity { result_idx: 0 } } in command 1
+[2025-10-28 13:07:31] ERROR: ❌ 注入收益失敗
+[2025-10-28 13:07:31] ERROR: ❌ 注入收益失敗
+[2025-10-28 13:07:31] ERROR: 注入收益失敗: 注入收益失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 2, kind: InvalidResultArity { result_idx: 0 } } in command 1
+[2025-10-28 13:08:28] ERROR: 缺少 maturityDate 參數
+[2025-10-28 13:12:33] ERROR: 使用者不存在,請先註冊
+[2025-10-28 13:13:28] ERROR: 授權失敗
+[2025-10-28 13:13:28] ERROR: 無權限執行此操作
+[2025-10-28 13:13:52] ERROR: 使用者不存在,請先註冊
+[2025-10-28 13:19:34] ERROR: ❌ 注入收益失敗
+[2025-10-28 13:19:34] ERROR: ❌ 注入收益失敗
+[2025-10-28 13:19:34] ERROR: 注入收益失敗: 注入收益失敗: Dry run failed, could not automatically determine a budget: CommandArgumentError { arg_idx: 2, kind: InvalidResultArity { result_idx: 0 } } in command 1
+[2025-10-28 13:20:56] ERROR: 構建領取收益交易失敗
+[2025-10-28 13:20:56] ERROR: 構建交易失敗: Missing transaction sender
+[2025-10-28 13:21:04] ERROR: 構建領取收益交易失敗
+[2025-10-28 13:21:04] ERROR: 構建交易失敗: Missing transaction sender
+[2025-10-29 03:51:52] ERROR: 使用者不存在,請先註冊
+[2025-10-29 03:52:44] ERROR: 使用者不存在,請先註冊
+[2025-10-29 05:05:37] ERROR: 投資池結算失敗
+[2025-10-29 05:05:37] ERROR: 投資池結算失敗
+[2025-10-29 05:05:37] ERROR: 投資池結算失敗: 投資池結算失敗: Dry run failed, could not automatically determine a budget: MoveAbort(MoveLocation { module: ModuleId { address: 94ab59c3a4f11e699b3d11543b4de36d7670712f5f4df5b2f6594eab4488c38d, name: Identifier("rwa_pool") }, function: 5, instruction: 23, function_name: Some("settle_pool") }, 2) in command 0
+[2025-10-29 05:12:10] ERROR: 投資池結算失敗
+[2025-10-29 05:12:10] ERROR: 投資池結算失敗
+[2025-10-29 05:12:10] ERROR: 投資池結算失敗: 投資池結算失敗: Dry run failed, could not automatically determine a budget: MoveAbort(MoveLocation { module: ModuleId { address: 94ab59c3a4f11e699b3d11543b4de36d7670712f5f4df5b2f6594eab4488c38d, name: Identifier("rwa_pool") }, function: 5, instruction: 23, function_name: Some("settle_pool") }, 2) in command 0
+[2025-10-29 05:12:52] ERROR: 投資池結算失敗
+[2025-10-29 05:12:52] ERROR: 投資池結算失敗
+[2025-10-29 05:12:52] ERROR: 投資池結算失敗: 投資池結算失敗: Dry run failed, could not automatically determine a budget: MoveAbort(MoveLocation { module: ModuleId { address: 94ab59c3a4f11e699b3d11543b4de36d7670712f5f4df5b2f6594eab4488c38d, name: Identifier("rwa_pool") }, function: 5, instruction: 23, function_name: Some("settle_pool") }, 2) in command 0
+[2025-10-29 05:56:23] ERROR: 使用者不存在,請先註冊
+[2025-10-29 05:57:31] ERROR: 使用者不存在,請先註冊
+[2025-10-29 06:02:24] ERROR: ❌ 注入收益失敗
+[2025-10-29 06:02:24] ERROR: 投資池結算失敗
+[2025-10-29 06:02:24] ERROR: 投資池結算失敗: 注入收益失敗: Dry run failed, could not automatically determine a budget: MoveAbort(MoveLocation { module: ModuleId { address: 6e7f6ce880c4a4eeaafbfef95c53c3bc554071b113fe0c84f1e32f1ac646c970, name: Identifier("taxcoin") }, function: 2, instruction: 10, function_name: Some("mint_coin") }, 3) in command 0
+[2025-10-29 06:02:58] ERROR: ❌ 注入收益失敗
+[2025-10-29 06:02:58] ERROR: 投資池結算失敗
+[2025-10-29 06:02:58] ERROR: 投資池結算失敗: 注入收益失敗: Dry run failed, could not automatically determine a budget: MoveAbort(MoveLocation { module: ModuleId { address: 6e7f6ce880c4a4eeaafbfef95c53c3bc554071b113fe0c84f1e32f1ac646c970, name: Identifier("taxcoin") }, function: 2, instruction: 10, function_name: Some("mint_coin") }, 3) in command 0
+[2025-10-29 06:14:50] ERROR: ❌ 注入收益失敗
+[2025-10-29 06:14:50] ERROR: 投資池結算失敗
+[2025-10-29 06:14:50] ERROR: 投資池結算失敗: 注入收益失敗: Dry run failed, could not automatically determine a budget: MoveAbort(MoveLocation { module: ModuleId { address: 6e7f6ce880c4a4eeaafbfef95c53c3bc554071b113fe0c84f1e32f1ac646c970, name: Identifier("taxcoin") }, function: 2, instruction: 10, function_name: Some("mint_coin") }, 3) in command 0
+[2025-10-29 06:26:42] ERROR: 使用者不存在,請先註冊
+[2025-10-29 06:27:24] ERROR: 使用者不存在,請先註冊
+[2025-10-29 06:28:55] ERROR: 投資池結算失敗
+[2025-10-29 06:28:55] ERROR: 投資池結算失敗
+[2025-10-29 06:28:55] ERROR: 投資池結算失敗: 投資池結算失敗: Transaction is rejected as invalid by more than 1/3 of validators by stake (non-retriable). Non-retriable errors: [Object ID 0x65d6fc06fdcf1b236f3943a32ca0bc818b4dc862a36b8674362cf8939ac85a33 Version 0x14d013c5 Digest FHXBdevpzrESvgsGKJxg8HzFCbv4DqxeEVRZmRGRGC9M is not available for consumption, current version: 0x14d013c6 { k#80127c70.., k#82867634.., k#8429dec4.., k#84ddf75f.., k#860e6116.., k#86a78fc2.., k#86c293a6.., k#88737c6d.., k#8aed639d.., k#8b999b8d.., k#8d63c33d.., k#8e61d170.., k#8ec4bc59.., k#8ff5bde0.., k#925efa86.., k#9469e614.., k#94d2b6b3.., k#94d32254.., k#94e9ca44.., k#9944f42c.., k#a24eb782.., k#a2d3bfd0.., k#a2e560a2.., k#a44fab99.., k#a47edc65.., k#a7034f3f.., k#a881dbb8.., k#a8912735.., k#a9e05fbe.., k#ab7edb6e.., k#acc7209e.., k#af8e2546.., k#af9a7bdc.., k#afc1fce1.., k#b2c704b9.., k#b310bc25.., k#b470ccb9.., k#b6c81e47.., k#b7740e89.., k#b84e7d1f.. } with 3376 stake].
+[2025-10-29 06:40:05] ERROR: 使用者不存在,請先註冊
+[2025-10-29 06:40:50] ERROR: 使用者不存在,請先註冊
+[2025-10-29 07:10:10] ERROR: ❌ 注入收益並結算失敗
+[2025-10-29 07:10:10] ERROR: 投資池結算失敗
+[2025-10-29 07:10:10] ERROR: 投資池結算失敗: 注入收益並結算失敗: Dry run failed, could not automatically determine a budget: MoveAbort(MoveLocation { module: ModuleId { address: 6e7f6ce880c4a4eeaafbfef95c53c3bc554071b113fe0c84f1e32f1ac646c970, name: Identifier("rwa_pool") }, function: 6, instruction: 23, function_name: Some("settle_pool") }, 2) in command 2
+[2025-10-29 07:17:32] ERROR: ❌ 注入收益並結算失敗
+[2025-10-29 07:17:32] ERROR: 投資池結算失敗
+[2025-10-29 07:17:32] ERROR: 投資池結算失敗: 注入收益並結算失敗: Dry run failed, could not automatically determine a budget: MoveAbort(MoveLocation { module: ModuleId { address: 6e7f6ce880c4a4eeaafbfef95c53c3bc554071b113fe0c84f1e32f1ac646c970, name: Identifier("rwa_pool") }, function: 6, instruction: 38, function_name: Some("settle_pool") }, 5) in command 2
+[2025-10-29 07:18:24] ERROR: ❌ 注入收益並結算失敗
+[2025-10-29 07:18:24] ERROR: 投資池結算失敗
+[2025-10-29 07:18:24] ERROR: 投資池結算失敗: 注入收益並結算失敗: Dry run failed, could not automatically determine a budget: MoveAbort(MoveLocation { module: ModuleId { address: 6e7f6ce880c4a4eeaafbfef95c53c3bc554071b113fe0c84f1e32f1ac646c970, name: Identifier("rwa_pool") }, function: 6, instruction: 38, function_name: Some("settle_pool") }, 5) in command 2
+[2025-10-29 07:50:49] ERROR: ❌ 注入收益並結算失敗
+[2025-10-29 07:50:49] ERROR: 投資池結算失敗
+[2025-10-29 07:50:49] ERROR: 投資池結算失敗: 注入收益並結算失敗: Dry run failed, could not automatically determine a budget: MoveAbort(MoveLocation { module: ModuleId { address: 6e7f6ce880c4a4eeaafbfef95c53c3bc554071b113fe0c84f1e32f1ac646c970, name: Identifier("rwa_pool") }, function: 6, instruction: 49, function_name: Some("settle_pool") }, 6) in command 2
+[2025-10-29 08:04:19] ERROR: 構建領取收益交易失敗
+[2025-10-29 08:04:19] ERROR: 構建交易失敗: Dry run failed, could not automatically determine a budget: MoveAbort(MoveLocation { module: ModuleId { address: 6e7f6ce880c4a4eeaafbfef95c53c3bc554071b113fe0c84f1e32f1ac646c970, name: Identifier("rwa_pool") }, function: 7, instruction: 28, function_name: Some("claim_yield") }, 6) in command 0
+[2025-10-29 08:09:06] ERROR: 構建領取收益交易失敗
+[2025-10-29 08:09:06] ERROR: 構建交易失敗: Dry run failed, could not automatically determine a budget: MoveAbort(MoveLocation { module: ModuleId { address: 6e7f6ce880c4a4eeaafbfef95c53c3bc554071b113fe0c84f1e32f1ac646c970, name: Identifier("rwa_pool") }, function: 7, instruction: 28, function_name: Some("claim_yield") }, 6) in command 0
+[2025-10-29 08:51:16] ERROR: 構建領取收益交易失敗
+[2025-10-29 08:51:16] ERROR: 構建交易失敗: Dry run failed, could not automatically determine a budget: MoveAbort(MoveLocation { module: ModuleId { address: 6e7f6ce880c4a4eeaafbfef95c53c3bc554071b113fe0c84f1e32f1ac646c970, name: Identifier("rwa_pool") }, function: 7, instruction: 28, function_name: Some("claim_yield") }, 6) in command 0
+[2025-10-29 09:06:42] ERROR: 使用者不存在,請先註冊
+[2025-10-29 09:07:24] ERROR: 使用者不存在,請先註冊
+[2025-10-30 03:30:55] ERROR: 使用者不存在,請先註冊
+[2025-10-30 06:02:28] ERROR: 使用者不存在,請先註冊
+[2025-10-30 06:17:26] ERROR: 使用者不存在,請先註冊
+[2025-10-30 06:19:10] ERROR: 使用者不存在,請先註冊
+[2025-10-30 06:19:14] ERROR: 請求參數錯誤
+[2025-10-30 06:21:53] ERROR: 請求參數錯誤
+[2025-10-30 06:21:54] ERROR: 請求參數錯誤
+[2025-10-30 08:48:02] ERROR: 您尚未註冊店家
+[2025-10-30 08:48:04] ERROR: 您尚未註冊店家
+[2025-10-30 08:48:04] ERROR: 您尚未註冊店家
+[2025-10-30 08:48:19] ERROR: 您尚未註冊店家
+[2025-10-30 09:00:40] ERROR: 該用戶已有店家資料
+[2025-10-30 09:00:54] ERROR: 該用戶已有店家資料
+[2025-10-30 09:08:46] ERROR: 
+Invalid `prisma.payment.create()` invocation:
+
+
+Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "", length 0 for the field 'customerId'.
+[2025-10-30 09:08:53] ERROR: 
+Invalid `prisma.payment.create()` invocation:
+
+
+Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "", length 0 for the field 'customerId'.
+[2025-10-30 09:12:54] ERROR: 
+Invalid `prisma.payment.create()` invocation:
+
+
+Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "", length 0 for the field 'customerId'.
+[2025-10-30 09:25:04] ERROR: 支付記錄不存在或已完成
+[2025-10-30 09:32:50] ERROR: 支付記錄不存在或已完成
+[2025-10-30 10:30:53] ERROR: 支付已過期
+[2025-10-30 10:30:56] ERROR: 只能取消待支付的訂單
+[2025-10-30 10:31:53] ERROR: 查詢交易失敗
+[2025-10-30 10:31:53] ERROR: 區塊鏈交易驗證失敗
+[2025-10-30 10:31:53] ERROR: 查詢交易失敗
+[2025-10-30 10:34:43] ERROR: 查詢交易失敗
+[2025-10-30 10:34:43] ERROR: 區塊鏈交易驗證失敗
+[2025-10-30 10:34:43] ERROR: 查詢交易失敗
+[2025-10-30 10:35:14] ERROR: 查詢交易失敗
+[2025-10-30 10:35:14] ERROR: 區塊鏈交易驗證失敗
+[2025-10-30 10:35:14] ERROR: 查詢交易失敗
+[2025-10-30 11:03:10] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 11:03:42] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 11:04:16] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 11:04:48] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 11:05:20] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 11:05:52] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 11:06:24] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 11:06:56] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 11:07:31] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 11:08:03] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 11:09:05] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 11:09:41] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 11:10:13] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 11:10:46] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 11:55:20] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 11:55:51] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 11:56:22] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 11:56:54] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 11:57:26] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 11:57:57] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 11:58:28] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 11:59:00] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 11:59:31] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 12:00:02] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 12:01:25] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 12:01:56] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 12:02:27] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 12:02:58] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 12:03:30] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 12:04:01] ERROR: ❌ 伺服器啟動失敗
+[2025-10-30 12:07:15] ERROR: 使用者不存在,請先註冊
+[2025-10-30 12:07:20] ERROR: 您尚未註冊店家
+[2025-10-30 12:07:23] ERROR: 您尚未註冊店家
+[2025-10-30 12:07:23] ERROR: 您尚未註冊店家
+[2025-10-30 12:08:40] ERROR: 使用者不存在,請先註冊
+[2025-10-31 01:14:38] ERROR: 使用者不存在,請先註冊
+[2025-10-31 01:18:18] ERROR: 自拍照驗證失敗: 圖片檔案無效或格式不支援. 建議: 請確保照片中包含清晰的臉部; 請移除墨鏡、口罩等遮蔽物; 請使用有效的圖片格式 (JPG, PNG, WebP); 請確保圖片大小在 10KB ~ 10MB 之間
+[2025-10-31 01:19:07] ERROR: 自拍照驗證失敗: 圖片檔案無效或格式不支援. 建議: 請確保照片中包含清晰的臉部; 請移除墨鏡、口罩等遮蔽物; 請使用有效的圖片格式 (JPG, PNG, WebP); 請確保圖片大小在 10KB ~ 10MB 之間
+[2025-10-31 01:19:32] ERROR: 臉部比對失敗: 圖片檔案無效. 建議: 請確保照片中包含清晰的臉部; 請移除墨鏡、口罩等遮蔽物; 請使用有效的圖片格式 (JPG, PNG, WebP); 請確保圖片大小在 10KB ~ 10MB 之間
+[2025-10-31 05:22:04] ERROR: 使用者不存在,請先註冊 {
+  "error": {
+    "message": "使用者不存在,請先註冊",
+    "code": "NOT_FOUND",
+    "statusCode": 404,
+    "name": "NotFoundError"
+  }
+}

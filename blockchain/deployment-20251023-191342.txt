@@ -1,0 +1,530 @@
+[warning] Client/Server api version mismatch, client api version : 1.58.2, server api version : 1.59.0
+[Note]: Dependency sources are no longer verified automatically during publication and upgrade. You can pass the `--verify-deps` option if you would like to verify them as part of publication or upgrade.
+[note] Dependencies on Bridge, MoveStdlib, Sui, and SuiSystem are automatically added, but this feature is disabled for your package because you have explicitly included dependencies on Sui. Consider removing these dependencies from Move.toml.
+UPDATING GIT DEPENDENCY https://github.com/MystenLabs/sui.git
+From https://github.com/MystenLabs/sui
+ * [new branch]          ds/dev-cheat-sheet    -> origin/ds/dev-cheat-sheet
+   1703f20a4..cddc7f54f  ds/release-1.59-patch -> origin/ds/release-1.59-patch
+   c2b1915ce..4638af933  main                  -> origin/main
+INCLUDING DEPENDENCY Sui
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING taxcoin
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/tax_claim_nft.move:10:23
+   │
+10 │     use sui::object::{Self, UID};
+   │                       ^^^^ Unnecessary alias 'object' for module 'sui::object'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/tax_claim_nft.move:10:29
+   │
+10 │     use sui::object::{Self, UID};
+   │                             ^^^ Unnecessary alias 'UID' for module member 'sui::object::UID'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/tax_claim_nft.move:11:14
+   │
+11 │     use sui::transfer;
+   │              ^^^^^^^^ Unnecessary alias 'transfer' for module 'sui::transfer'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/tax_claim_nft.move:12:27
+   │
+12 │     use sui::tx_context::{Self, TxContext};
+   │                           ^^^^ Unnecessary alias 'tx_context' for module 'sui::tx_context'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/tax_claim_nft.move:12:33
+   │
+12 │     use sui::tx_context::{Self, TxContext};
+   │                                 ^^^^^^^^^ Unnecessary alias 'TxContext' for module member 'sui::tx_context::TxContext'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W09011]: unused constant
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/tax_claim_nft.move:17:11
+   │
+17 │     const E_NOT_AUTHORIZED: u64 = 1;
+   │           ^^^^^^^^^^^^^^^^ The constant 'E_NOT_AUTHORIZED' is never used. Consider removing it.
+   │
+   = This warning can be suppressed with '#[allow(unused_const)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/tax_claim_nft.move:117:12
+    │
+117 │     public entry fun mint(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/tax_claim_nft.move:163:12
+    │
+163 │     public entry fun approve(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/tax_claim_nft.move:185:12
+    │
+185 │     public entry fun reject(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/tax_claim_nft.move:209:12
+    │
+209 │     public entry fun mark_disbursed(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_token.move:10:23
+   │
+10 │     use sui::object::{Self, UID};
+   │                       ^^^^ Unnecessary alias 'object' for module 'sui::object'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_token.move:10:29
+   │
+10 │     use sui::object::{Self, UID};
+   │                             ^^^ Unnecessary alias 'UID' for module member 'sui::object::UID'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_token.move:11:14
+   │
+11 │     use sui::transfer;
+   │              ^^^^^^^^ Unnecessary alias 'transfer' for module 'sui::transfer'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_token.move:12:27
+   │
+12 │     use sui::tx_context::{Self, TxContext};
+   │                           ^^^^ Unnecessary alias 'tx_context' for module 'sui::tx_context'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_token.move:12:33
+   │
+12 │     use sui::tx_context::{Self, TxContext};
+   │                                 ^^^^^^^^^ Unnecessary alias 'TxContext' for module member 'sui::tx_context::TxContext'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W09011]: unused constant
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_token.move:17:11
+   │
+17 │     const E_NOT_AUTHORIZED: u64 = 1;
+   │           ^^^^^^^^^^^^^^^^ The constant 'E_NOT_AUTHORIZED' is never used. Consider removing it.
+   │
+   = This warning can be suppressed with '#[allow(unused_const)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_token.move:113:12
+    │
+113 │     public entry fun create_token(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_token.move:155:12
+    │
+155 │     public entry fun mark_sold(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_token.move:180:12
+    │
+180 │     public entry fun redeem(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_token.move:219:12
+    │
+219 │     public entry fun batch_redeem(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:11:23
+   │
+11 │     use sui::object::{Self, UID};
+   │                       ^^^^ Unnecessary alias 'object' for module 'sui::object'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:11:29
+   │
+11 │     use sui::object::{Self, UID};
+   │                             ^^^ Unnecessary alias 'UID' for module member 'sui::object::UID'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:12:14
+   │
+12 │     use sui::transfer;
+   │              ^^^^^^^^ Unnecessary alias 'transfer' for module 'sui::transfer'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:13:27
+   │
+13 │     use sui::tx_context::{Self, TxContext};
+   │                           ^^^^ Unnecessary alias 'tx_context' for module 'sui::tx_context'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:13:33
+   │
+13 │     use sui::tx_context::{Self, TxContext};
+   │                                 ^^^^^^^^^ Unnecessary alias 'TxContext' for module member 'sui::tx_context::TxContext'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:19:14
+   │
+19 │     use std::vector;
+   │              ^^^^^^ Unnecessary alias 'vector' for module 'std::vector'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W09011]: unused constant
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:38:11
+   │
+38 │     const RISK_LOW: u8 = 0;
+   │           ^^^^^^^^ The constant 'RISK_LOW' is never used. Consider removing it.
+   │
+   = This warning can be suppressed with '#[allow(unused_const)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W09011]: unused constant
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:39:11
+   │
+39 │     const RISK_MEDIUM: u8 = 1;
+   │           ^^^^^^^^^^^ The constant 'RISK_MEDIUM' is never used. Consider removing it.
+   │
+   = This warning can be suppressed with '#[allow(unused_const)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W09011]: unused constant
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:40:11
+   │
+40 │     const RISK_HIGH: u8 = 2;
+   │           ^^^^^^^^^ The constant 'RISK_HIGH' is never used. Consider removing it.
+   │
+   = This warning can be suppressed with '#[allow(unused_const)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:150:12
+    │
+150 │     public entry fun create_pool(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:206:12
+    │
+206 │     public entry fun invest(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:273:12
+    │
+273 │     public entry fun settle_pool(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:299:12
+    │
+299 │     public entry fun claim_yield(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W09014]: unused mutable reference '&mut' parameter
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:348:14
+    │
+348 │         ctx: &mut TxContext
+    │         ---  ^^^^^^^^^^^^^^ Mutable reference is never used mutably, consider switching to an immutable reference '&' instead
+    │         │     
+    │         For parameters, this can be silenced by prefixing the name with an underscore, e.g. '_ctx'
+    │
+    = This warning can be suppressed with '#[allow(unused_mut_parameter)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:362:12
+    │
+362 │     public entry fun check_and_update_status(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/exchange.move:12:23
+   │
+12 │     use sui::object::{Self, UID};
+   │                       ^^^^ Unnecessary alias 'object' for module 'sui::object'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/exchange.move:12:29
+   │
+12 │     use sui::object::{Self, UID};
+   │                             ^^^ Unnecessary alias 'UID' for module member 'sui::object::UID'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/exchange.move:13:14
+   │
+13 │     use sui::transfer;
+   │              ^^^^^^^^ Unnecessary alias 'transfer' for module 'sui::transfer'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/exchange.move:14:27
+   │
+14 │     use sui::tx_context::{Self, TxContext};
+   │                           ^^^^ Unnecessary alias 'tx_context' for module 'sui::tx_context'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/exchange.move:14:33
+   │
+14 │     use sui::tx_context::{Self, TxContext};
+   │                                 ^^^^^^^^^ Unnecessary alias 'TxContext' for module member 'sui::tx_context::TxContext'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W09001]: unused alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/exchange.move:19:14
+   │
+19 │     use sui::math;
+   │              ^^^^ Unused 'use' of alias 'math'. Consider removing it
+   │
+   = This warning can be suppressed with '#[allow(unused_use)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/exchange.move:144:12
+    │
+144 │     public entry fun add_liquidity(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/exchange.move:218:12
+    │
+218 │     public entry fun remove_liquidity(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/exchange.move:279:12
+    │
+279 │     public entry fun swap_sui_to_taxcoin(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/exchange.move:337:12
+    │
+337 │     public entry fun swap_taxcoin_to_sui(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W09014]: unused mutable reference '&mut' parameter
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/exchange.move:429:54
+    │
+429 │     fun emit_price_update(pool: &LiquidityPool, ctx: &mut TxContext) {
+    │                                                 ---  ^^^^^^^^^^^^^^ Mutable reference is never used mutably, consider switching to an immutable reference '&' instead
+    │                                                 │     
+    │                                                 For parameters, this can be silenced by prefixing the name with an underscore, e.g. '_ctx'
+    │
+    = This warning can be suppressed with '#[allow(unused_mut_parameter)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/exchange.move:512:12
+    │
+512 │     public entry fun collect_fees(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:12:14
+   │
+12 │     use sui::transfer;
+   │              ^^^^^^^^ Unnecessary alias 'transfer' for module 'sui::transfer'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:13:27
+   │
+13 │     use sui::tx_context::{Self, TxContext};
+   │                           ^^^^ Unnecessary alias 'tx_context' for module 'sui::tx_context'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:13:33
+   │
+13 │     use sui::tx_context::{Self, TxContext};
+   │                                 ^^^^^^^^^ Unnecessary alias 'TxContext' for module member 'sui::tx_context::TxContext'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W09001]: unused alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:14:24
+   │
+14 │     use sui::balance::{Self, Balance};
+   │                        ^^^^ Unused 'use' of alias 'balance'. Consider removing it
+   │
+   = This warning can be suppressed with '#[allow(unused_use)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W09001]: unused alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:14:30
+   │
+14 │     use sui::balance::{Self, Balance};
+   │                              ^^^^^^^ Unused 'use' of alias 'Balance'. Consider removing it
+   │
+   = This warning can be suppressed with '#[allow(unused_use)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:15:23
+   │
+15 │     use sui::object::{Self, UID};
+   │                       ^^^^ Unnecessary alias 'object' for module 'sui::object'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:15:29
+   │
+15 │     use sui::object::{Self, UID};
+   │                             ^^^ Unnecessary alias 'UID' for module member 'sui::object::UID'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W09011]: unused constant
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:20:11
+   │
+20 │     const E_NOT_AUTHORIZED: u64 = 2;
+   │           ^^^^^^^^^^^^^^^^ The constant 'E_NOT_AUTHORIZED' is never used. Consider removing it.
+   │
+   = This warning can be suppressed with '#[allow(unused_const)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W04037]: deprecated usage
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:53:42
+   │
+53 │         let (treasury, metadata) = coin::create_currency(
+   │                                          ^^^^^^^^^^^^^^^ The function 'sui::coin::create_currency' is deprecated: Use `coin_registry::new_currency_with_otw` instead
+   │
+   = This warning can be suppressed with '#[allow(deprecated_usage)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:87:12
+   │
+87 │     public entry fun mint(
+   │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+   │
+   = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+   = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:113:12
+    │
+113 │     public entry fun batch_mint(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:146:12
+    │
+146 │     public entry fun burn(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:163:12
+    │
+163 │     public entry fun transfer(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:182:12
+    │
+182 │     public entry fun join(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+Please report feedback on the linter warnings at https://forums.sui.io
+
+Skipping dependency verification
+Error executing transaction '25Ubohi6wBoEYN8JFYSCaJaQ7khZKXQ71q4nFfkrrFtH': InsufficientGas

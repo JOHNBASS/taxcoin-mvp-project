@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Claim NFT Preview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .subtitle {
+            text-align: center;
+            color: rgba(255,255,255,0.9);
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        .nft-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .nft-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .nft-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+        }
+
+        .nft-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #1F2937;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .nft-image-container {
+            background: #F3F4F6;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nft-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .nft-info {
+            background: #F9FAFB;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #E5E7EB;
+            font-size: 0.9em;
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            color: #6B7280;
+            font-weight: 600;
+        }
+
+        .info-value {
+            color: #1F2937;
+            font-weight: 500;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 5px 14px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+            color: white;
+        }
+
+        .status-pending {
+            background: linear-gradient(135deg, #94A3B8, #CBD5E1);
+        }
+
+        .status-approved {
+            background: linear-gradient(135deg, #10B981, #34D399);
+        }
+
+        .status-rejected {
+            background: linear-gradient(135deg, #EF4444, #F87171);
+        }
+
+        .status-disbursed {
+            background: linear-gradient(135deg, #8B5CF6, #A78BFA);
+        }
+
+        .url-display {
+            background: #1F2937;
+            color: #10B981;
+            padding: 12px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.75em;
+            margin-top: 15px;
+            word-break: break-all;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .feature-list {
+            list-style: none;
+            margin-top: 12px;
+        }
+
+        .feature-list li {
+            padding: 6px 0;
+            color: #4B5563;
+            display: flex;
+            align-items: center;
+            font-size: 0.9em;
+        }
+
+        .feature-list li:before {
+            content: "●";
+            color: #10B981;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .status-table {
+            margin-top: 30px;
+            padding: 25px;
+            background: rgba(255,255,255,0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .status-table h3 {
+            color: #1F2937;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #E5E7EB;
+        }
+
+        th {
+            background: #F3F4F6;
+            font-weight: 600;
+            color: #374151;
+        }
+
+        .workflow {
+            margin-top: 30px;
+            padding: 30px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .workflow h3 {
+            color: white;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .flow-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .flow-step {
+            background: rgba(255,255,255,0.15);
+            padding: 15px 20px;
+            border-radius: 10px;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .step-number {
+            background: white;
+            color: #667eea;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 退稅證明 NFT 預覽</h1>
+        <p class="subtitle">TaxCoin MVP - Tax Claim Certificate NFT Collection</p>
+
+        <div class="nft-grid">
+            <!-- 待審核 -->
+            <div class="nft-card">
+                <div class="nft-title">
+                    退稅證明 NFT #TC001
+                    <br>
+                    <span class="status-badge status-pending">待審核</span>
+                </div>
+
+                <div class="nft-image-container">
+                    <img src="tax-claim-0.svg" alt="待審核 NFT" class="nft-image">
+                </div>
+
+                <div class="nft-info">
+                    <div class="info-row">
+                        <span class="info-label">狀態碼</span>
+                        <span class="info-value">STATUS_PENDING (0)</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">退稅金額</span>
+                        <span class="info-value">50 TWD</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">原始消費</span>
+                        <span class="info-value">1,000 TWD</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">商家</span>
+                        <span class="info-value">全聯福利中心</span>
+                    </div>
+                </div>
+
+                <div class="url-display">
+                    tax-claim-0.svg
+                </div>
+
+                <ul class="feature-list">
+                    <li>灰色調設計（代表處理中）</li>
+                    <li>時鐘動畫旋轉</li>
+                    <li>虛線圓環旋轉</li>
+                </ul>
+            </div>
+
+            <!-- 已核准 -->
+            <div class="nft-card">
+                <div class="nft-title">
+                    退稅證明 NFT #TC002
+                    <br>
+                    <span class="status-badge status-approved">已核准</span>
+                </div>
+
+                <div class="nft-image-container">
+                    <img src="tax-claim-1.svg" alt="已核准 NFT" class="nft-image">
+                </div>
+
+                <div class="nft-info">
+                    <div class="info-row">
+                        <span class="info-label">狀態碼</span>
+                        <span class="info-value">STATUS_APPROVED (1)</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">退稅金額</span>
+                        <span class="info-value">75 TWD</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">原始消費</span>
+                        <span class="info-value">1,500 TWD</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">商家</span>
+                        <span class="info-value">家樂福</span>
+                    </div>
+                </div>
+
+                <div class="url-display">
+                    tax-claim-1.svg
+                </div>
+
+                <ul class="feature-list">
+                    <li>綠色漸層（代表成功）</li>
+                    <li>大對勾符號</li>
+                    <li>閃爍星星效果</li>
+                    <li>認證標記</li>
+                </ul>
+            </div>
+
+            <!-- 已拒絕 -->
+            <div class="nft-card">
+                <div class="nft-title">
+                    退稅證明 NFT #TC003
+                    <br>
+                    <span class="status-badge status-rejected">已拒絕</span>
+                </div>
+
+                <div class="nft-image-container">
+                    <img src="tax-claim-2.svg" alt="已拒絕 NFT" class="nft-image">
+                </div>
+
+                <div class="nft-info">
+                    <div class="info-row">
+                        <span class="info-label">狀態碼</span>
+                        <span class="info-value">STATUS_REJECTED (2)</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">退稅金額</span>
+                        <span class="info-value">0 TWD</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">拒絕原因</span>
+                        <span class="info-value">收據不清晰</span>
+                    </div>
+                </div>
+
+                <div class="url-display">
+                    tax-claim-2.svg
+                </div>
+
+                <ul class="feature-list">
+                    <li>紅色漸層（代表拒絕）</li>
+                    <li>X 錯誤符號</li>
+                    <li>警告三角標記</li>
+                    <li>脈衝警示效果</li>
+                </ul>
+            </div>
+
+            <!-- 已發放 -->
+            <div class="nft-card">
+                <div class="nft-title">
+                    退稅證明 NFT #TC004
+                    <br>
+                    <span class="status-badge status-disbursed">已發放</span>
+                </div>
+
+                <div class="nft-image-container">
+                    <img src="tax-claim-3.svg" alt="已發放 NFT" class="nft-image">
+                </div>
+
+                <div class="nft-info">
+                    <div class="info-row">
+                        <span class="info-label">狀態碼</span>
+                        <span class="info-value">STATUS_DISBURSED (3)</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">退稅金額</span>
+                        <span class="info-value">100 TWD</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">TaxCoin 數量</span>
+                        <span class="info-value">100 TC</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">發放日期</span>
+                        <span class="info-value">2025-10-24</span>
+                    </div>
+                </div>
+
+                <div class="url-display">
+                    tax-claim-3.svg
+                </div>
+
+                <ul class="feature-list">
+                    <li>紫色漸層（代表完成）</li>
+                    <li>T$ TaxCoin 符號</li>
+                    <li>金幣堆疊效果</li>
+                    <li>成功徽章</li>
+                    <li>飄落金幣動畫</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 狀態對照表 -->
+        <div class="status-table">
+            <h3>📋 NFT 狀態對照表</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>狀態碼</th>
+                        <th>狀態名稱</th>
+                        <th>圖片檔案</th>
+                        <th>主色調</th>
+                        <th>說明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>STATUS_PENDING</td>
+                        <td>tax-claim-0.svg</td>
+                        <td>灰色 (#94A3B8)</td>
+                        <td>申請已提交，等待審核</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>STATUS_APPROVED</td>
+                        <td>tax-claim-1.svg</td>
+                        <td>綠色 (#10B981)</td>
+                        <td>申請已通過審核</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>STATUS_REJECTED</td>
+                        <td>tax-claim-2.svg</td>
+                        <td>紅色 (#EF4444)</td>
+                        <td>申請被拒絕</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>STATUS_DISBURSED</td>
+                        <td>tax-claim-3.svg</td>
+                        <td>紫色 (#8B5CF6)</td>
+                        <td>TaxCoin 已發放</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 工作流程 -->
+        <div class="workflow">
+            <h3>🔄 NFT 狀態變化流程</h3>
+            <div class="flow-steps">
+                <div class="flow-step">
+                    <div class="step-number">1</div>
+                    <div>
+                        <strong>用戶提交申請</strong><br>
+                        → 鑄造 NFT，status = 0 (待審核)<br>
+                        → 顯示 tax-claim-0.svg (灰色時鐘)
+                    </div>
+                </div>
+                <div class="flow-step">
+                    <div class="step-number">2</div>
+                    <div>
+                        <strong>管理員審核通過</strong><br>
+                        → 更新 NFT，status = 1 (已核准)<br>
+                        → 圖片自動切換為 tax-claim-1.svg (綠色對勾)
+                    </div>
+                </div>
+                <div class="flow-step">
+                    <div class="step-number">3</div>
+                    <div>
+                        <strong>系統發放 TaxCoin</strong><br>
+                        → 更新 NFT，status = 3 (已發放)<br>
+                        → 圖片自動切換為 tax-claim-3.svg (紫色 T$)
+                    </div>
+                </div>
+                <div class="flow-step">
+                    <div class="step-number">✕</div>
+                    <div>
+                        <strong>如果審核未通過</strong><br>
+                        → 更新 NFT，status = 2 (已拒絕)<br>
+                        → 圖片自動切換為 tax-claim-2.svg (紅色 X)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

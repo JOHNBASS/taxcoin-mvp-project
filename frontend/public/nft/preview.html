@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWA Pool Share NFT Preview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .subtitle {
+            text-align: center;
+            color: rgba(255,255,255,0.9);
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        .nft-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .nft-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .nft-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+        }
+
+        .nft-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #1F2937;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .nft-image-container {
+            background: #F3F4F6;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nft-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .nft-info {
+            background: #F9FAFB;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #E5E7EB;
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            color: #6B7280;
+            font-weight: 600;
+        }
+
+        .info-value {
+            color: #1F2937;
+            font-weight: 500;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+            color: white;
+        }
+
+        .status-active {
+            background: linear-gradient(135deg, #3B82F6, #10B981);
+        }
+
+        .status-settled {
+            background: linear-gradient(135deg, #F59E0B, #10B981);
+        }
+
+        .feature-list {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .feature-list li {
+            padding: 8px 0;
+            color: #4B5563;
+            display: flex;
+            align-items: center;
+        }
+
+        .feature-list li:before {
+            content: "✓";
+            color: #10B981;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        .url-display {
+            background: #1F2937;
+            color: #10B981;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85em;
+            margin-top: 20px;
+            word-break: break-all;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .tech-specs {
+            margin-top: 30px;
+            padding: 20px;
+            background: linear-gradient(135deg, #EEF2FF, #E0E7FF);
+            border-radius: 10px;
+            border-left: 4px solid #6366F1;
+        }
+
+        .tech-specs h3 {
+            color: #4338CA;
+            margin-bottom: 15px;
+        }
+
+        .spec-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .spec-item {
+            background: white;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 RWA 投資池份額 NFT 預覽</h1>
+        <p class="subtitle">TaxCoin MVP - Pool Share NFT Collection</p>
+
+        <div class="nft-grid">
+            <!-- 投資中 NFT -->
+            <div class="nft-card">
+                <div class="nft-title">
+                    投資池份額憑證 #1
+                    <span class="status-badge status-active">投資中</span>
+                </div>
+
+                <div class="nft-image-container">
+                    <img src="pool-share-false.svg" alt="投資中 NFT" class="nft-image">
+                </div>
+
+                <div class="nft-info">
+                    <div class="info-row">
+                        <span class="info-label">狀態</span>
+                        <span class="info-value">is_settled: false</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">投資金額</span>
+                        <span class="info-value">500 TWD</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">預期收益</span>
+                        <span class="info-value">10 TWD (2% APY)</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">到期日</span>
+                        <span class="info-value">2025-10-31</span>
+                    </div>
+                </div>
+
+                <div class="url-display">
+                    https://taxcoin-mvp.transferhelper.com.tw/nft/pool-share-false.svg
+                </div>
+
+                <ul class="feature-list">
+                    <li>藍綠色漸層設計</li>
+                    <li>向上箭頭表示增長</li>
+                    <li>脈衝動畫效果</li>
+                    <li>動態波浪曲線</li>
+                </ul>
+            </div>
+
+            <!-- 已結算 NFT -->
+            <div class="nft-card">
+                <div class="nft-title">
+                    投資池份額憑證 #1
+                    <span class="status-badge status-settled">已結算</span>
+                </div>
+
+                <div class="nft-image-container">
+                    <img src="pool-share-true.svg" alt="已結算 NFT" class="nft-image">
+                </div>
+
+                <div class="nft-info">
+                    <div class="info-row">
+                        <span class="info-label">狀態</span>
+                        <span class="info-value">is_settled: true</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">投資金額</span>
+                        <span class="info-value">500 TWD</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">實際收益</span>
+                        <span class="info-value">10 TWD ✓</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">結算日</span>
+                        <span class="info-value">2025-10-31</span>
+                    </div>
+                </div>
+
+                <div class="url-display">
+                    https://taxcoin-mvp.transferhelper.com.tw/nft/pool-share-true.svg
+                </div>
+
+                <ul class="feature-list">
+                    <li>金色漸層設計</li>
+                    <li>綠色對勾表示完成</li>
+                    <li>金幣背景象徵收益</li>
+                    <li>星光閃爍效果</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 技術規格 -->
+        <div class="tech-specs">
+            <h3>📋 技術規格</h3>
+            <div class="spec-grid">
+                <div class="spec-item">
+                    <strong>格式：</strong> SVG (Scalable Vector Graphics)
+                </div>
+                <div class="spec-item">
+                    <strong>尺寸：</strong> 400 x 400 像素
+                </div>
+                <div class="spec-item">
+                    <strong>檔案位置：</strong> frontend/public/nft/
+                </div>
+                <div class="spec-item">
+                    <strong>動畫：</strong> CSS Animations (內嵌)
+                </div>
+                <div class="spec-item">
+                    <strong>相容性：</strong> 所有現代瀏覽器
+                </div>
+                <div class="spec-item">
+                    <strong>Display 標準：</strong> Sui NFT Display Protocol
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 40px; padding: 30px; background: rgba(255,255,255,0.1); border-radius: 15px; backdrop-filter: blur(10px);">
+            <h3 style="color: white; margin-bottom: 15px; text-align: center;">🔄 NFT 狀態切換邏輯</h3>
+            <p style="color: rgba(255,255,255,0.9); text-align: center; line-height: 1.8;">
+                當投資者調用 <code style="background: rgba(0,0,0,0.3); padding: 2px 8px; border-radius: 4px;">claim_yield()</code> 函數領取收益時，<br>
+                NFT 的 <code style="background: rgba(0,0,0,0.3); padding: 2px 8px; border-radius: 4px;">is_settled</code> 欄位會從 <code style="background: rgba(0,0,0,0.3); padding: 2px 8px; border-radius: 4px;">false</code> 變為 <code style="background: rgba(0,0,0,0.3); padding: 2px 8px; border-radius: 4px;">true</code>，<br>
+                圖片 URL 將自動從 <strong>pool-share-false.svg</strong> 切換為 <strong>pool-share-true.svg</strong>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

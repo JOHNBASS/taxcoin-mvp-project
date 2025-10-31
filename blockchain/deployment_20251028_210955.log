@@ -1,0 +1,982 @@
+[warning] Client/Server api version mismatch, client api version : 1.59.0, server api version : 1.59.1
+[Note]: Dependency sources are no longer verified automatically during publication and upgrade. You can pass the `--verify-deps` option if you would like to verify them as part of publication or upgrade.
+[note] Dependencies on Bridge, MoveStdlib, Sui, and SuiSystem are automatically added, but this feature is disabled for your package because you have explicitly included dependencies on Sui. Consider removing these dependencies from Move.toml.
+UPDATING GIT DEPENDENCY https://github.com/MystenLabs/sui.git
+INCLUDING DEPENDENCY Sui
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING taxcoin
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_token.move:10:23
+   │
+10 │     use sui::object::{Self, UID};
+   │                       ^^^^ Unnecessary alias 'object' for module 'sui::object'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_token.move:10:29
+   │
+10 │     use sui::object::{Self, UID};
+   │                             ^^^ Unnecessary alias 'UID' for module member 'sui::object::UID'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_token.move:11:14
+   │
+11 │     use sui::transfer;
+   │              ^^^^^^^^ Unnecessary alias 'transfer' for module 'sui::transfer'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_token.move:12:27
+   │
+12 │     use sui::tx_context::{Self, TxContext};
+   │                           ^^^^ Unnecessary alias 'tx_context' for module 'sui::tx_context'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_token.move:12:33
+   │
+12 │     use sui::tx_context::{Self, TxContext};
+   │                                 ^^^^^^^^^ Unnecessary alias 'TxContext' for module member 'sui::tx_context::TxContext'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W09011]: unused constant
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_token.move:17:11
+   │
+17 │     const E_NOT_AUTHORIZED: u64 = 1;
+   │           ^^^^^^^^^^^^^^^^ The constant 'E_NOT_AUTHORIZED' is never used. Consider removing it.
+   │
+   = This warning can be suppressed with '#[allow(unused_const)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_token.move:113:12
+    │
+113 │     public entry fun create_token(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_token.move:155:12
+    │
+155 │     public entry fun mark_sold(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_token.move:180:12
+    │
+180 │     public entry fun redeem(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_token.move:219:12
+    │
+219 │     public entry fun batch_redeem(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:12:14
+   │
+12 │     use sui::transfer;
+   │              ^^^^^^^^ Unnecessary alias 'transfer' for module 'sui::transfer'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:13:27
+   │
+13 │     use sui::tx_context::{Self, TxContext};
+   │                           ^^^^ Unnecessary alias 'tx_context' for module 'sui::tx_context'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:13:33
+   │
+13 │     use sui::tx_context::{Self, TxContext};
+   │                                 ^^^^^^^^^ Unnecessary alias 'TxContext' for module member 'sui::tx_context::TxContext'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W09001]: unused alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:14:24
+   │
+14 │     use sui::balance::{Self, Balance};
+   │                        ^^^^ Unused 'use' of alias 'balance'. Consider removing it
+   │
+   = This warning can be suppressed with '#[allow(unused_use)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W09001]: unused alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:14:30
+   │
+14 │     use sui::balance::{Self, Balance};
+   │                              ^^^^^^^ Unused 'use' of alias 'Balance'. Consider removing it
+   │
+   = This warning can be suppressed with '#[allow(unused_use)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:15:23
+   │
+15 │     use sui::object::{Self, UID};
+   │                       ^^^^ Unnecessary alias 'object' for module 'sui::object'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:15:29
+   │
+15 │     use sui::object::{Self, UID};
+   │                             ^^^ Unnecessary alias 'UID' for module member 'sui::object::UID'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W09011]: unused constant
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:20:11
+   │
+20 │     const E_NOT_AUTHORIZED: u64 = 2;
+   │           ^^^^^^^^^^^^^^^^ The constant 'E_NOT_AUTHORIZED' is never used. Consider removing it.
+   │
+   = This warning can be suppressed with '#[allow(unused_const)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W04037]: deprecated usage
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:53:42
+   │
+53 │         let (treasury, metadata) = coin::create_currency(
+   │                                          ^^^^^^^^^^^^^^^ The function 'sui::coin::create_currency' is deprecated: Use `coin_registry::new_currency_with_otw` instead
+   │
+   = This warning can be suppressed with '#[allow(deprecated_usage)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:87:12
+   │
+87 │     public entry fun mint(
+   │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+   │
+   = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+   = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:125:12
+    │
+125 │     public entry fun batch_mint(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:158:12
+    │
+158 │     public entry fun burn(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:175:12
+    │
+175 │     public entry fun transfer(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/taxcoin.move:194:12
+    │
+194 │     public entry fun join(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:11:23
+   │
+11 │     use sui::object::{Self, UID};
+   │                       ^^^^ Unnecessary alias 'object' for module 'sui::object'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:11:29
+   │
+11 │     use sui::object::{Self, UID};
+   │                             ^^^ Unnecessary alias 'UID' for module member 'sui::object::UID'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:12:14
+   │
+12 │     use sui::transfer;
+   │              ^^^^^^^^ Unnecessary alias 'transfer' for module 'sui::transfer'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:13:27
+   │
+13 │     use sui::tx_context::{Self, TxContext};
+   │                           ^^^^ Unnecessary alias 'tx_context' for module 'sui::tx_context'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:13:33
+   │
+13 │     use sui::tx_context::{Self, TxContext};
+   │                                 ^^^^^^^^^ Unnecessary alias 'TxContext' for module member 'sui::tx_context::TxContext'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:21:14
+   │
+21 │     use std::vector;
+   │              ^^^^^^ Unnecessary alias 'vector' for module 'std::vector'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W09011]: unused constant
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:40:11
+   │
+40 │     const RISK_LOW: u8 = 0;
+   │           ^^^^^^^^ The constant 'RISK_LOW' is never used. Consider removing it.
+   │
+   = This warning can be suppressed with '#[allow(unused_const)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W09011]: unused constant
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:41:11
+   │
+41 │     const RISK_MEDIUM: u8 = 1;
+   │           ^^^^^^^^^^^ The constant 'RISK_MEDIUM' is never used. Consider removing it.
+   │
+   = This warning can be suppressed with '#[allow(unused_const)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W09011]: unused constant
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:42:11
+   │
+42 │     const RISK_HIGH: u8 = 2;
+   │           ^^^^^^^^^ The constant 'RISK_HIGH' is never used. Consider removing it.
+   │
+   = This warning can be suppressed with '#[allow(unused_const)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:192:12
+    │
+192 │     public entry fun create_pool(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:248:12
+    │
+248 │     public entry fun invest(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:316:12
+    │
+316 │     public entry fun deposit_yield(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:338:12
+    │
+338 │     public entry fun update_maturity_date_for_testing(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:348:12
+    │
+348 │     public entry fun settle_pool(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:374:12
+    │
+374 │     public entry fun claim_yield(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W09014]: unused mutable reference '&mut' parameter
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:423:14
+    │
+423 │         ctx: &mut TxContext
+    │         ---  ^^^^^^^^^^^^^^ Mutable reference is never used mutably, consider switching to an immutable reference '&' instead
+    │         │     
+    │         For parameters, this can be silenced by prefixing the name with an underscore, e.g. '_ctx'
+    │
+    = This warning can be suppressed with '#[allow(unused_mut_parameter)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/rwa_pool.move:437:12
+    │
+437 │     public entry fun check_and_update_status(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/tax_claim_nft.move:10:23
+   │
+10 │     use sui::object::{Self, UID};
+   │                       ^^^^ Unnecessary alias 'object' for module 'sui::object'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/tax_claim_nft.move:10:29
+   │
+10 │     use sui::object::{Self, UID};
+   │                             ^^^ Unnecessary alias 'UID' for module member 'sui::object::UID'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/tax_claim_nft.move:11:14
+   │
+11 │     use sui::transfer;
+   │              ^^^^^^^^ Unnecessary alias 'transfer' for module 'sui::transfer'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/tax_claim_nft.move:12:27
+   │
+12 │     use sui::tx_context::{Self, TxContext};
+   │                           ^^^^ Unnecessary alias 'tx_context' for module 'sui::tx_context'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/tax_claim_nft.move:12:33
+   │
+12 │     use sui::tx_context::{Self, TxContext};
+   │                                 ^^^^^^^^^ Unnecessary alias 'TxContext' for module member 'sui::tx_context::TxContext'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W09011]: unused constant
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/tax_claim_nft.move:19:11
+   │
+19 │     const E_NOT_AUTHORIZED: u64 = 1;
+   │           ^^^^^^^^^^^^^^^^ The constant 'E_NOT_AUTHORIZED' is never used. Consider removing it.
+   │
+   = This warning can be suppressed with '#[allow(unused_const)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/tax_claim_nft.move:173:12
+    │
+173 │     public entry fun mint(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/tax_claim_nft.move:227:12
+    │
+227 │     public entry fun approve(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/tax_claim_nft.move:249:12
+    │
+249 │     public entry fun reject(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/tax_claim_nft.move:273:12
+    │
+273 │     public entry fun mark_disbursed(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/tax_claim_nft.move:312:12
+    │
+312 │     public entry fun emergency_transfer(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/exchange.move:12:23
+   │
+12 │     use sui::object::{Self, UID};
+   │                       ^^^^ Unnecessary alias 'object' for module 'sui::object'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/exchange.move:12:29
+   │
+12 │     use sui::object::{Self, UID};
+   │                             ^^^ Unnecessary alias 'UID' for module member 'sui::object::UID'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/exchange.move:13:14
+   │
+13 │     use sui::transfer;
+   │              ^^^^^^^^ Unnecessary alias 'transfer' for module 'sui::transfer'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/exchange.move:14:27
+   │
+14 │     use sui::tx_context::{Self, TxContext};
+   │                           ^^^^ Unnecessary alias 'tx_context' for module 'sui::tx_context'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W02021]: duplicate alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/exchange.move:14:33
+   │
+14 │     use sui::tx_context::{Self, TxContext};
+   │                                 ^^^^^^^^^ Unnecessary alias 'TxContext' for module member 'sui::tx_context::TxContext'. This alias is provided by default
+   │
+   = This warning can be suppressed with '#[allow(duplicate_alias)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W09001]: unused alias
+   ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/exchange.move:19:14
+   │
+19 │     use sui::math;
+   │              ^^^^ Unused 'use' of alias 'math'. Consider removing it
+   │
+   = This warning can be suppressed with '#[allow(unused_use)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/exchange.move:144:12
+    │
+144 │     public entry fun add_liquidity(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/exchange.move:218:12
+    │
+218 │     public entry fun remove_liquidity(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/exchange.move:279:12
+    │
+279 │     public entry fun swap_sui_to_taxcoin(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/exchange.move:337:12
+    │
+337 │     public entry fun swap_taxcoin_to_sui(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[W09014]: unused mutable reference '&mut' parameter
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/exchange.move:429:54
+    │
+429 │     fun emit_price_update(pool: &LiquidityPool, ctx: &mut TxContext) {
+    │                                                 ---  ^^^^^^^^^^^^^^ Mutable reference is never used mutably, consider switching to an immutable reference '&' instead
+    │                                                 │     
+    │                                                 For parameters, this can be silenced by prefixing the name with an underscore, e.g. '_ctx'
+    │
+    = This warning can be suppressed with '#[allow(unused_mut_parameter)]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+warning[Lint W99010]: unnecessary `entry` on a `public` function
+    ┌─ /Users/john_c_chang/Documents/POC/SpecKit_test/taxcoin-mvp/blockchain/sources/exchange.move:512:12
+    │
+512 │     public entry fun collect_fees(
+    │            ^^^^^ `entry` on `public` functions limits composability as it adds restrictions, e.g. the type of each return value must have `drop`. `entry` on `public` is only meaningful in niche scenarios.
+    │
+    = `public` functions can be called from PTBs. `entry` can be used to allow non-`public` functions to be called from PTBs, but it adds restrictions on the usage of input arguments and on the type of return values. Unless this `public` function interacts with an intricate set of other `entry` functions, the `entry` modifier should be removed.
+    = This warning can be suppressed with '#[allow(lint(public_entry))]' applied to the 'module' or module member ('const', 'fun', or 'struct')
+
+Please report feedback on the linter warnings at https://forums.sui.io
+
+Skipping dependency verification
+Transaction Digest: E4pnF4pgmRYiLjEoWYwRAsHSGQRT7QNBKRCt5tGvLCLt
+╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Transaction Data                                                                                             │
+├──────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ Sender: 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5                                   │
+│ Gas Owner: 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5                                │
+│ Gas Budget: 500000000 MIST                                                                                   │
+│ Gas Price: 1000 MIST                                                                                         │
+│ Gas Payment:                                                                                                 │
+│  ┌──                                                                                                         │
+│  │ ID: 0x79b139a3ba33524017cc962a67eb638098d5fcf2bb4677064c0d388fdaa170e1                                    │
+│  │ Version: 349180832                                                                                        │
+│  │ Digest: 6SqGeVaf1F6CMw5gfGiF67JDi15ZwTVTMhR5gy9tiFhD                                                      │
+│  └──                                                                                                         │
+│                                                                                                              │
+│ Transaction Kind: Programmable                                                                               │
+│ ╭──────────────────────────────────────────────────────────────────────────────────────────────────────────╮ │
+│ │ Input Objects                                                                                            │ │
+│ ├──────────────────────────────────────────────────────────────────────────────────────────────────────────┤ │
+│ │ 0   Pure Arg: Type: address, Value: "0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5" │ │
+│ ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────╯ │
+│ ╭─────────────────────────────────────────────────────────────────────────╮                                  │
+│ │ Commands                                                                │                                  │
+│ ├─────────────────────────────────────────────────────────────────────────┤                                  │
+│ │ 0  Publish:                                                             │                                  │
+│ │  ┌                                                                      │                                  │
+│ │  │ Dependencies:                                                        │                                  │
+│ │  │   0x0000000000000000000000000000000000000000000000000000000000000001 │                                  │
+│ │  │   0x0000000000000000000000000000000000000000000000000000000000000002 │                                  │
+│ │  └                                                                      │                                  │
+│ │                                                                         │                                  │
+│ │ 1  TransferObjects:                                                     │                                  │
+│ │  ┌                                                                      │                                  │
+│ │  │ Arguments:                                                           │                                  │
+│ │  │   Result 0                                                           │                                  │
+│ │  │ Address: Input  0                                                    │                                  │
+│ │  └                                                                      │                                  │
+│ ╰─────────────────────────────────────────────────────────────────────────╯                                  │
+│                                                                                                              │
+│ Signatures:                                                                                                  │
+│    qOuz9pbR86WbfvTJ88BoIB0RteXBSWxXLzuedPM04ITyaMX6t5hTAnzbIHuuL9sOavIyiXORJ8c06096ujPdDQ==                  │
+│                                                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭───────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Transaction Effects                                                                               │
+├───────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ Digest: E4pnF4pgmRYiLjEoWYwRAsHSGQRT7QNBKRCt5tGvLCLt                                              │
+│ Status: Success                                                                                   │
+│ Executed Epoch: 901                                                                               │
+│                                                                                                   │
+│ Created Objects:                                                                                  │
+│  ┌──                                                                                              │
+│  │ ID: 0x085c2ea63fdf994c551d8e4d7bddbc7dadb017908a874f9144a109628aec016d                         │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )  │
+│  │ Version: 349180833                                                                             │
+│  │ Digest: DjXeDkdF3d3mSeGPKTEmnHCykwer8dQXHqBNcL17wJi1                                           │
+│  └──                                                                                              │
+│  ┌──                                                                                              │
+│  │ ID: 0x3f184d13a32edd1b2aab1156de2dcb2d16019dd26168482dff8f046c4092e68f                         │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )  │
+│  │ Version: 349180833                                                                             │
+│  │ Digest: 2DcXjV6vhXeLHp4Hac7wcUeUjg6fxt8EmeYztYQL9h3u                                           │
+│  └──                                                                                              │
+│  ┌──                                                                                              │
+│  │ ID: 0x5aabad149c314d91087becd99539cf2085762a0e85e2c269c1a4499060affa13                         │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )  │
+│  │ Version: 349180833                                                                             │
+│  │ Digest: 3BkrCLGbEYdkDBhw9vJq1cMRNaffHJ183cz6gY7rrP99                                           │
+│  └──                                                                                              │
+│  ┌──                                                                                              │
+│  │ ID: 0x7fd5b5d4414245e625ede4e34e542098dcac46deccabf434d389006f6064cbe9                         │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )  │
+│  │ Version: 349180833                                                                             │
+│  │ Digest: 7HPBEX6T5WVU35MZg6VV7Fb3T6dHcjFiz12cTwKayCbj                                           │
+│  └──                                                                                              │
+│  ┌──                                                                                              │
+│  │ ID: 0x8afe1b6ce3989de4692abf840563bc606f92256ce665cbc5852e56b62ae5e062                         │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )  │
+│  │ Version: 349180833                                                                             │
+│  │ Digest: DnH6rdTpfPWXuqnzjchbNUNxVPSro9iukrbmQRDnRiNM                                           │
+│  └──                                                                                              │
+│  ┌──                                                                                              │
+│  │ ID: 0x94ab59c3a4f11e699b3d11543b4de36d7670712f5f4df5b2f6594eab4488c38d                         │
+│  │ Owner: Immutable                                                                               │
+│  │ Version: 1                                                                                     │
+│  │ Digest: 6K4hcejZ847me8u76zZKt8NjiVfsKSZPQm1CcfdzCbh8                                           │
+│  └──                                                                                              │
+│  ┌──                                                                                              │
+│  │ ID: 0x984b0652aec05c1e5b4afa39df6b04d60c60e35d60de816a92f00363fd928d5d                         │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )  │
+│  │ Version: 349180833                                                                             │
+│  │ Digest: HahAhpk9B77tbUviWgqa7SSoEPKRYx9yM3vocLxuHzSm                                           │
+│  └──                                                                                              │
+│  ┌──                                                                                              │
+│  │ ID: 0xa2f05f6406dfc65f8f4845c819969b5e31b739e383d14af6df2be2248d0b5d0d                         │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )  │
+│  │ Version: 349180833                                                                             │
+│  │ Digest: 81THsSQdNicVdAHTcpFxAb4uU57XvqZT77Mbd3Yin2oR                                           │
+│  └──                                                                                              │
+│  ┌──                                                                                              │
+│  │ ID: 0xb2258b205fd4894e0234b1e875863fa473377fa01007718d1daad1f1c10faf8f                         │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )  │
+│  │ Version: 349180833                                                                             │
+│  │ Digest: 4yJrWEsCR9r7ZrGPutEndvzyKhCzcZLgw1QaGCSJUjgc                                           │
+│  └──                                                                                              │
+│  ┌──                                                                                              │
+│  │ ID: 0xbbd3b1d1cab258f4d415f96e8b18838418cdf8cd53591b037fe92e523d5a6bff                         │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )  │
+│  │ Version: 349180833                                                                             │
+│  │ Digest: E6QDRM2TBM4BZzpARV7Z7BdEAubuDnS1LnRmDCfUHwoX                                           │
+│  └──                                                                                              │
+│  ┌──                                                                                              │
+│  │ ID: 0xd20ea1c2a5a720610e14b531a433e1e1e05c1b44fbb6c30cd89e63245d5a8e54                         │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )  │
+│  │ Version: 349180833                                                                             │
+│  │ Digest: EUKkqetaSoEJCBNJPN53gmDpDXzqDKUtXojgzxfDZiiK                                           │
+│  └──                                                                                              │
+│  ┌──                                                                                              │
+│  │ ID: 0xf6c4354bcd7061516afdc7b4e65812db1b1059f02ac42e988e6d6e458d363ee7                         │
+│  │ Owner: Shared( 349180833 )                                                                     │
+│  │ Version: 349180833                                                                             │
+│  │ Digest: BNtzJk5YphiKZm9DkkefvPgP4L4Q6gytMAa4676WVEuw                                           │
+│  └──                                                                                              │
+│  ┌──                                                                                              │
+│  │ ID: 0xf7d606eaa7145eab953906838edca5639b1e8f08e5786a3fda1ec34df3703ac5                         │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )  │
+│  │ Version: 349180833                                                                             │
+│  │ Digest: 4tT688qJXWmsFELwFtB5tvb1WozSW45er31DTdtuCVUa                                           │
+│  └──                                                                                              │
+│  ┌──                                                                                              │
+│  │ ID: 0xfa03cd9107ad6992aa939488a4cd42850e163d348a207f67fe1889f19027d66a                         │
+│  │ Owner: Immutable                                                                               │
+│  │ Version: 349180833                                                                             │
+│  │ Digest: AqBzgNmoLJLkgWmBh6bDwQZX55Uv4Fi5C7qmJqBLeXDo                                           │
+│  └──                                                                                              │
+│ Mutated Objects:                                                                                  │
+│  ┌──                                                                                              │
+│  │ ID: 0x79b139a3ba33524017cc962a67eb638098d5fcf2bb4677064c0d388fdaa170e1                         │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )  │
+│  │ Version: 349180833                                                                             │
+│  │ Digest: 96xvf5p7g6FWWMoAfJuHtMyrwibYEhhs6vU7N5WfGBn                                            │
+│  └──                                                                                              │
+│ Gas Object:                                                                                       │
+│  ┌──                                                                                              │
+│  │ ID: 0x79b139a3ba33524017cc962a67eb638098d5fcf2bb4677064c0d388fdaa170e1                         │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )  │
+│  │ Version: 349180833                                                                             │
+│  │ Digest: 96xvf5p7g6FWWMoAfJuHtMyrwibYEhhs6vU7N5WfGBn                                            │
+│  └──                                                                                              │
+│ Gas Cost Summary:                                                                                 │
+│    Storage Cost: 144932000 MIST                                                                   │
+│    Computation Cost: 2000000 MIST                                                                 │
+│    Storage Rebate: 978120 MIST                                                                    │
+│    Non-refundable Storage Fee: 9880 MIST                                                          │
+│                                                                                                   │
+│ Transaction Dependencies:                                                                         │
+│    2KEeApqRXkCMTYuN1caxxFNngaGSbBpAFxKwJoGopfZT                                                   │
+│    8cJkjiBDoZQ8tPhoX65T5gJNkazn6fbAcqos9qZqPQr5                                                   │
+│    Dd9pn1zFcSJjinxQewFd2gQdR4XKsHxFioD5MYnwLZQz                                                   │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Transaction Block Events                                                                                                                   │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│  ┌──                                                                                                                                       │
+│  │ EventID: E4pnF4pgmRYiLjEoWYwRAsHSGQRT7QNBKRCt5tGvLCLt:0                                                                                 │
+│  │ PackageID: 0x94ab59c3a4f11e699b3d11543b4de36d7670712f5f4df5b2f6594eab4488c38d                                                           │
+│  │ Transaction Module: rwa_pool                                                                                                            │
+│  │ Sender: 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5                                                              │
+│  │ EventType: 0x2::display::DisplayCreated<0x94ab59c3a4f11e699b3d11543b4de36d7670712f5f4df5b2f6594eab4488c38d::rwa_pool::PoolShare>        │
+│  │ ParsedJSON:                                                                                                                             │
+│  │   ┌────┬────────────────────────────────────────────────────────────────────┐                                                           │
+│  │   │ id │ 0x3f184d13a32edd1b2aab1156de2dcb2d16019dd26168482dff8f046c4092e68f │                                                           │
+│  │   └────┴────────────────────────────────────────────────────────────────────┘                                                           │
+│  └──                                                                                                                                       │
+│  ┌──                                                                                                                                       │
+│  │ EventID: E4pnF4pgmRYiLjEoWYwRAsHSGQRT7QNBKRCt5tGvLCLt:1                                                                                 │
+│  │ PackageID: 0x94ab59c3a4f11e699b3d11543b4de36d7670712f5f4df5b2f6594eab4488c38d                                                           │
+│  │ Transaction Module: rwa_pool                                                                                                            │
+│  │ Sender: 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5                                                              │
+│  │ EventType: 0x2::display::VersionUpdated<0x94ab59c3a4f11e699b3d11543b4de36d7670712f5f4df5b2f6594eab4488c38d::rwa_pool::PoolShare>        │
+│  │ ParsedJSON:                                                                                                                             │
+│  │   ┌─────────┬──────────┬───────┬───────────────────────────────────────────────────────────────────────────┐                            │
+│  │   │ fields  │ contents │ key   │ name                                                                      │                            │
+│  │   │         │          ├───────┼───────────────────────────────────────────────────────────────────────────┤                            │
+│  │   │         │          │ value │ 投資池份額憑證 #{amount}                                                  │                            │
+│  │   │         │          ├───────┼───────────────────────────────────────────────────────────────────────────┤                            │
+│  │   │         │          │ key   │ description                                                               │                            │
+│  │   │         │          ├───────┼───────────────────────────────────────────────────────────────────────────┤                            │
+│  │   │         │          │ value │ RWA 投資池份額憑證，可獲得投資收益                                        │                            │
+│  │   │         │          ├───────┼───────────────────────────────────────────────────────────────────────────┤                            │
+│  │   │         │          │ key   │ image_url                                                                 │                            │
+│  │   │         │          ├───────┼───────────────────────────────────────────────────────────────────────────┤                            │
+│  │   │         │          │ value │ https://taxcoin-mvp.transferhelper.com.tw/nft/pool-share-{is_settled}.svg │                            │
+│  │   │         │          ├───────┼───────────────────────────────────────────────────────────────────────────┤                            │
+│  │   │         │          │ key   │ pool_id                                                                   │                            │
+│  │   │         │          ├───────┼───────────────────────────────────────────────────────────────────────────┤                            │
+│  │   │         │          │ value │ {pool_id}                                                                 │                            │
+│  │   │         │          ├───────┼───────────────────────────────────────────────────────────────────────────┤                            │
+│  │   │         │          │ key   │ amount                                                                    │                            │
+│  │   │         │          ├───────┼───────────────────────────────────────────────────────────────────────────┤                            │
+│  │   │         │          │ value │ {amount}                                                                  │                            │
+│  │   │         │          ├───────┼───────────────────────────────────────────────────────────────────────────┤                            │
+│  │   │         │          │ key   │ expected_yield                                                            │                            │
+│  │   │         │          ├───────┼───────────────────────────────────────────────────────────────────────────┤                            │
+│  │   │         │          │ value │ {expected_yield}                                                          │                            │
+│  │   │         │          ├───────┼───────────────────────────────────────────────────────────────────────────┤                            │
+│  │   │         │          │ key   │ is_settled                                                                │                            │
+│  │   │         │          ├───────┼───────────────────────────────────────────────────────────────────────────┤                            │
+│  │   │         │          │ value │ {is_settled}                                                              │                            │
+│  │   │         │          ├───────┼───────────────────────────────────────────────────────────────────────────┤                            │
+│  │   │         │          │ key   │ actual_yield                                                              │                            │
+│  │   │         │          ├───────┼───────────────────────────────────────────────────────────────────────────┤                            │
+│  │   │         │          │ value │ {actual_yield}                                                            │                            │
+│  │   ├─────────┼──────────┴───────┴───────────────────────────────────────────────────────────────────────────┤                            │
+│  │   │ id      │ 0x3f184d13a32edd1b2aab1156de2dcb2d16019dd26168482dff8f046c4092e68f                           │                            │
+│  │   ├─────────┼──────────────────────────────────────────────────────────────────────────────────────────────┤                            │
+│  │   │ version │ 1                                                                                            │                            │
+│  │   └─────────┴──────────────────────────────────────────────────────────────────────────────────────────────┘                            │
+│  └──                                                                                                                                       │
+│  ┌──                                                                                                                                       │
+│  │ EventID: E4pnF4pgmRYiLjEoWYwRAsHSGQRT7QNBKRCt5tGvLCLt:2                                                                                 │
+│  │ PackageID: 0x94ab59c3a4f11e699b3d11543b4de36d7670712f5f4df5b2f6594eab4488c38d                                                           │
+│  │ Transaction Module: tax_claim_nft                                                                                                       │
+│  │ Sender: 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5                                                              │
+│  │ EventType: 0x2::display::DisplayCreated<0x94ab59c3a4f11e699b3d11543b4de36d7670712f5f4df5b2f6594eab4488c38d::tax_claim_nft::TaxClaimNFT> │
+│  │ ParsedJSON:                                                                                                                             │
+│  │   ┌────┬────────────────────────────────────────────────────────────────────┐                                                           │
+│  │   │ id │ 0x8afe1b6ce3989de4692abf840563bc606f92256ce665cbc5852e56b62ae5e062 │                                                           │
+│  │   └────┴────────────────────────────────────────────────────────────────────┘                                                           │
+│  └──                                                                                                                                       │
+│  ┌──                                                                                                                                       │
+│  │ EventID: E4pnF4pgmRYiLjEoWYwRAsHSGQRT7QNBKRCt5tGvLCLt:3                                                                                 │
+│  │ PackageID: 0x94ab59c3a4f11e699b3d11543b4de36d7670712f5f4df5b2f6594eab4488c38d                                                           │
+│  │ Transaction Module: tax_claim_nft                                                                                                       │
+│  │ Sender: 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5                                                              │
+│  │ EventType: 0x2::display::VersionUpdated<0x94ab59c3a4f11e699b3d11543b4de36d7670712f5f4df5b2f6594eab4488c38d::tax_claim_nft::TaxClaimNFT> │
+│  │ ParsedJSON:                                                                                                                             │
+│  │   ┌─────────┬──────────┬───────┬──────────────────────────────────────────────────────────────────────┐                                 │
+│  │   │ fields  │ contents │ key   │ name                                                                 │                                 │
+│  │   │         │          ├───────┼──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │         │          │ value │ 退稅證明 NFT #{claim_id} 🔒                                          │                                 │
+│  │   │         │          ├───────┼──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │         │          │ key   │ description                                                          │                                 │
+│  │   │         │          ├───────┼──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │         │          │ value │ TaxCoin 退稅申請證明（靈魂綁定，不可轉讓），可追蹤退稅申請狀態       │                                 │
+│  │   │         │          ├───────┼──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │         │          │ key   │ image_url                                                            │                                 │
+│  │   │         │          ├───────┼──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │         │          │ value │ https://taxcoin-mvp.transferhelper.com.tw/nft/tax-claim-{status}.svg │                                 │
+│  │   │         │          ├───────┼──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │         │          │ key   │ claim_id                                                             │                                 │
+│  │   │         │          ├───────┼──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │         │          │ value │ {claim_id}                                                           │                                 │
+│  │   │         │          ├───────┼──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │         │          │ key   │ did                                                                  │                                 │
+│  │   │         │          ├───────┼──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │         │          │ value │ {did}                                                                │                                 │
+│  │   │         │          ├───────┼──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │         │          │ key   │ original_owner                                                       │                                 │
+│  │   │         │          ├───────┼──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │         │          │ value │ {original_owner}                                                     │                                 │
+│  │   │         │          ├───────┼──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │         │          │ key   │ is_soulbound                                                         │                                 │
+│  │   │         │          ├───────┼──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │         │          │ value │ {is_soulbound}                                                       │                                 │
+│  │   │         │          ├───────┼──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │         │          │ key   │ original_amount                                                      │                                 │
+│  │   │         │          ├───────┼──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │         │          │ value │ {original_amount}                                                    │                                 │
+│  │   │         │          ├───────┼──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │         │          │ key   │ tax_amount                                                           │                                 │
+│  │   │         │          ├───────┼──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │         │          │ value │ {tax_amount}                                                         │                                 │
+│  │   │         │          ├───────┼──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │         │          │ key   │ taxcoin_amount                                                       │                                 │
+│  │   │         │          ├───────┼──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │         │          │ value │ {taxcoin_amount}                                                     │                                 │
+│  │   │         │          ├───────┼──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │         │          │ key   │ merchant_name                                                        │                                 │
+│  │   │         │          ├───────┼──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │         │          │ value │ {merchant_name}                                                      │                                 │
+│  │   │         │          ├───────┼──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │         │          │ key   │ status                                                               │                                 │
+│  │   │         │          ├───────┼──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │         │          │ value │ {status}                                                             │                                 │
+│  │   │         │          ├───────┼──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │         │          │ key   │ purchase_date                                                        │                                 │
+│  │   │         │          ├───────┼──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │         │          │ value │ {purchase_date}                                                      │                                 │
+│  │   ├─────────┼──────────┴───────┴──────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │ id      │ 0x8afe1b6ce3989de4692abf840563bc606f92256ce665cbc5852e56b62ae5e062                      │                                 │
+│  │   ├─────────┼─────────────────────────────────────────────────────────────────────────────────────────┤                                 │
+│  │   │ version │ 1                                                                                       │                                 │
+│  │   └─────────┴─────────────────────────────────────────────────────────────────────────────────────────┘                                 │
+│  └──                                                                                                                                       │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Object Changes                                                                                                                        │
+├───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ Created Objects:                                                                                                                      │
+│  ┌──                                                                                                                                  │
+│  │ ObjectID: 0x085c2ea63fdf994c551d8e4d7bddbc7dadb017908a874f9144a109628aec016d                                                       │
+│  │ Sender: 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5                                                         │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )                                      │
+│  │ ObjectType: 0x94ab59c3a4f11e699b3d11543b4de36d7670712f5f4df5b2f6594eab4488c38d::taxcoin::AdminCap                                  │
+│  │ Version: 349180833                                                                                                                 │
+│  │ Digest: DjXeDkdF3d3mSeGPKTEmnHCykwer8dQXHqBNcL17wJi1                                                                               │
+│  └──                                                                                                                                  │
+│  ┌──                                                                                                                                  │
+│  │ ObjectID: 0x3f184d13a32edd1b2aab1156de2dcb2d16019dd26168482dff8f046c4092e68f                                                       │
+│  │ Sender: 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5                                                         │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )                                      │
+│  │ ObjectType: 0x2::display::Display<0x94ab59c3a4f11e699b3d11543b4de36d7670712f5f4df5b2f6594eab4488c38d::rwa_pool::PoolShare>         │
+│  │ Version: 349180833                                                                                                                 │
+│  │ Digest: 2DcXjV6vhXeLHp4Hac7wcUeUjg6fxt8EmeYztYQL9h3u                                                                               │
+│  └──                                                                                                                                  │
+│  ┌──                                                                                                                                  │
+│  │ ObjectID: 0x5aabad149c314d91087becd99539cf2085762a0e85e2c269c1a4499060affa13                                                       │
+│  │ Sender: 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5                                                         │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )                                      │
+│  │ ObjectType: 0x2::package::Publisher                                                                                                │
+│  │ Version: 349180833                                                                                                                 │
+│  │ Digest: 3BkrCLGbEYdkDBhw9vJq1cMRNaffHJ183cz6gY7rrP99                                                                               │
+│  └──                                                                                                                                  │
+│  ┌──                                                                                                                                  │
+│  │ ObjectID: 0x7fd5b5d4414245e625ede4e34e542098dcac46deccabf434d389006f6064cbe9                                                       │
+│  │ Sender: 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5                                                         │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )                                      │
+│  │ ObjectType: 0x94ab59c3a4f11e699b3d11543b4de36d7670712f5f4df5b2f6594eab4488c38d::tax_claim_nft::AdminCap                            │
+│  │ Version: 349180833                                                                                                                 │
+│  │ Digest: 7HPBEX6T5WVU35MZg6VV7Fb3T6dHcjFiz12cTwKayCbj                                                                               │
+│  └──                                                                                                                                  │
+│  ┌──                                                                                                                                  │
+│  │ ObjectID: 0x8afe1b6ce3989de4692abf840563bc606f92256ce665cbc5852e56b62ae5e062                                                       │
+│  │ Sender: 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5                                                         │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )                                      │
+│  │ ObjectType: 0x2::display::Display<0x94ab59c3a4f11e699b3d11543b4de36d7670712f5f4df5b2f6594eab4488c38d::tax_claim_nft::TaxClaimNFT>  │
+│  │ Version: 349180833                                                                                                                 │
+│  │ Digest: DnH6rdTpfPWXuqnzjchbNUNxVPSro9iukrbmQRDnRiNM                                                                               │
+│  └──                                                                                                                                  │
+│  ┌──                                                                                                                                  │
+│  │ ObjectID: 0x984b0652aec05c1e5b4afa39df6b04d60c60e35d60de816a92f00363fd928d5d                                                       │
+│  │ Sender: 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5                                                         │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )                                      │
+│  │ ObjectType: 0x2::coin::TreasuryCap<0x94ab59c3a4f11e699b3d11543b4de36d7670712f5f4df5b2f6594eab4488c38d::taxcoin::TAXCOIN>           │
+│  │ Version: 349180833                                                                                                                 │
+│  │ Digest: HahAhpk9B77tbUviWgqa7SSoEPKRYx9yM3vocLxuHzSm                                                                               │
+│  └──                                                                                                                                  │
+│  ┌──                                                                                                                                  │
+│  │ ObjectID: 0xa2f05f6406dfc65f8f4845c819969b5e31b739e383d14af6df2be2248d0b5d0d                                                       │
+│  │ Sender: 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5                                                         │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )                                      │
+│  │ ObjectType: 0x2::package::UpgradeCap                                                                                               │
+│  │ Version: 349180833                                                                                                                 │
+│  │ Digest: 81THsSQdNicVdAHTcpFxAb4uU57XvqZT77Mbd3Yin2oR                                                                               │
+│  └──                                                                                                                                  │
+│  ┌──                                                                                                                                  │
+│  │ ObjectID: 0xb2258b205fd4894e0234b1e875863fa473377fa01007718d1daad1f1c10faf8f                                                       │
+│  │ Sender: 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5                                                         │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )                                      │
+│  │ ObjectType: 0x94ab59c3a4f11e699b3d11543b4de36d7670712f5f4df5b2f6594eab4488c38d::exchange::AdminCap                                 │
+│  │ Version: 349180833                                                                                                                 │
+│  │ Digest: 4yJrWEsCR9r7ZrGPutEndvzyKhCzcZLgw1QaGCSJUjgc                                                                               │
+│  └──                                                                                                                                  │
+│  ┌──                                                                                                                                  │
+│  │ ObjectID: 0xbbd3b1d1cab258f4d415f96e8b18838418cdf8cd53591b037fe92e523d5a6bff                                                       │
+│  │ Sender: 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5                                                         │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )                                      │
+│  │ ObjectType: 0x94ab59c3a4f11e699b3d11543b4de36d7670712f5f4df5b2f6594eab4488c38d::rwa_pool::AdminCap                                 │
+│  │ Version: 349180833                                                                                                                 │
+│  │ Digest: E6QDRM2TBM4BZzpARV7Z7BdEAubuDnS1LnRmDCfUHwoX                                                                               │
+│  └──                                                                                                                                  │
+│  ┌──                                                                                                                                  │
+│  │ ObjectID: 0xd20ea1c2a5a720610e14b531a433e1e1e05c1b44fbb6c30cd89e63245d5a8e54                                                       │
+│  │ Sender: 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5                                                         │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )                                      │
+│  │ ObjectType: 0x94ab59c3a4f11e699b3d11543b4de36d7670712f5f4df5b2f6594eab4488c38d::rwa_token::AdminCap                                │
+│  │ Version: 349180833                                                                                                                 │
+│  │ Digest: EUKkqetaSoEJCBNJPN53gmDpDXzqDKUtXojgzxfDZiiK                                                                               │
+│  └──                                                                                                                                  │
+│  ┌──                                                                                                                                  │
+│  │ ObjectID: 0xf6c4354bcd7061516afdc7b4e65812db1b1059f02ac42e988e6d6e458d363ee7                                                       │
+│  │ Sender: 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5                                                         │
+│  │ Owner: Shared( 349180833 )                                                                                                         │
+│  │ ObjectType: 0x94ab59c3a4f11e699b3d11543b4de36d7670712f5f4df5b2f6594eab4488c38d::exchange::LiquidityPool                            │
+│  │ Version: 349180833                                                                                                                 │
+│  │ Digest: BNtzJk5YphiKZm9DkkefvPgP4L4Q6gytMAa4676WVEuw                                                                               │
+│  └──                                                                                                                                  │
+│  ┌──                                                                                                                                  │
+│  │ ObjectID: 0xf7d606eaa7145eab953906838edca5639b1e8f08e5786a3fda1ec34df3703ac5                                                       │
+│  │ Sender: 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5                                                         │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )                                      │
+│  │ ObjectType: 0x2::package::Publisher                                                                                                │
+│  │ Version: 349180833                                                                                                                 │
+│  │ Digest: 4tT688qJXWmsFELwFtB5tvb1WozSW45er31DTdtuCVUa                                                                               │
+│  └──                                                                                                                                  │
+│  ┌──                                                                                                                                  │
+│  │ ObjectID: 0xfa03cd9107ad6992aa939488a4cd42850e163d348a207f67fe1889f19027d66a                                                       │
+│  │ Sender: 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5                                                         │
+│  │ Owner: Immutable                                                                                                                   │
+│  │ ObjectType: 0x2::coin::CoinMetadata<0x94ab59c3a4f11e699b3d11543b4de36d7670712f5f4df5b2f6594eab4488c38d::taxcoin::TAXCOIN>          │
+│  │ Version: 349180833                                                                                                                 │
+│  │ Digest: AqBzgNmoLJLkgWmBh6bDwQZX55Uv4Fi5C7qmJqBLeXDo                                                                               │
+│  └──                                                                                                                                  │
+│ Mutated Objects:                                                                                                                      │
+│  ┌──                                                                                                                                  │
+│  │ ObjectID: 0x79b139a3ba33524017cc962a67eb638098d5fcf2bb4677064c0d388fdaa170e1                                                       │
+│  │ Sender: 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5                                                         │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )                                      │
+│  │ ObjectType: 0x2::coin::Coin<0x2::sui::SUI>                                                                                         │
+│  │ Version: 349180833                                                                                                                 │
+│  │ Digest: 96xvf5p7g6FWWMoAfJuHtMyrwibYEhhs6vU7N5WfGBn                                                                                │
+│  └──                                                                                                                                  │
+│ Published Objects:                                                                                                                    │
+│  ┌──                                                                                                                                  │
+│  │ PackageID: 0x94ab59c3a4f11e699b3d11543b4de36d7670712f5f4df5b2f6594eab4488c38d                                                      │
+│  │ Version: 1                                                                                                                         │
+│  │ Digest: 6K4hcejZ847me8u76zZKt8NjiVfsKSZPQm1CcfdzCbh8                                                                               │
+│  │ Modules: exchange, rwa_pool, rwa_token, tax_claim_nft, taxcoin                                                                     │
+│  └──                                                                                                                                  │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭───────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Balance Changes                                                                                   │
+├───────────────────────────────────────────────────────────────────────────────────────────────────┤
+│  ┌──                                                                                              │
+│  │ Owner: Account Address ( 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 )  │
+│  │ CoinType: 0x2::sui::SUI                                                                        │
+│  │ Amount: -145953880                                                                             │
+│  └──                                                                                              │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────╯

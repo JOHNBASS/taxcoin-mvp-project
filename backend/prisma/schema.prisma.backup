@@ -1,0 +1,239 @@
+// Prisma Schema for TAXCOIN MVP
+// 參考: .specify/features/taxcoin-mvp-platform/data-model.md
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ===== 列舉類型 =====
+
+enum UserRole {
+  TOURIST  // 旅客
+  INVESTOR // 投資者
+  ADMIN    // 管理員
+}
+
+enum KycStatus {
+  PENDING  // 待驗證
+  VERIFIED // 已驗證
+  REJECTED // 已拒絕
+}
+
+enum ClaimStatus {
+  PENDING   // 待審核
+  APPROVED  // 已核准
+  REJECTED  // 已拒絕
+  DISBURSED // 已發放
+}
+
+enum PoolStatus {
+  募集中 // 募集中
+  已滿額 // 已滿額
+  已到期 // 已到期
+  已兌現 // 已兌現
+}
+
+// ===== 使用者管理 =====
+
+model User {
+  id            String      @id @default(uuid())
+  did           String      @unique // 去中心化身份識別碼
+  role          UserRole
+  kycStatus     KycStatus   @default(PENDING)
+  walletAddress String?     @unique
+  email         String?     @unique
+  phoneNumber   String?
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+
+  // 關聯
+  kycRecords    KycRecord[]
+  taxClaims     TaxClaim[]
+  investments   Investment[]
+  notifications Notification[]
+
+  @@map("users")
+  @@index([walletAddress])
+  @@index([email])
+}
+
+model KycRecord {
+  id               String    @id @default(uuid())
+  userId           String
+  passportNumber   String
+  passportImageUrl String
+  faceImageUrl     String
+  nationality      String
+  dateOfBirth      DateTime
+  verifiedAt       DateTime?
+  rejectedReason   String?
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+
+  // 關聯
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("kyc_records")
+  @@index([userId])
+  @@index([passportNumber])
+}
+
+// ===== 退稅申請 =====
+
+model TaxClaim {
+  id              String       @id @default(uuid())
+  userId          String
+  receiptImages   String[] // 收據圖片 URLs
+  ocrResult       Json? // OCR 解析結果
+  originalAmount  Decimal      @db.Decimal(10, 2) // 原始金額
+  taxAmount       Decimal      @db.Decimal(10, 2) // 退稅金額
+  taxCoinAmount   Decimal      @db.Decimal(10, 2) // TaxCoin 數量
+  status          ClaimStatus  @default(PENDING)
+  nftTokenId      String?      @unique // NFT Token ID
+  reviewedBy      String? // 審核者 ID
+  reviewedAt      DateTime?
+  rejectedReason  String?
+  disbursedAt     DateTime?
+  createdAt       DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
+
+  // 關聯
+  user        User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  nft         TaxClaimNft?
+  rwaPoolItem RwaPoolItem?
+
+  @@map("tax_claims")
+  @@index([userId])
+  @@index([status])
+  @@index([createdAt])
+}
+
+model TaxClaimNft {
+  id          String   @id @default(uuid())
+  taxClaimId  String   @unique
+  nftTokenId  String   @unique // Sui NFT Object ID
+  metadataUri String
+  mintedAt    DateTime @default(now())
+
+  // 關聯
+  taxClaim TaxClaim @relation(fields: [taxClaimId], references: [id], onDelete: Cascade)
+
+  @@map("tax_claim_nfts")
+  @@index([nftTokenId])
+}
+
+// ===== RWA 投資池 =====
+
+model RwaPool {
+  id                 String     @id @default(uuid())
+  poolName           String
+  targetAmount       Decimal    @db.Decimal(12, 2) // 目標募集金額
+  currentAmount      Decimal    @db.Decimal(12, 2) @default(0) // 當前募集金額
+  yieldRate          Decimal    @db.Decimal(5, 2) // 預期收益率 (%)
+  maturityDate       DateTime // 到期日
+  status             PoolStatus @default(募集中)
+  poolContractId     String?    @unique // Sui Pool Contract Object ID
+  totalTokenSupply   Decimal?   @db.Decimal(18, 8) // 代幣總供應量
+  createdAt          DateTime   @default(now())
+  updatedAt          DateTime   @updatedAt
+
+  // 關聯
+  items       RwaPoolItem[]
+  investments Investment[]
+
+  @@map("rwa_pools")
+  @@index([status])
+  @@index([maturityDate])
+}
+
+model RwaPoolItem {
+  id         String   @id @default(uuid())
+  poolId     String
+  taxClaimId String   @unique
+  addedAt    DateTime @default(now())
+
+  // 關聯
+  pool     RwaPool  @relation(fields: [poolId], references: [id], onDelete: Cascade)
+  taxClaim TaxClaim @relation(fields: [taxClaimId], references: [id], onDelete: Cascade)
+
+  @@map("rwa_pool_items")
+  @@index([poolId])
+}
+
+// ===== 投資記錄 =====
+
+model Investment {
+  id                String    @id @default(uuid())
+  userId            String
+  poolId            String
+  investmentAmount  Decimal   @db.Decimal(12, 2) // 投資金額
+  tokenAmount       Decimal   @db.Decimal(18, 8) // 獲得的代幣數量
+  yieldAmount       Decimal?  @db.Decimal(12, 2) // 收益金額
+  redeemedAt        DateTime?
+  transactionHash   String?   @unique // Sui Transaction Hash
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+
+  // 關聯
+  user User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  pool RwaPool @relation(fields: [poolId], references: [id], onDelete: Cascade)
+
+  @@map("investments")
+  @@index([userId])
+  @@index([poolId])
+  @@index([createdAt])
+}
+
+// ===== 通知系統 =====
+
+model Notification {
+  id        String   @id @default(uuid())
+  userId    String
+  title     String
+  message   String
+  type      String // 通知類型: TAX_APPROVED, INVESTMENT_SUCCESS, POOL_MATURED, etc.
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  // 關聯
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("notifications")
+  @@index([userId, isRead])
+  @@index([createdAt])
+}
+
+// ===== 系統設定 =====
+
+model SystemConfig {
+  id        String   @id @default(uuid())
+  key       String   @unique // 配置鍵名
+  value     String // 配置值 (JSON string)
+  updatedAt DateTime @updatedAt
+
+  @@map("system_config")
+}
+
+// ===== 審計日誌 =====
+
+model AuditLog {
+  id         String   @id @default(uuid())
+  userId     String? // 操作者 ID (可為系統)
+  action     String // 操作類型
+  entityType String // 實體類型
+  entityId   String // 實體 ID
+  changes    Json? // 變更內容
+  ipAddress  String?
+  userAgent  String?
+  createdAt  DateTime @default(now())
+
+  @@map("audit_logs")
+  @@index([userId])
+  @@index([entityType, entityId])
+  @@index([createdAt])
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"ocr.service.d.ts","sourceRoot":"","sources":["../../src/services/ocr.service.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,SAAS,EAAE,MAAM,kBAAkB,CAAC;AAS7C,eAAO,MAAM,kBAAkB,GAC7B,WAAW,MAAM,KAChB,OAAO,CAAC,SAAS,CAmCnB,CAAC;AA0JF,eAAO,MAAM,uBAAuB,GAClC,YAAY,MAAM,EAAE,KACnB,OAAO,CAAC,SAAS,EAAE,CAQrB,CAAC;AAOF,eAAO,MAAM,iBAAiB,GAAI,WAAW,SAAS,KAAG,OAoCxD,CAAC"}

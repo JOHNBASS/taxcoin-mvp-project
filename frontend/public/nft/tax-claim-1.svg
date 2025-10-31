@@ -1,0 +1,93 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="approvedGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#34D399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6EE7B7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="glowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </linearGradient>
+    <radialGradient id="shineGradient">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="400" height="400" fill="url(#approvedGradient)"/>
+
+  <!-- 裝飾光芒 -->
+  <g opacity="0.2">
+    <path d="M 80,60 L 85,70 L 95,72 L 87,80 L 89,90 L 80,85 L 71,90 L 73,80 L 65,72 L 75,70 Z" fill="#ffffff"/>
+    <path d="M 330,90 L 333,97 L 340,98 L 335,103 L 336,110 L 330,107 L 324,110 L 325,103 L 320,98 L 327,97 Z" fill="#ffffff"/>
+  </g>
+
+  <!-- 光芒效果 -->
+  <circle cx="200" cy="180" r="90" fill="url(#shineGradient)" opacity="0.3"/>
+
+  <!-- 主要內容區域 -->
+  <rect x="40" y="60" width="320" height="280" rx="20" fill="#ffffff" opacity="0.95"/>
+
+  <!-- 標題區域 -->
+  <rect x="40" y="60" width="320" height="60" rx="20" fill="url(#glowGradient)"/>
+
+  <!-- 圖標 - 已核准對勾 -->
+  <g transform="translate(200, 180)">
+    <!-- 圓形背景 -->
+    <circle cx="0" cy="0" r="50" fill="#10B981" opacity="0.2"/>
+    <circle cx="0" cy="0" r="42" fill="#10B981" opacity="0.3"/>
+
+    <!-- 對勾符號 -->
+    <path d="M -18,0 L -8,18 L 22,-18" stroke="#10B981" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <animate attributeName="stroke-dasharray" from="0,100" to="100,0" dur="0.6s" fill="freeze"/>
+    </path>
+
+    <!-- 外圈裝飾 -->
+    <circle cx="0" cy="0" r="48" fill="none" stroke="#10B981" stroke-width="3" opacity="0.5"/>
+  </g>
+
+  <!-- 標題文字 -->
+  <text x="200" y="95" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1F2937" text-anchor="middle">
+    退稅證明 NFT
+  </text>
+
+  <!-- 狀態標籤 -->
+  <rect x="135" y="255" width="130" height="32" rx="16" fill="#10B981"/>
+  <text x="200" y="277" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    已核准
+  </text>
+
+  <!-- 說明文字 -->
+  <text x="200" y="310" font-family="Arial, sans-serif" font-size="13" fill="#059669" text-anchor="middle">
+    您的退稅申請已通過審核
+  </text>
+
+  <!-- 裝飾線條 -->
+  <line x1="80" y1="140" x2="320" y2="140" stroke="#E5E7EB" stroke-width="1"/>
+
+  <!-- 認證標記 -->
+  <g transform="translate(340, 80)">
+    <circle r="20" fill="#10B981"/>
+    <path d="M -6,0 L -2,6 L 8,-6" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- 底部資訊 -->
+  <text x="200" y="375" font-family="Arial, sans-serif" font-size="11" fill="#9CA3AF" text-anchor="middle">
+    TaxCoin • Tax Claim Certificate
+  </text>
+
+  <!-- 慶祝星星 -->
+  <g opacity="0.6">
+    <circle cx="120" cy="150" r="2" fill="#10B981">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="160" r="2" fill="#34D399">
+      <animate attributeName="opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="200" r="2" fill="#10B981">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

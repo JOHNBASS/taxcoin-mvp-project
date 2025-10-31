@@ -1,0 +1,11 @@
+node_modules
+dist
+npm-debug.log
+# .env - 需要在構建時讀取，不應該被排除
+# .env.*
+*.log
+.git
+.gitignore
+README.md
+.vscode
+.idea

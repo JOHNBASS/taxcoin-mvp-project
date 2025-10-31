@@ -1,0 +1,159 @@
+╔══════════════════════════════════════════════════════════╗
+║          Sui 智能合約部署資訊                            ║
+╚══════════════════════════════════════════════════════════╝
+
+部署時間: 2025-10-20 18:30:00
+錢包地址: 0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5
+網路: Testnet
+交易摘要: CD34PJdNm1VeP3XmCtSc5PijP31sUku9YNVqs4KyPVEZ
+
+─────────────────────────────────────────────────────────
+
+📦 Package ID:
+0x4e5f221285adee3e6d07c347f72601953d90e4fae1418f8b02ac8a9fd5f35c5c
+
+─────────────────────────────────────────────────────────
+
+🔑 重要的 Object IDs:
+
+1. TreasuryCap<TAXCOIN> (用於鑄造 TaxCoin)
+   0xb69b9aa69abf0d409c76bb05c264fa09570e2875e0ee10fa8aa455c21700b37c
+
+2. AdminCap (taxcoin module)
+   0x85d13d96db3071f3a489a6ad6ed7fd3eb7f8073b3a0e5ddd48517166eeba5c64
+
+3. AdminCap (tax_claim_nft module)
+   0x0dcc84707ca9f14ceda0e9bdc5af708724ee4295b89cec4d34516ee7743d960b
+
+4. AdminCap (rwa_token module)
+   0xd527e1c18d516cb91c1f255f59158e7a324ba1e9669bff260ddabea0d1ef9fae
+
+5. AdminCap (rwa_pool module)
+   0xcb1e8f90858bfea381b7f00ab22658477f9bf4a09e441d666048fa2bd4614a67
+
+6. UpgradeCap (Package 升級權限)
+   0x8024db8f82e27204321113d1255395ce7a6cb8d812c33af2144fcbf4c187fb1d
+
+─────────────────────────────────────────────────────────
+
+📝 更新 backend/.env 檔案:
+
+請將以下內容複製到 backend/.env 檔案:
+
+# Sui 區塊鏈配置
+SUI_NETWORK=testnet
+SUI_RPC_URL=https://fullnode.testnet.sui.io:443
+
+# 智能合約 Package ID
+SUI_TAXCOIN_PACKAGE_ID=0x4e5f221285adee3e6d07c347f72601953d90e4fae1418f8b02ac8a9fd5f35c5c
+
+# TaxCoin 相關
+SUI_TAXCOIN_TREASURY_CAP=0xb69b9aa69abf0d409c76bb05c264fa09570e2875e0ee10fa8aa455c21700b37c
+SUI_TAXCOIN_ADMIN_CAP=0x85d13d96db3071f3a489a6ad6ed7fd3eb7f8073b3a0e5ddd48517166eeba5c64
+
+# 其他模組的 AdminCap
+SUI_TAX_CLAIM_ADMIN_CAP=0x0dcc84707ca9f14ceda0e9bdc5af708724ee4295b89cec4d34516ee7743d960b
+SUI_RWA_TOKEN_ADMIN_CAP=0xd527e1c18d516cb91c1f255f59158e7a324ba1e9669bff260ddabea0d1ef9fae
+SUI_RWA_POOL_ADMIN_CAP=0xcb1e8f90858bfea381b7f00ab22658477f9bf4a09e441d666048fa2bd4614a67
+
+# Package 升級權限
+SUI_UPGRADE_CAP=0x8024db8f82e27204321113d1255395ce7a6cb8d812c33af2144fcbf4c187fb1d
+
+# 私鑰和錢包地址 (請從你的 keystore 獲取私鑰)
+SUI_PRIVATE_KEY=你的私鑰
+SUI_WALLET_ADDRESS=0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5
+
+─────────────────────────────────────────────────────────
+
+🔍 查看部署詳情:
+
+Sui Explorer (Package):
+https://suiexplorer.com/object/0x4e5f221285adee3e6d07c347f72601953d90e4fae1418f8b02ac8a9fd5f35c5c?network=testnet
+
+查看你的錢包:
+https://suiexplorer.com/address/0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5?network=testnet
+
+查看部署交易:
+https://suiexplorer.com/txblock/CD34PJdNm1VeP3XmCtSc5PijP31sUku9YNVqs4KyPVEZ?network=testnet
+
+─────────────────────────────────────────────────────────
+
+🧪 測試合約功能:
+
+1. 鑄造 TaxCoin (100 TaxCoin = 100 * 10^8)
+
+sui client call \
+  --package 0x4e5f221285adee3e6d07c347f72601953d90e4fae1418f8b02ac8a9fd5f35c5c \
+  --module taxcoin \
+  --function mint \
+  --args 0xb69b9aa69abf0d409c76bb05c264fa09570e2875e0ee10fa8aa455c21700b37c \
+         0x85d13d96db3071f3a489a6ad6ed7fd3eb7f8073b3a0e5ddd48517166eeba5c64 \
+         10000000000 \
+         0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 \
+         "test-claim-001" \
+  --gas-budget 10000000
+
+2. 創建退稅申請 NFT
+
+sui client call \
+  --package 0x4e5f221285adee3e6d07c347f72601953d90e4fae1418f8b02ac8a9fd5f35c5c \
+  --module tax_claim_nft \
+  --function mint \
+  --args 0x0dcc84707ca9f14ceda0e9bdc5af708724ee4295b89cec4d34516ee7743d960b \
+         "claim-001" \
+         "did:sui:0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5" \
+         20000 \
+         1000 \
+         "Test Store" \
+         $(date +%s)000 \
+         "ipfs://test" \
+         0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5 \
+  --gas-budget 10000000
+
+3. 創建 RWA 投資池
+
+sui client call \
+  --package 0x4e5f221285adee3e6d07c347f72601953d90e4fae1418f8b02ac8a9fd5f35c5c \
+  --module rwa_pool \
+  --function create_pool \
+  --args 0xcb1e8f90858bfea381b7f00ab22658477f9bf4a09e441d666048fa2bd4614a67 \
+         "Test Pool" \
+         "Test pool description" \
+         1000000000000 \
+         500 \
+         3 \
+         $(date -v+1y +%s)000 \
+         '["claim-001"]' \
+  --gas-budget 10000000
+
+─────────────────────────────────────────────────────────
+
+📚 下一步:
+
+1. ✅ 更新 backend/.env 檔案 (請複製上面的環境變數)
+2. ✅ 測試合約功能 (使用上面的測試指令)
+3. ✅ 整合到後端 API
+4. ✅ 部署前端應用
+5. ✅ 執行端到端測試
+
+詳細說明請參考: blockchain/DEPLOYMENT_GUIDE.md
+
+─────────────────────────────────────────────────────────
+
+💡 重要提示:
+
+⚠️ 妥善保管所有 AdminCap Object IDs
+⚠️ 不要將私鑰提交到 Git
+⚠️ 使用環境變數管理敏感資訊
+⚠️ UpgradeCap 用於未來升級合約,請妥善保管
+
+─────────────────────────────────────────────────────────
+
+✅ 部署成功!
+
+所有智能合約已成功部署到 Sui Testnet。
+現在可以開始整合到你的應用程式中。
+
+如有問題,請參考:
+- blockchain/DEPLOYMENT_GUIDE.md
+- blockchain/TROUBLESHOOTING.md
