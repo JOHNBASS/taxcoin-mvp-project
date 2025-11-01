@@ -367,6 +367,14 @@ docker compose logs taxcoin-backend --tail=50
 Faucet URL: https://faucet.celo.org/alfajores 
 你的錢包地址： 0xc98200a3B2d20Df6Fd50090DC9f22770fb56F13f
 
+合約地址： 0x19b5Fdf9A5b54c6a201DF241110a9C3EAFFDD381
+部署交易： 0x4ce10cd92d34d052abc0506f5ee58de113a6fb8fc8a9130fe21ba50f9aa4f3d6
+區塊號： 8706898
+Chain ID： 11142220 (Celo Sepolia)
+Celoscan： https://sepolia.celoscan.io/address/0x19b5Fdf9A5b54c6a201DF241110a9C3EAFFDD381
+
+
+
 https://testnet.suivision.xyz/account/0xaa86742a187dc784346e0a471b14bd66df47ecfecb2fc6f47242036582039ae4
 
 
