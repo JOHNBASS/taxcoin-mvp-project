@@ -180,7 +180,12 @@ class CeloVerifierService {
       // 呼叫智能合約驗證
       logger.info('📝 正在發送交易到 Celo 鏈上...');
 
-      const tx = await this.verifierContract.verifyProof(
+      if (!this.verifierContract) {
+        throw new Error('Verifier contract not initialized');
+      }
+
+      const contract: any = this.verifierContract;
+      const tx = await contract.verifyProof(
         proofBytes,
         publicSignalsBytes,
         params.nationality,
@@ -261,8 +266,9 @@ class CeloVerifierService {
     try {
       logger.info('🔍 查詢鏈上驗證狀態', { userAddress });
 
-      const verification = await this.verifierContract.getVerification(userAddress);
-      const isVerified = await this.verifierContract.isVerified(userAddress);
+      const contract: any = this.verifierContract;
+      const verification = await contract.getVerification(userAddress);
+      const isVerified = await contract.isVerified(userAddress);
 
       if (!isVerified) {
         logger.info('用戶尚未完成鏈上驗證', { userAddress });
@@ -306,6 +312,12 @@ class CeloVerifierService {
     }
 
     try {
+      if (!this.verifierContract) {
+        throw new Error('Verifier contract not initialized');
+      }
+
+      const contract: any = this.verifierContract;
+
       // 計算 proof hash
       const proofHash = ethers.keccak256(
         ethers.solidityPacked(
@@ -314,7 +326,7 @@ class CeloVerifierService {
         )
       );
 
-      const isUsed = await this.verifierContract.isProofUsed(proofHash);
+      const isUsed = await contract.isProofUsed(proofHash);
       return isUsed;
     } catch (error) {
       logger.error('❌ 檢查 Proof 使用狀態失敗', {

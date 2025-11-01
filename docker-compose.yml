@@ -1,0 +1,104 @@
+version: '3.8'
+
+# 注意: Docker Compose 會自動讀取 backend/.env 檔案
+# 環境變數優先順序:
+# 1. Shell 環境變數
+# 2. backend/.env 檔案
+# 3. 此檔案中的 ${VAR:-default} 預設值
+
+services:
+  # MongoDB 資料庫服務
+  mongodb:
+    image: mongo:7-jammy
+    container_name: taxcoin-mongodb
+    restart: unless-stopped
+    command: ["--replSet", "rs0", "--bind_ip_all"]
+    environment:
+      MONGO_INITDB_DATABASE: taxcoin
+    volumes:
+      - mongodb_data:/data/db
+      - mongodb_config:/data/configdb
+    networks:
+      - taxcoin-network
+    healthcheck:
+      test: ['CMD', 'mongosh', '--quiet', '--eval', 'db.runCommand({ ping: 1 })']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # 後端 API 服務
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      args:
+        BUILDKIT_INLINE_CACHE: 1
+      # 增加構建超時時間（解決 Self SDK 下載慢的問題）
+      # shm_size: '2gb'
+    container_name: taxcoin-backend
+    restart: unless-stopped
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    env_file:
+      - ./backend/.env
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      DATABASE_URL: mongodb://mongodb:27017/taxcoin?replicaSet=rs0
+      JWT_EXPIRES_IN: 7d
+      SUI_NETWORK: testnet
+      CORS_ORIGIN: https://taxcoin-mvp.transferhelper.com.tw
+      MAX_FILE_SIZE: '5242880'
+      UPLOAD_DIR: /app/uploads
+    ports:
+      - '5003:3000'
+    volumes:
+      - ./backend/uploads:/app/uploads
+      - ./backend/logs:/app/logs
+    networks:
+      - taxcoin-network
+    healthcheck:
+      test: ['CMD', 'wget', '--no-verbose', '--tries=1', '--spider', 'http://localhost:3000/api/v1/health']
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # 前端服務
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: taxcoin-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    env_file:
+      - ./frontend/.env
+    environment:
+      VITE_API_BASE_URL: https://taxcoin-mvp.transferhelper.com.tw/api/v1
+    ports:
+      - '5004:5004'
+    networks:
+      - taxcoin-network
+    healthcheck:
+      test: ['CMD', 'wget', '--no-verbose', '--tries=1', '--spider', 'http://localhost:5004']
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+networks:
+  taxcoin-network:
+    driver: bridge
+    name: taxcoin-network
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.10.0.0/16
+          gateway: 10.10.0.1
+
+volumes:
+  mongodb_data:
+    name: taxcoin-mongodb-data
+  mongodb_config:
+    name: taxcoin-mongodb-config

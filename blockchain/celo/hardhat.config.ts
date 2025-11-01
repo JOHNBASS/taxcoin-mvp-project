@@ -19,6 +19,12 @@ const config: HardhatUserConfig = {
       accounts: process.env.CELO_PRIVATE_KEY ? [process.env.CELO_PRIVATE_KEY] : [],
       chainId: 44787,
     },
+    "celo-sepolia": {
+      url: process.env.CELO_SEPOLIA_RPC_URL || "https://forno.sepolia.celo-testnet.org",
+      accounts: process.env.CELO_PRIVATE_KEY ? [process.env.CELO_PRIVATE_KEY] : [],
+      chainId: 11142220,
+      timeout: 120000,
+    },
   },
   etherscan: {
     apiKey: {

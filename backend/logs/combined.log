@@ -31123,3 +31123,1753 @@ Inconsistent column data: Malformed ObjectID: provided hex string representation
   "query": {},
   "ip": "::ffff:127.0.0.1"
 }
+[2025-10-31 09:38:02] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:38:32] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:39:02] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:39:32] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:40:02] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:40:33] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:41:03] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:41:33] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:42:03] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:42:33] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:43:03] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:43:33] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:44:03] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:44:34] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:45:04] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:45:34] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:46:04] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:46:34] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:47:04] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:47:34] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:48:05] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:48:35] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:49:05] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:49:35] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:50:05] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:50:35] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:51:05] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:51:35] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:52:05] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:52:36] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:53:06] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:53:36] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:54:06] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:54:36] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:55:06] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:55:36] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:56:07] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:56:37] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:57:07] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:57:37] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:58:07] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:58:37] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:59:07] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 09:59:37] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:00:08] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:00:38] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:01:08] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:01:38] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:02:08] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:02:38] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:03:08] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:03:38] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:04:08] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:04:39] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:05:09] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:05:39] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:06:09] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:06:39] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:07:10] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:07:40] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:08:10] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:08:40] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:09:10] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:09:40] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:10:10] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:10:40] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:11:10] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:11:40] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:12:10] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:12:40] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:13:11] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:13:41] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:14:11] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:14:41] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:15:11] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:15:41] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:16:11] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:16:41] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:17:12] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:17:42] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:18:12] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:18:42] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:19:12] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:19:42] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:20:12] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:20:42] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:21:12] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:21:42] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:22:12] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:22:43] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:23:13] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:23:43] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 10:48:34] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 11:39:12] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 12:25:12] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 12:25:42] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 13:26:09] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 13:26:39] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 14:27:06] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 14:52:56] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 14:53:26] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 14:53:56] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 14:54:26] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 14:54:56] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 14:55:26] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 14:55:56] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 14:56:26] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 14:56:57] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 14:57:27] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 14:57:57] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 14:58:27] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 14:58:57] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 14:59:27] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 14:59:57] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:00:27] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:00:57] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:01:27] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:01:58] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:02:28] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:02:58] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:03:28] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:03:58] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:04:28] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:04:58] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:05:28] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:05:58] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:06:28] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:06:58] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:07:29] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:07:59] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:08:29] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:08:59] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:09:29] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:09:59] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:10:29] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:10:59] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:11:30] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:12:00] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:12:30] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:13:00] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:13:30] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:14:00] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:14:30] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:15:00] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:15:30] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:16:00] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:16:31] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:17:01] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:17:31] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:18:01] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:18:31] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:19:01] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:19:31] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:20:01] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:20:31] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:21:02] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:21:32] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:22:02] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:22:32] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:23:02] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:23:32] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:24:02] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:24:32] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:25:02] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:25:32] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:26:02] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:26:33] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:27:03] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:27:33] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:28:03] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:28:33] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:29:04] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:29:34] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:30:04] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:30:34] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:31:04] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:31:34] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:32:04] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:32:34] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:33:04] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:33:34] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:34:04] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:34:35] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:35:05] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:35:35] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:36:05] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:36:35] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:37:05] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:37:35] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:38:05] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:38:35] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:39:06] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:39:36] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:40:06] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:40:36] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:41:06] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:41:36] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:42:06] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:42:36] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:43:06] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:43:36] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:44:07] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:44:37] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:45:07] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:45:37] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:46:07] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:46:37] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:47:07] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:47:37] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:48:07] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:48:38] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:49:08] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:49:38] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:50:08] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:50:38] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:51:08] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:51:38] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:52:08] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:52:38] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:53:08] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:53:38] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:54:09] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:54:39] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:55:09] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:55:39] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:56:09] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:56:39] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:57:09] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:57:39] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:58:09] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:58:40] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:59:10] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 15:59:40] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:00:10] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:00:40] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:01:10] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:01:40] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:02:10] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:02:40] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:03:10] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:03:41] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:04:33] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:05:03] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:05:33] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:06:03] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:06:33] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:07:03] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:07:34] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:08:04] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:08:34] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:09:04] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:09:34] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:10:04] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:10:34] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:11:04] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:11:34] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:12:04] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:12:34] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:13:04] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:13:34] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:14:05] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:14:35] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:15:05] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:15:35] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:16:05] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:16:35] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:17:05] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:17:35] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:18:05] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:18:35] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:19:06] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:19:36] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:20:06] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:20:36] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:21:06] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:21:36] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:22:06] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:22:36] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:23:06] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:23:37] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:24:07] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:24:37] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:25:07] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:25:37] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:26:07] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:26:37] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:27:08] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:27:38] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:28:08] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:28:38] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:29:08] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:29:38] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:30:08] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:30:38] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:31:08] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:31:38] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:32:09] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:32:39] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:33:09] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:33:39] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:34:09] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:34:39] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:35:09] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:35:39] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:36:09] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:36:39] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:37:10] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:37:40] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:38:10] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:38:40] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:39:10] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:39:40] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:40:10] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:40:40] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:41:10] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:41:41] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:42:11] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 16:42:41] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 17:31:21] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 18:43:33] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 20:23:38] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 21:57:47] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 22:38:40] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-31 23:11:03] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 00:52:08] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 02:01:12] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 03:40:09] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 05:21:18] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 06:51:32] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 08:31:54] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:41:12] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:41:42] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:42:12] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:42:42] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:43:12] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:43:42] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:44:12] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:44:42] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:45:08] INFO: GET /api/v1/tax-claims {
+  "query": {
+    "page": "1",
+    "limit": "10"
+  },
+  "ip": "::ffff:10.10.0.4"
+}
+[2025-11-01 09:45:08] INFO: 開始認證 {
+  "path": "/",
+  "hasAuth": true
+}
+[2025-11-01 09:45:08] INFO: 使用者認證成功 {
+  "userId": "69040d818675f0a83e79810d",
+  "role": "TOURIST"
+}
+[2025-11-01 09:45:11] INFO: POST /api/v1/auth/nonce {
+  "query": {},
+  "ip": "::ffff:10.10.0.4"
+}
+[2025-11-01 09:45:11] INFO: 生成登入 nonce {
+  "walletAddress": "0xaa86742a187dc784346e0a471b14bd66df47ecfecb2fc6f47242036582039ae4"
+}
+[2025-11-01 09:45:12] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:45:42] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:46:12] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:47:43] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:48:13] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:48:43] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:49:13] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:49:43] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:50:13] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:50:43] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:51:13] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:51:43] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:52:14] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:52:44] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:53:14] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:53:44] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:54:14] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:54:44] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:55:14] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:55:44] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:56:14] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:56:44] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:57:15] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:57:45] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:58:15] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:58:45] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:59:15] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 09:59:45] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 10:00:15] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 10:00:45] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 10:00:47] INFO: POST /api/v1/auth/nonce {
+  "query": {},
+  "ip": "::ffff:10.10.0.4"
+}
+[2025-11-01 10:00:47] INFO: 生成登入 nonce {
+  "walletAddress": "0xaa86742a187dc784346e0a471b14bd66df47ecfecb2fc6f47242036582039ae4"
+}
+[2025-11-01 10:00:49] INFO: POST /api/v1/auth/wallet-login {
+  "query": {},
+  "ip": "::ffff:10.10.0.4"
+}
+[2025-11-01 10:00:49] WARN: ⚠️  暫時跳過簽名驗證 (開發模式)
+[2025-11-01 10:00:49] WARN: ⚠️  暫時跳過地址匹配驗證 (開發模式)
+[2025-11-01 10:00:49] INFO: 錢包登入成功 {
+  "userId": "69040d818675f0a83e79810d",
+  "walletAddress": "0xaa86742a187dc784346e0a471b14bd66df47ecfecb2fc6f47242036582039ae4",
+  "role": "TOURIST"
+}
+[2025-11-01 10:00:51] INFO: GET /api/v1/kyc/me {
+  "query": {},
+  "ip": "::ffff:10.10.0.4"
+}
+[2025-11-01 10:00:51] INFO: 開始認證 {
+  "path": "/me",
+  "hasAuth": true
+}
+[2025-11-01 10:00:51] INFO: 使用者認證成功 {
+  "userId": "69040d818675f0a83e79810d",
+  "role": "TOURIST"
+}
+[2025-11-01 10:00:54] INFO: 收到 SIGTERM 信號,正在關閉伺服器...
+[2025-11-01 10:00:54] INFO: 停止定時任務調度器
+[2025-11-01 10:00:54] INFO: 所有定時任務已停止
+[2025-11-01 10:00:57] INFO: Sui 服務初始化 {
+  "network": "testnet",
+  "rpcUrl": "https://fullnode.testnet.sui.io:443"
+}
+[2025-11-01 10:00:57] INFO: 開始初始化密鑰對 {
+  "hasConfig": true,
+  "configKeys": [
+    "network",
+    "privateKey",
+    "taxCoinPackageId",
+    "rwaPoolPackageId",
+    "adminCapId",
+    "nftAdminCapId"
+  ]
+}
+[2025-11-01 10:00:57] INFO: 讀取私鑰配置 {
+  "hasPrivateKey": true,
+  "privateKeyType": "string"
+}
+[2025-11-01 10:00:57] INFO: 嘗試初始化 Sui 密鑰對 {
+  "privateKeyLength": 70,
+  "privateKeyPrefix": "suiprivkey1qrt3...",
+  "startsWithSuiprivkey": true,
+  "firstChars": "suiprivkey1qrt3mxaeq"
+}
+[2025-11-01 10:00:57] INFO: 解析 Bech32 格式私鑰
+[2025-11-01 10:00:57] INFO: Bech32 解碼成功 {
+  "prefix": "suiprivkey",
+  "secretKeyLength": 32
+}
+[2025-11-01 10:00:57] INFO: 使用 Bech32 格式私鑰初始化成功
+[2025-11-01 10:00:57] INFO: Sui 密鑰對初始化成功 {
+  "adminAddress": "0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5"
+}
+[2025-11-01 10:00:57] INFO: ✅ 使用 Tesseract.js 進行 OCR (免費開源方案)
+[2025-11-01 10:00:57] INFO: ✅ 資料庫連接成功
+[2025-11-01 10:00:57] INFO: ✅ 資料庫連接測試通過
+[2025-11-01 10:00:57] INFO: 啟動定時任務調度器
+[2025-11-01 10:00:57] INFO: ✓ 收益分配定時任務已啟動 (每天凌晨 2:00)
+[2025-11-01 10:00:57] INFO: ✓ 到期投資結算定時任務已啟動 (每天凌晨 3:00)
+[2025-11-01 10:00:57] INFO: 所有定時任務已成功啟動
+[2025-11-01 10:00:57] INFO: ✅ 定時任務調度器已啟動
+[2025-11-01 10:00:57] INFO: 🚀 伺服器啟動成功
+[2025-11-01 10:00:57] INFO: 📍 環境: production
+[2025-11-01 10:00:57] INFO: 🌐 Port: 3000
+[2025-11-01 10:00:57] INFO: 📡 CORS Origin: https://taxcoin-mvp.transferhelper.com.tw
+[2025-11-01 10:00:57] INFO: ✅ 健康檢查: http://localhost:3000/api/v1/health
+[2025-11-01 10:01:20] INFO: 收到 SIGTERM 信號,正在關閉伺服器...
+[2025-11-01 10:01:20] INFO: 停止定時任務調度器
+[2025-11-01 10:01:20] INFO: 所有定時任務已停止
+[2025-11-01 10:01:34] INFO: Sui 服務初始化 {
+  "network": "testnet",
+  "rpcUrl": "https://fullnode.testnet.sui.io:443"
+}
+[2025-11-01 10:01:34] INFO: 開始初始化密鑰對 {
+  "hasConfig": true,
+  "configKeys": [
+    "network",
+    "privateKey",
+    "taxCoinPackageId",
+    "rwaPoolPackageId",
+    "adminCapId",
+    "nftAdminCapId"
+  ]
+}
+[2025-11-01 10:01:34] INFO: 讀取私鑰配置 {
+  "hasPrivateKey": true,
+  "privateKeyType": "string"
+}
+[2025-11-01 10:01:34] INFO: 嘗試初始化 Sui 密鑰對 {
+  "privateKeyLength": 70,
+  "privateKeyPrefix": "suiprivkey1qrt3...",
+  "startsWithSuiprivkey": true,
+  "firstChars": "suiprivkey1qrt3mxaeq"
+}
+[2025-11-01 10:01:34] INFO: 解析 Bech32 格式私鑰
+[2025-11-01 10:01:34] INFO: Bech32 解碼成功 {
+  "prefix": "suiprivkey",
+  "secretKeyLength": 32
+}
+[2025-11-01 10:01:34] INFO: 使用 Bech32 格式私鑰初始化成功
+[2025-11-01 10:01:34] INFO: Sui 密鑰對初始化成功 {
+  "adminAddress": "0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5"
+}
+[2025-11-01 10:01:34] INFO: ✅ 使用 Tesseract.js 進行 OCR (免費開源方案)
+[2025-11-01 10:01:35] INFO: ✅ 資料庫連接成功
+[2025-11-01 10:01:35] INFO: ✅ 資料庫連接測試通過
+[2025-11-01 10:01:35] INFO: 啟動定時任務調度器
+[2025-11-01 10:01:35] INFO: ✓ 收益分配定時任務已啟動 (每天凌晨 2:00)
+[2025-11-01 10:01:35] INFO: ✓ 到期投資結算定時任務已啟動 (每天凌晨 3:00)
+[2025-11-01 10:01:35] INFO: 所有定時任務已成功啟動
+[2025-11-01 10:01:35] INFO: ✅ 定時任務調度器已啟動
+[2025-11-01 10:01:35] INFO: 🚀 伺服器啟動成功
+[2025-11-01 10:01:35] INFO: 📍 環境: production
+[2025-11-01 10:01:35] INFO: 🌐 Port: 3000
+[2025-11-01 10:01:35] INFO: 📡 CORS Origin: https://taxcoin-mvp.transferhelper.com.tw
+[2025-11-01 10:01:35] INFO: ✅ 健康檢查: http://localhost:3000/api/v1/health
+[2025-11-01 10:01:51] INFO: 收到 SIGTERM 信號,正在關閉伺服器...
+[2025-11-01 10:01:51] INFO: 停止定時任務調度器
+[2025-11-01 10:01:51] INFO: 所有定時任務已停止
+[2025-11-01 10:02:40] INFO: Sui 服務初始化 {
+  "network": "testnet",
+  "rpcUrl": "https://fullnode.testnet.sui.io:443"
+}
+[2025-11-01 10:02:40] INFO: 開始初始化密鑰對 {
+  "hasConfig": true,
+  "configKeys": [
+    "network",
+    "privateKey",
+    "taxCoinPackageId",
+    "rwaPoolPackageId",
+    "adminCapId",
+    "nftAdminCapId"
+  ]
+}
+[2025-11-01 10:02:40] INFO: 讀取私鑰配置 {
+  "hasPrivateKey": true,
+  "privateKeyType": "string"
+}
+[2025-11-01 10:02:40] INFO: 嘗試初始化 Sui 密鑰對 {
+  "privateKeyLength": 70,
+  "privateKeyPrefix": "suiprivkey1qrt3...",
+  "startsWithSuiprivkey": true,
+  "firstChars": "suiprivkey1qrt3mxaeq"
+}
+[2025-11-01 10:02:40] INFO: 解析 Bech32 格式私鑰
+[2025-11-01 10:02:40] INFO: Bech32 解碼成功 {
+  "prefix": "suiprivkey",
+  "secretKeyLength": 32
+}
+[2025-11-01 10:02:40] INFO: 使用 Bech32 格式私鑰初始化成功
+[2025-11-01 10:02:40] INFO: Sui 密鑰對初始化成功 {
+  "adminAddress": "0xf3964ed53f9052fc57c66f489f9ac80c339e456a34a25c0eba90e4e85c13ecf5"
+}
+[2025-11-01 10:02:40] INFO: ✅ 使用 Tesseract.js 進行 OCR (免費開源方案)
+[2025-11-01 10:02:41] INFO: ✅ 資料庫連接成功
+[2025-11-01 10:02:41] INFO: ✅ 資料庫連接測試通過
+[2025-11-01 10:02:41] INFO: 啟動定時任務調度器
+[2025-11-01 10:02:41] INFO: ✓ 收益分配定時任務已啟動 (每天凌晨 2:00)
+[2025-11-01 10:02:41] INFO: ✓ 到期投資結算定時任務已啟動 (每天凌晨 3:00)
+[2025-11-01 10:02:41] INFO: 所有定時任務已成功啟動
+[2025-11-01 10:02:41] INFO: ✅ 定時任務調度器已啟動
+[2025-11-01 10:02:41] INFO: 🚀 伺服器啟動成功
+[2025-11-01 10:02:41] INFO: 📍 環境: production
+[2025-11-01 10:02:41] INFO: 🌐 Port: 3000
+[2025-11-01 10:02:41] INFO: 📡 CORS Origin: https://taxcoin-mvp.transferhelper.com.tw
+[2025-11-01 10:02:41] INFO: ✅ 健康檢查: http://localhost:3000/api/v1/health
+[2025-11-01 10:02:46] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 10:03:02] INFO: GET /api/v1/kyc/me {
+  "query": {},
+  "ip": "::ffff:10.10.0.4"
+}
+[2025-11-01 10:03:02] INFO: 開始認證 {
+  "path": "/me",
+  "hasAuth": true
+}
+[2025-11-01 10:03:02] INFO: 使用者認證成功 {
+  "userId": "69040d818675f0a83e79810d",
+  "role": "TOURIST"
+}
+[2025-11-01 10:03:10] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 10:03:32] INFO: GET /api/v1/kyc/me {
+  "query": {},
+  "ip": "::ffff:10.10.0.4"
+}
+[2025-11-01 10:03:32] INFO: 開始認證 {
+  "path": "/me",
+  "hasAuth": true
+}
+[2025-11-01 10:03:32] INFO: 使用者認證成功 {
+  "userId": "69040d818675f0a83e79810d",
+  "role": "TOURIST"
+}
+[2025-11-01 10:03:40] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 10:04:10] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 10:04:40] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 10:05:10] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 10:05:40] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 10:06:10] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 10:06:40] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 10:07:10] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 10:07:40] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 10:08:10] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-11-01 10:08:41] INFO: HEAD /api/v1/health {
+  "query": {},
+  "ip": "::ffff:127.0.0.1"
+}
